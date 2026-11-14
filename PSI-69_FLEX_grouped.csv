@@ -1,0 +1,150 @@
+fuel,pressure_kpa,o2_pct,co2_pct,he_pct,test_end,n_tests,test_numbers
+Methanol,101,21.0,0.0,0.0,Disruption,1,1
+Methanol,102,21.0,0.0,0.0,Extinction,5,2 3 33 34 203
+Methanol,101,21.0,0.0,0.0,Extinction,4,4 5 6 202
+Heptane,101,21.0,0.0,0.0,Disruption,5,7 9 204 205 206
+Heptane,102,21.0,0.0,0.0,Disruption,2,8 229
+Methanol,309,21.0,70.0,0.0,Extinction,2,10 11
+Heptane,309,21.0,70.0,0.0,Disruption,1,12
+Methanol,277,21.0,70.0,0.0,Extinction,1,13
+Methanol,274,21.0,70.0,0.0,Extinction,1,14
+Methanol,276,21.0,70.0,0.0,Extinction,2,15 16
+Methanol,206,21.0,70.0,0.0,Disruption,1,17
+Heptane,207,21.0,70.0,0.0,Extinction,1,18
+Heptane,72,34.0,0.0,0.0,Disruption,3,19 23 24
+Methanol,72,34.0,0.0,0.0,Completion,1,20
+Methanol,72,34.0,0.0,0.0,Disruption,2,21 22
+Methanol,72,30.0,0.0,0.0,Completion,1,25
+Methanol,72,30.0,0.0,0.0,Disruption,1,26
+Heptane,72,30.0,0.0,0.0,Disruption,2,27 28
+Methanol,102,30.0,0.0,0.0,Completion,1,29
+Methanol,103,30.0,0.0,0.0,Extinction,1,30
+Heptane,103,30.0,0.0,0.0,Disruption,2,31 52
+Heptane,103,30.0,0.0,0.0,Completion,1,32
+Heptane,102,21.0,0.0,0.0,Extinction,3,35 49 228
+Methanol,72,20.0,0.0,0.0,Extinction,2,36 54
+Methanol,71,34.0,0.0,0.0,Disruption,2,37 38
+Heptane,71,34.0,0.0,0.0,Disruption,1,39
+Methanol,71,30.0,0.0,0.0,Disruption,2,40 41
+Heptane,71,30.0,0.0,0.0,Disruption,2,42 43
+Methanol,102,30.0,0.0,0.0,Disruption,1,44
+Methanol,102,30.0,0.0,0.0,Extinction,1,45
+Methanol,103,21.0,0.0,0.0,Disruption,1,46
+Heptane,103,21.0,0.0,0.0,Completion,2,47 51
+Methanol,102,21.0,0.0,0.0,Disruption,1,48
+Heptane,103,21.0,0.0,0.0,Extinction,2,50 230
+Heptane,103,21.0,0.0,0.0,Disruption,1,53
+Methanol,72,20.0,0.0,0.0,Disruption,1,55
+Heptane,73,20.0,0.0,0.0,Completion,1,56
+Heptane,73,20.0,0.0,0.0,Extinction,1,57
+Methanol,103,18.0,0.0,0.0,Extinction,4,58 59 60 61
+Heptane,102,18.0,0.0,0.0,Extinction,2,62 64
+Heptane,102,18.0,0.0,0.0,Completion,1,63
+Methanol,102,15.0,0.0,0.0,Extinction,5,65 66 67 68 71
+Heptane,102,14.0,0.0,0.0,Completion,1,69
+Heptane,101,15.0,0.0,0.0,Extinction,2,70 73
+Heptane,102,15.0,0.0,0.0,Completion,2,72 74
+Methanol,103,13.0,0.0,0.0,Extinction,2,75 76
+Methanol,102,14.0,0.0,0.0,Extinction,2,77 78
+Heptane,102,13.0,0.0,0.0,Extinction,1,79
+Heptane,103,13.0,0.0,0.0,Extinction,2,80 81
+Methanol,102,13.0,0.0,0.0,Extinction,1,82
+Methanol,103,12.0,0.0,0.0,Extinction,4,83 85 86 87
+Methanol,102,12.0,0.0,0.0,Extinction,4,84 219 220 221
+Methanol,72,25.0,15.0,0.0,Disruption,4,88 89 90 91
+Heptane,72,25.0,15.0,0.0,Disruption,2,92 93
+Heptane,71,24.0,20.0,0.0,Extinction,2,94 95
+Heptane,71,24.0,20.0,0.0,Disruption,3,96 174 175
+Methanol,71,23.0,20.0,0.0,Completion,1,97
+Methanol,72,23.0,25.0,0.0,Extinction,1,98
+Methanol,71,23.0,25.0,0.0,Extinction,5,99 183 184 185 186
+Heptane,72,23.0,25.0,0.0,Extinction,2,100 101
+Heptane,71,21.0,30.0,0.0,Extinction,2,102 103
+Methanol,71,23.0,20.0,0.0,Extinction,1,104
+Methanol,71,23.0,20.0,0.0,Disruption,2,105 107
+Methanol,72,23.0,25.0,0.0,Disruption,1,106
+Methanol,72,23.0,25.0,0.0,Completion,1,108
+Methanol,72,21.0,30.0,0.0,Extinction,2,109 110
+Methanol,72,21.0,30.0,0.0,Completion,1,111
+Methanol,71,21.0,30.0,0.0,Completion,1,112
+Methanol,71,20.0,35.0,0.0,Extinction,2,113 115
+Methanol,0,20.0,35.0,0.0,Extinction,1,114
+Methanol,72,20.0,35.0,0.0,Extinction,1,116
+Heptane,71,20.0,35.0,0.0,Extinction,2,117 118
+Heptane,71,18.0,40.0,0.0,Extinction,2,119 120
+Methanol,70,18.0,40.0,0.0,Extinction,1,121
+Methanol,71,18.0,40.0,0.0,Extinction,3,122 123 124
+Methanol,72,17.0,45.0,0.0,Extinction,3,125 127 128
+Methanol,71,17.0,45.0,0.0,Extinction,2,126 147
+Heptane,71,17.0,45.0,0.0,Extinction,1,129
+Heptane,72,17.0,45.0,0.0,Extinction,1,130
+Heptane,102,24.0,20.0,0.0,Disruption,6,131 132 133 137 138 139
+Heptane,102,24.0,20.0,0.0,Extinction,1,134
+Heptane,102,24.0,20.0,0.0,Completion,2,135 136
+Methanol,71,15.0,50.0,0.0,Extinction,4,140 141 142 143
+Methanol,102,20.0,5.0,0.0,Extinction,3,144 145 146
+Heptane,102,20.0,5.0,0.0,Disruption,2,148 149
+Heptane,102,20.0,5.0,0.0,Extinction,1,150
+Methanol,102,18.0,15.0,0.0,Completion,1,151
+Methanol,102,18.0,15.0,0.0,Extinction,4,152 153 190 191
+Heptane,102,18.0,15.0,0.0,Extinction,4,154 155 165 172
+Heptane,102,18.0,15.0,0.0,Completion,1,156
+Methanol,102,16.0,25.0,0.0,Extinction,4,157 158 159 160
+Methanol,102,15.0,32.0,0.0,Extinction,4,161 162 163 164
+Methanol,101,14.0,36.0,0.0,Extinction,1,166
+Methanol,102,14.0,36.0,0.0,Extinction,1,167
+Methanol,102,21.0,15.0,0.0,Disruption,1,168
+Methanol,102,21.0,15.0,0.0,Extinction,2,169 170
+Heptane,101,18.0,15.0,0.0,Extinction,1,171
+Heptane,102,18.0,15.0,0.0,Disruption,1,173
+Methanol,72,24.0,20.0,0.0,Extinction,2,176 177
+Heptane,71,23.0,25.0,0.0,Extinction,1,178
+Heptane,71,23.0,25.0,0.0,Disruption,1,179
+Heptane,101,19.0,10.0,0.0,Extinction,2,180 181
+Heptane,101,19.0,10.0,0.0,Disruption,1,182
+Methanol,101,19.0,10.0,0.0,Extinction,2,187 188
+Methanol,101,18.0,15.0,0.0,Extinction,1,189
+Methanol,101,17.0,20.0,0.0,Extinction,2,192 193
+Heptane,100,17.0,20.0,0.0,Extinction,2,194 195
+Heptane,101,20.0,5.0,0.0,Extinction,2,196 197
+Heptane,101,20.0,5.0,0.0,Disruption,1,198
+Methanol,101,20.0,5.0,0.0,Extinction,3,199 200 201
+Heptane,102,21.0,0.0,0.0,Completion,2,207 208
+Heptane,101,16.0,0.0,0.0,Extinction,3,209 210 211
+Heptane,102,15.0,0.0,0.0,Extinction,1,212
+Heptane,101,14.0,0.0,0.0,Extinction,2,213 214
+Methanol,101,14.0,0.0,0.0,Extinction,2,215 216
+Methanol,101,13.0,0.0,0.0,Extinction,2,217 218
+Methanol,101,20.0,0.0,5.0,Extinction,2,222 223
+Heptane,101,20.0,0.0,5.0,Completion,1,224
+Methanol,100,19.0,0.0,10.0,Extinction,1,225
+Methanol,101,18.0,0.0,15.0,Extinction,2,226 227
+Heptane,101,19.0,0.0,10.0,Disruption,1,231
+Heptane,102,18.0,0.0,15.0,Extinction,1,232
+Heptane,102,18.0,0.0,15.0,Completion,2,233 234
+Heptane,101,17.0,0.0,20.0,Extinction,2,235 236
+Heptane,101,17.0,0.0,20.0,Disruption,1,237
+Heptane,101,17.0,0.0,20.0,Completion,1,238
+Methanol,101,17.0,0.0,20.0,Extinction,2,239 240
+Methanol,101,16.0,0.0,25.0,Extinction,2,241 242
+Heptane,101,16.0,0.0,25.0,Extinction,1,243
+Methanol,101,15.0,0.0,30.0,Extinction,2,244 245
+Methanol,101,14.0,0.0,35.0,Extinction,2,246 247
+Methanol,102,13.0,0.0,40.0,Extinction,1,248
+Heptane,71,24.0,0.0,20.0,Extinction,1,249
+Heptane,71,23.0,0.0,25.0,Completion,1,250
+Methanol,71,24.0,0.0,20.0,Extinction,1,251
+Methanol,71,24.0,0.0,20.0,Disruption,1,252
+Methanol,71,23.0,0.0,25.0,Extinction,1,253
+Methanol,71,23.0,0.0,25.0,Disruption,1,254
+Methanol,71,21.0,0.0,30.0,Extinction,3,255 256 257
+Heptane,71,21.0,0.0,30.0,Extinction,2,258 259
+Heptane,71,20.0,0.0,35.0,Extinction,2,260 261
+Methanol,70,20.0,0.0,35.0,Extinction,2,262 263
+Methanol,71,18.0,0.0,40.0,Extinction,3,264 265 266
+Heptane,70,18.0,0.0,40.0,Extinction,1,267
+Heptane,71,18.0,0.0,40.0,Extinction,1,268
+Heptane,71,17.0,0.0,45.0,Extinction,1,269
+Heptane,71,17.0,0.0,45.0,Completion,1,270
+Methanol,71,17.0,0.0,45.0,Extinction,2,271 272
+Heptane,102,21.0,0.0,15.0,Extinction,2,273 274
