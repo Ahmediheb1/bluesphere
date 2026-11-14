@@ -12,7 +12,7 @@ NASA has run hundreds of fire experiments in orbit. The results are public in NA
 
 ## The key finding
 
-In these PSI tables, solid materials, the stuff habitats are made of, were tested in microgravity between 13.6% and 22.2% oxygen only, and no test was run in lunar or Martian gravity. The Moon base will be built where NASA has no fire data yet. BlueSphere shows this gap, and becomes more cautious inside it.
+In these PSI tables, solid materials, the materials habitats are made of, were tested in microgravity between 13.6% and 22.2% oxygen only, and no test was run in lunar or Martian gravity. The Moon base will be built where NASA has no fire data yet. BlueSphere shows this gap, and becomes more cautious inside it.
 
 ## What the app does
 
@@ -59,16 +59,16 @@ Every file sits at the root of the repository, except the theme (`.streamlit/con
 
 All data comes from NASA's [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/physci/repo/) repository, under a CC0 license. The raw test tables are the `PSI-*.csv` files, and the way they are read is explained in [DATA.md](DATA.md).
 
-| Investigation | PSI |
-| --- | --- |
-| BASS-II (DOI 10.60555/4qc4-de67) | [PSI-25](https://psi.nasa.gov/physci/repo/data/investigations/PSI-25) |
-| Saffire-I | [PSI-98](https://psi.nasa.gov/physci/repo/data/investigations/PSI-98) |
-| Saffire-II | [PSI-99](https://psi.nasa.gov/physci/repo/data/investigations/PSI-99) |
-| Saffire-III | [PSI-100](https://psi.nasa.gov/physci/repo/data/investigations/PSI-100) |
-| FLEX | [PSI-69](https://psi.nasa.gov/physci/repo/data/investigations/PSI-69) |
-| FLEX-2 | [PSI-68](https://psi.nasa.gov/physci/repo/data/investigations/PSI-68) |
-| ACME BRE | [PSI-20](https://psi.nasa.gov/physci/repo/data/investigations/PSI-20) |
-| CFI-G | [PSI-159](https://psi.nasa.gov/physci/repo/data/investigations/PSI-159) |
+| Investigation | PSI | DOI |
+| --- | --- | --- |
+| BASS-II | [PSI-25](https://psi.nasa.gov/physci/repo/data/investigations/PSI-25) | [10.60555/4qc4-de67](https://doi.org/10.60555/4qc4-de67) |
+| Saffire-I | [PSI-98](https://psi.nasa.gov/physci/repo/data/investigations/PSI-98) | [10.60555/0t15-1z43](https://doi.org/10.60555/0t15-1z43) |
+| Saffire-II | [PSI-99](https://psi.nasa.gov/physci/repo/data/investigations/PSI-99) | [10.60555/2chp-m469](https://doi.org/10.60555/2chp-m469) |
+| Saffire-III | [PSI-100](https://psi.nasa.gov/physci/repo/data/investigations/PSI-100) | [10.60555/040q-4h36](https://doi.org/10.60555/040q-4h36) |
+| FLEX | [PSI-69](https://psi.nasa.gov/physci/repo/data/investigations/PSI-69) | [10.60555/mbq8-0451](https://doi.org/10.60555/mbq8-0451) |
+| FLEX-2 | [PSI-68](https://psi.nasa.gov/physci/repo/data/investigations/PSI-68) | [10.60555/byp8-h018](https://doi.org/10.60555/byp8-h018) |
+| ACME BRE | [PSI-20](https://psi.nasa.gov/physci/repo/data/investigations/PSI-20) | [10.60555/vb93-3y72](https://doi.org/10.60555/vb93-3y72) |
+| CFI-G | [PSI-159](https://psi.nasa.gov/physci/repo/data/investigations/PSI-159) | [10.60555/cyt1-kh64](https://doi.org/10.60555/cyt1-kh64) |
 
 The other sources (NASA papers on Saffire, NASA's 2015 guide to combustion science, NASA's exploration atmosphere) are listed on the app's Sources page.
 

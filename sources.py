@@ -13,7 +13,9 @@ if not inv.empty:
     section("NASA PSI investigations")
     for _, row in inv.iterrows():
         url = PSI_URL.format(psi_id=row["psi_id"])
-        st.markdown(f"- **[{row['investigation']} ({row['psi_id']})]({url})**: {row['description']}")
+        doi = row['doi']
+        st.markdown(f"- **[{row['investigation']} ({row['psi_id']})]({url})**: {row['description']} "
+                    f"DOI: [{doi}](https://doi.org/{doi})")
 
 section("Papers")
 PAPERS = [

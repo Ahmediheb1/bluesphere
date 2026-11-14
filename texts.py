@@ -55,7 +55,7 @@ STRINGS = {
     'det_scenario': 'Scenario',
     'det_sc_pmma': 'PMMA plastic fire',
     'det_sc_sibal': 'Fabric fire (SIBAL)',
-    'det_sc_exercise': 'No fire: a crew member exercising',
+    'det_sc_exercise': 'No fire: crew exercise',
     'det_cautious': 'Cautious mode (Moon base: no NASA data)',
     'det_cautious_help': 'In a no-data zone, BlueSphere lowers its alert threshold so the alert comes earlier.',
     'det_time': 'Time since the start (minutes:seconds)',
@@ -119,7 +119,7 @@ STRINGS = {
     'home_cta_assistant': 'Ask the assistant',
     'home_sphere_caption': 'In microgravity, hot gas does not rise. A flame becomes a sphere, fed by oxygen that diffuses in.',
     'home_gap_title': 'Where the data runs out',
-    'home_gap_lead': 'In these NASA microgravity tables, solid materials, the stuff habitats are made of, were tested '
+    'home_gap_lead': 'In these NASA microgravity tables, solid materials, the materials habitats are made of, were tested '
                      'between {lo}% and {hi}% oxygen. The Moon base will likely run at 30% or more, in lunar gravity, '
                      'where no test exists yet.',
     'home_gap_note': 'BlueSphere analysis of the NASA PSI tables (BASS-II and Saffire for solids; ACME BRE and FLEX for gases '

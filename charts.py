@@ -31,11 +31,11 @@ def _axis(c: dict) -> dict:
     )
 
 
-def _finish(chart, height: int = HEIGHT):
+def _finish(chart, height: int = HEIGHT, top: int = 12):
     c = colors()
     return (
         chart.properties(height=height, background=c["surface"],
-                         padding={"left": 12, "right": 12, "top": 12, "bottom": 8})
+                         padding={"left": 12, "right": 12, "top": top, "bottom": 8})
         .configure(font=CHART_FONT)
         .configure_axis(**_axis(c))
         .configure_view(stroke=None)
@@ -304,6 +304,7 @@ def signal_chart(det: pd.DataFrame, signal: str, t_now: float, events: list[tupl
     if shown:
         ev = pd.DataFrame(shown, columns=["t", "label"])
         layers.append(alt.Chart(ev).mark_rule(color=c["muted"], strokeDash=[4, 4]).encode(x=x))
-        layers.append(alt.Chart(ev).mark_text(align="left", baseline="top", dx=4, dy=4, color=c["ink2"], fontSize=11)
+        # Event names sit just above the plot, so they never cover the data or the axis title.
+        layers.append(alt.Chart(ev).mark_text(align="left", baseline="bottom", dx=4, dy=-3, color=c["ink2"], fontSize=11)
                       .encode(x=x, y=alt.value(0), text="label:N"))
-    return _finish(alt.layer(*layers), height=190)
+    return _finish(alt.layer(*layers), height=200, top=24)

@@ -116,7 +116,8 @@ def inject_css() -> None:
 
         /* Oxygen ruler */
         .bs-ruler {{ background: {c['surface']}; border: 1px solid {c['line']}; border-radius: 10px; padding: 1.2rem 1.2rem 0.6rem 1.2rem; }}
-        .bs-ruler svg {{ width: 100%; height: auto; display: block; }}
+        .bs-ruler {{ overflow-x: auto; }}
+        .bs-ruler svg {{ width: 100%; min-width: 760px; height: auto; display: block; }}
         .bs-ruler-note {{ font-size: 0.9rem; color: {c['muted']}; margin-top: 0.6rem; line-height: 1.5; }}
 
         /* Modules: a list, not a grid of identical cards */

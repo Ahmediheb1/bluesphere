@@ -17,12 +17,9 @@ def clock(seconds: float) -> str:
 page_header(t("det_title"), t("det_lead"))
 st.warning(t("det_simulated"), icon=":material/science:")
 
-left, right = st.columns([3, 2], vertical_alignment="bottom")
-with left:
-    scenario = st.pills(t("det_scenario"), list(sensors.SCENARIOS), default="pmma",
-                        format_func=lambda k: t(f"det_sc_{k}"), key="det_scenario") or "pmma"
-with right:
-    cautious = st.toggle(t("det_cautious"), value=False, help=t("det_cautious_help"), key="det_cautious")
+scenario = st.pills(t("det_scenario"), list(sensors.SCENARIOS), default="pmma",
+                    format_func=lambda k: t(f"det_sc_{k}"), key="det_scenario") or "pmma"
+cautious = st.toggle(t("det_cautious"), value=False, help=t("det_cautious_help"), key="det_cautious")
 t_now = st.select_slider(t("det_time"), options=list(range(0, sensors.DURATION_S + 1, sensors.STEP_S)),
                          value=480, format_func=clock, key="det_time")
 
@@ -61,10 +58,11 @@ def when(value):
 
 m1, m2, m3 = st.columns(3)
 m1.metric(t("det_ignition"), clock(sensors.IGNITION_S) if fire else t("det_none"))
-v, d = when(first_watch)
-m2.metric(t("det_first_alert"), v, d, delta_color="off")
-v, d = when(first_fire)
-m3.metric(t("det_confirmed"), v, d, delta_color="off")
+for col, label, value in [(m2, "det_first_alert", first_watch), (m3, "det_confirmed", first_fire)]:
+    shown, after = when(value)
+    col.metric(t(label), shown)
+    if after:
+        col.caption(after)
 
 # The four signals
 events = []

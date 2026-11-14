@@ -1,9 +1,9 @@
 investigation,psi_id,doi,n_tests,full_name,area,fuel_state,hardware,description
-Saffire-I,PSI-98,,2.0,Spacecraft Fire Safety Demonstration I,prevention,solid,Cygnus,"Large fire set on purpose inside an uncrewed Cygnus spacecraft, after it left the ISS."
-Saffire-II,PSI-99,,9.0,Spacecraft Fire Safety Demonstration II,prevention,solid,Cygnus,"Nine 29 x 5 cm samples burned inside an uncrewed Cygnus spacecraft, with an Earth comparison."
-Saffire-III,PSI-100,,2.0,Spacecraft Fire Safety Demonstration III,prevention,solid,Cygnus,"Third large fire of the Saffire series, inside an uncrewed Cygnus spacecraft."
+Saffire-I,PSI-98,10.60555/0t15-1z43,2.0,Spacecraft Fire Safety Demonstration I,prevention,solid,Cygnus,"Large fire set on purpose inside an uncrewed Cygnus spacecraft, after it left the ISS."
+Saffire-II,PSI-99,10.60555/2chp-m469,9.0,Spacecraft Fire Safety Demonstration II,prevention,solid,Cygnus,"Nine 29 x 5 cm samples burned inside an uncrewed Cygnus spacecraft, with an Earth comparison."
+Saffire-III,PSI-100,10.60555/040q-4h36,2.0,Spacecraft Fire Safety Demonstration III,prevention,solid,Cygnus,"Third large fire of the Saffire series, inside an uncrewed Cygnus spacecraft."
 BASS-II,PSI-25,10.60555/4qc4-de67,129.0,Burning and Suppression of Solids II,prevention,solid,"MSG, SPICE duct","Burning and extinction of solids in a small wind tunnel (up to 40 cm/s) in the Microgravity Science Glovebox, with oxygen lowered below 21% by adding nitrogen."
-FLEX,PSI-69,,274.0,Flame Extinguishment Experiment,suppression,liquid,"CIR, MDCA","Methanol and heptane droplets in still air; suppression by dilution with CO₂ or helium, from 0.7 to 3 atm."
-FLEX-2,PSI-68,,,Flame Extinguishment Experiment 2,suppression,liquid,"CIR, MDCA","Droplets of eight fuels, from 17 to 30% O₂ and 0.5 to 3 atm. PSI gives only the ranges, not each test."
-ACME BRE,PSI-20,,194.0,ACME Burning Rate Emulator,prevention,gas,CIR,"Gas flames that emulate the burning of materials, in still air, from 21 to 40% O₂."
-CFI-G,PSI-159,,154.0,ACME Cool Flames Investigation with Gases,physics,gas,CIR,Inverse flames: a mixture of up to 85% O₂ flows from a spherical burner into a fuel atmosphere.
+FLEX,PSI-69,10.60555/mbq8-0451,274.0,Flame Extinguishment Experiment,suppression,liquid,"CIR, MDCA","Methanol and heptane droplets in still air; suppression by dilution with CO₂ or helium, from 0.7 to 3 atm."
+FLEX-2,PSI-68,10.60555/byp8-h018,,Flame Extinguishment Experiment 2,suppression,liquid,"CIR, MDCA","Droplets of eight fuels, from 17 to 30% O₂ and 0.5 to 3 atm. PSI gives only the ranges, not each test."
+ACME BRE,PSI-20,10.60555/vb93-3y72,194.0,ACME Burning Rate Emulator,prevention,gas,CIR,"Gas flames that emulate the burning of materials, in still air, from 21 to 40% O₂."
+CFI-G,PSI-159,10.60555/cyt1-kh64,154.0,ACME Cool Flames Investigation with Gases,physics,gas,CIR,Inverse flames: a mixture of up to 85% O₂ flows from a spherical burner into a fuel atmosphere.

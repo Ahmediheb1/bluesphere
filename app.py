@@ -1,5 +1,8 @@
 """BlueSphere: an AI-powered fire safety copilot built on NASA microgravity combustion data.
 
+Team BlueSphere, NASA Space Apps Challenge 2026 (Flame in Freefall).
+Use of AI: Claude (Anthropic) took part in writing the code with the BlueSphere team.
+
 Run locally:  py -m streamlit run app.py
 """
 
