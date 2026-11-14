@@ -1,30 +1,27 @@
-"""Sources et méthode : d'où vient chaque chiffre, et comment l'IA est utilisée."""
+"""Sources and method: where every number comes from, and how AI is used."""
 
 import streamlit as st
 
 from data import PSI_URL, load_investigations
-from i18n import get_lang, t
-from style import page_header
+from style import page_header, section
+from texts import t
 
-page_header(t("nav_sources"), t("sources_lead"))
-
-lang = get_lang()
+page_header(t("sources_title"), t("sources_lead"))
 
 inv = load_investigations()
 if not inv.empty:
-    st.subheader("NASA PSI")
+    section("NASA PSI investigations")
     for _, row in inv.iterrows():
         url = PSI_URL.format(psi_id=row["psi_id"])
-        desc = row["desc_fr"] if lang == "fr" else row["desc_en"]
-        st.markdown(f"- **[{row['investigation']} ({row['psi_id']})]({url})** : {desc}")
+        st.markdown(f"- **[{row['investigation']} ({row['psi_id']})]({url})**: {row['description']}")
 
-st.subheader("Articles" if lang == "fr" else "Papers")
+section("Papers")
 PAPERS = [
     ("Ferkul et al., 2017, Results of Large-Scale Spacecraft Flammability Tests (NASA)",
      "https://ntrs.nasa.gov/api/citations/20170008805/downloads/20170008805.pdf"),
     ("Fortenberry et al., 2021, Combustion Products from Saffire-IV and Saffire-V (ICES)",
      "https://ttu-ir.tdl.org/items/13a0b598-7e79-4d08-9d42-1fd220ad8803"),
-    ("Brooker et Niehaus, 2022, Model Development of Large-Scale Spacecraft Fires during Saffire-IV (NASA)",
+    ("Brooker and Niehaus, 2022, Model Development of Large-Scale Spacecraft Fires during Saffire-IV (NASA)",
      "https://ntrs.nasa.gov/citations/20220002714"),
     ("Brooker et al., 2015, Modeling and Analysis of Realistic Fire Scenarios in Spacecraft (NASA)",
      "https://ntrs.nasa.gov/api/citations/20150021283/downloads/20150021283.pdf"),
@@ -41,7 +38,7 @@ PAPERS = [
 for title, url in PAPERS:
     st.markdown(f"- [{title}]({url})" if url else f"- {title}")
 
-st.subheader("NASA")
+section("NASA pages")
 RESOURCES = [
     ("A Researcher's Guide to: Combustion Science (2015)",
      "https://www.nasa.gov/missions/station/a-researchers-guide-to-combustion-science/"),
@@ -55,5 +52,5 @@ RESOURCES = [
 for title, url in RESOURCES:
     st.markdown(f"- [{title}]({url})")
 
-st.subheader(t("sources_ai_title"))
+section(t("sources_ai_title"))
 st.markdown(t("sources_ai"))

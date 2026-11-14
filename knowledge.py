@@ -1,12 +1,11 @@
-"""La base de connaissances de l'assistant : seulement des faits tirés de sources de la NASA.
+"""The assistant's knowledge base: only facts taken from NASA sources.
 
-Chaque fait porte l'étiquette de sa source, par exemple [S4]. L'application affiche ensuite
-la liste des sources citées, avec leurs liens. Pour ajouter un fait, ajouter sa source dans
-SOURCES et l'étiqueter dans FACTS.
+Each fact carries the tag of its source, for example [S4]. The app then shows the list of
+cited sources with their links. To add a fact, add its source to SOURCES and tag it in FACTS.
 """
 
 SOURCES = {
-    "S1": ("NASA Space Apps 2026, challenge « Flame in Freefall »",
+    "S1": ("NASA Space Apps 2026, challenge \"Flame in Freefall\"",
            "https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/"),
     "S2": ("NASA, A Researcher's Guide to: Combustion Science (2015)",
            "https://www.nasa.gov/missions/station/a-researchers-guide-to-combustion-science/"),

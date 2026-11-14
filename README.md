@@ -1,54 +1,63 @@
 # BlueSphere 🔵
 
-**NASA Space Apps Challenge 2026 · Défi « Flame in Freefall » · Équipe BlueSphere (Sherbrooke)**
+**NASA Space Apps Challenge 2026, "Flame in Freefall" challenge. Team BlueSphere, Sherbrooke, Canada.**
 
-BlueSphere est un copilote de sécurité incendie alimenté par l'IA. Il transforme des décennies d'expériences de la NASA sur le feu en microgravité en réponses claires, pour protéger les astronautes sur la Lune et sur Mars.
+**Live app: https://bluesphere.streamlit.app**
 
-*BlueSphere is an AI-powered fire safety copilot that turns decades of NASA microgravity combustion experiments into clear answers to keep astronauts safe on the Moon and Mars.*
+BlueSphere is an AI-powered fire safety copilot. It turns decades of NASA microgravity combustion experiments into clear answers to keep astronauts safe on the Moon and Mars.
 
-## Ce que fait l'application
+## The problem
 
-- **Atlas d'inflammabilité** : 764 essais réels de 8 expériences de la NASA (BASS-II, Saffire I à III, FLEX, FLEX-2, ACME BRE, CFI-G) réunis sur une seule carte, oxygène en fonction de la vitesse de l'air.
-- **Les zones sans données** : ce que la NASA n'a pas encore testé, à commencer par l'atmosphère de la future base lunaire (30 % d'O₂ ou plus, à 10,2 psi ou moins) en gravité lunaire.
-- **Classement selon l'environnement** : station spatiale, base lunaire, rover lunaire, vaisseau vers Mars ou environnement personnalisé. Un score de risque de 0 à 100 avec la pondération de l'équipe (oxygène 30 %, matériau 25 %, ventilation 25 %, épaisseur 10 %, pression 10 %), les essais de la NASA les plus proches, et une confiance qui baisse là où les données manquent (mode prudent).
-- **Assistant d'IA** : il répond aux questions sur le feu dans l'espace seulement avec des faits tirés de sources de la NASA (`knowledge.py`), cite chaque source et dit « je ne sais pas » quand l'information manque. Modèle Claude Sonnet 5.5 ; la clé de l'API reste dans les secrets de Streamlit, jamais sur GitHub.
-- Application bilingue (français et anglais) : `?lang=fr` ou `?lang=en` dans le lien.
+NASA has run hundreds of fire experiments in orbit. The results are public in NASA's Physical Sciences Informatics (PSI) repository, but they are hard to find, harder to compare, and even harder to interpret. Meanwhile, the future Moon base and pressurized rovers will likely run at 30% oxygen or more, at 10.2 psi or less, to shorten the preparation before moonwalks. More oxygen means more fire risk.
 
-## Lancer en local
+## The key finding
+
+In these PSI tables, solid materials, the stuff habitats are made of, were tested in microgravity between 13.6% and 22.2% oxygen only, and no test was run in lunar or Martian gravity. The Moon base will be built where NASA has no fire data yet. BlueSphere shows this gap, and becomes more cautious inside it.
+
+## What the app does
+
+- **Flammability atlas**: 764 real tests from 8 NASA investigations (BASS-II, Saffire I to III, FLEX, FLEX-2, ACME BRE, CFI-G) on a single map, oxygen against air speed, plus a coverage map of the conditions no test has covered yet.
+- **Ranking by environment**: space station, Moon base, lunar rover, ship to Mars, or a custom environment. A risk score from 0 to 100 with the team's expert weighting (oxygen 30%, material 25%, ventilation 25%, thickness 10%, pressure 10%), the closest NASA tests, and a confidence that drops where data is missing (cautious mode).
+- **AI assistant**: answers questions about fire in space using only facts from NASA sources (`knowledge.py`), cites each source, and says "I don't know" when the information is missing. It runs on Claude Sonnet 5.5; the API key stays in the Streamlit secrets, never in this repository.
+- **After the fire** and **live detection**: in progress.
+
+## Run it locally
 
 ```bash
 py -m pip install -r requirements.txt
 py -m streamlit run app.py
 ```
 
-Pour reconstruire le tableau de données à partir des fichiers bruts de PSI :
+To rebuild the data table from the raw PSI files:
 
 ```bash
 py build_dataset.py
 ```
 
-## Fichiers du projet
+The assistant needs a Claude API key. On Streamlit Community Cloud, add `ANTHROPIC_API_KEY` under the app's Settings > Secrets. Never put the key in a file of this repository.
 
-Tous les fichiers sont à la racine du dépôt, sauf le thème (`.streamlit/config.toml`).
+## Project files
 
-| Fichier | Rôle |
+Every file sits at the root of the repository, except the theme (`.streamlit/config.toml`).
+
+| File | Role |
 | --- | --- |
-| `app.py` | Point d'entrée : langue, menu et pages |
-| `accueil.py`, `atlas.py`, `classement.py`, `assistant.py`, `sources.py` | Les pages de l'application |
-| `i18n.py` | Tous les textes, en français et en anglais |
-| `data.py`, `charts.py`, `style.py` | Lecture des données, graphiques, couleurs |
-| `risk.py` | Le score de risque, la confiance et le classement des essais |
-| `knowledge.py` | La base de connaissances de l'assistant : les faits de la NASA et leurs sources |
-| `experiments.csv`, `investigations.csv` | Les données harmonisées utilisées par l'application |
-| `PSI-*.csv` | Les tableaux d'essais bruts de la NASA |
-| `build_dataset.py` | Construit `experiments.csv` à partir des tableaux bruts |
-| `DATA.md` | Comment chaque tableau de la NASA est lu |
+| `app.py` | Entry point: page setup and navigation |
+| `home.py`, `atlas.py`, `ranking.py`, `assistant.py`, `sources.py` | The pages of the app |
+| `texts.py` | Every piece of text shown in the app |
+| `data.py`, `charts.py`, `style.py` | Data loading, charts, look and feel |
+| `risk.py` | The risk score, the confidence, and the ranking of tests |
+| `knowledge.py` | The assistant's knowledge base: NASA facts and their sources |
+| `experiments.csv`, `investigations.csv` | The harmonized data used by the app |
+| `PSI-*.csv` | The raw NASA test tables |
+| `build_dataset.py` | Builds `experiments.csv` from the raw tables |
+| `DATA.md` | How each NASA table is read |
 
-## Données
+## Data
 
-Toutes les données viennent du dépôt [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/physci/repo/) de la NASA, sous licence CC0. Les tableaux d'essais bruts sont les fichiers `PSI-*.csv`, et la façon de les lire est expliquée dans [DATA.md](DATA.md).
+All data comes from NASA's [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/physci/repo/) repository, under a CC0 license. The raw test tables are the `PSI-*.csv` files, and the way they are read is explained in [DATA.md](DATA.md).
 
-| Expérience | PSI |
+| Investigation | PSI |
 | --- | --- |
 | BASS-II (DOI 10.60555/4qc4-de67) | [PSI-25](https://psi.nasa.gov/physci/repo/data/investigations/PSI-25) |
 | Saffire-I | [PSI-98](https://psi.nasa.gov/physci/repo/data/investigations/PSI-98) |
@@ -59,16 +68,14 @@ Toutes les données viennent du dépôt [Physical Sciences Informatics (PSI)](ht
 | ACME BRE | [PSI-20](https://psi.nasa.gov/physci/repo/data/investigations/PSI-20) |
 | CFI-G | [PSI-159](https://psi.nasa.gov/physci/repo/data/investigations/PSI-159) |
 
-Les autres sources (articles de la NASA sur Saffire, guide de la NASA sur la combustion, 2015) sont listées dans la page « Sources et méthode » de l'application.
+The other sources (NASA papers on Saffire, NASA's 2015 guide to combustion science, NASA's exploration atmosphere) are listed on the app's Sources page.
 
-## Usage de l'IA
+## Use of AI
 
-*Déclaration demandée par le règlement de NASA Space Apps.*
+*Statement required by the NASA Space Apps rules.*
 
-Claude (Anthropic) a participé à l'écriture du code avec l'équipe BlueSphere. L'assistant de l'application fonctionne avec Claude, grâce à une clé d'API. Les idées, le scénario de la base lunaire, les choix scientifiques et l'analyse du risque viennent de l'équipe BlueSphere.
+Claude (Anthropic) took part in writing the code with the BlueSphere team. The app's assistant runs on Claude, through an API key. The ideas, the Moon base scenario, the scientific choices and the risk analysis come from the BlueSphere team.
 
-*Use of AI (required by the NASA Space Apps rules): Claude (Anthropic) took part in writing the code with the BlueSphere team. The app's assistant runs on Claude, through an API key. The ideas, the Moon base scenario, the scientific choices and the risk analysis come from the BlueSphere team.*
+## License
 
-## Licence
-
-Code sous licence MIT. Données de la NASA : CC0.
+Code under the MIT license. NASA data: CC0.

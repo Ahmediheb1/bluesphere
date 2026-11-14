@@ -1,10 +1,9 @@
-"""Chargement des données de BlueSphere.
+"""Loading BlueSphere's data.
 
-experiments.csv : un essai par ligne, avec les colonnes harmonisées ci-dessous.
-investigations.csv : une ligne par expérience de la NASA (nom, numéro PSI, lien).
+experiments.csv: one NASA test per row (or a group of identical tests), with harmonized columns.
+investigations.csv: one row per NASA investigation (name, PSI number, number of tests, description).
 
-Les unités sont toujours les mêmes : oxygène en % du volume, pression en kPa,
-vitesse de l'air en cm/s, épaisseur en mm.
+Units are always the same: oxygen in % by volume, pressure in kPa, air speed in cm/s, thickness in mm.
 """
 
 from pathlib import Path
@@ -12,30 +11,30 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-DATA_DIR = Path(__file__).resolve().parent  # tous les fichiers sont à la racine du projet
+DATA_DIR = Path(__file__).resolve().parent  # every file sits at the root of the project
 
 EXPERIMENT_COLUMNS = [
-    "investigation",     # nom court de l'expérience, ex. BASS-II
-    "psi_id",            # numéro PSI, ex. PSI-25
-    "test_id",           # identifiant de l'essai dans le tableau de PSI
-    "material",          # matériau ou combustible
-    "fuel_state",        # solid, liquid ou gas
-    "geometry",          # forme de l'échantillon
-    "thickness_mm",      # épaisseur
-    "o2_pct",            # oxygène, % du volume
-    "pressure_kpa",      # pression
-    "flow_cm_s",         # vitesse de l'air (0 = air immobile)
-    "flow_direction",    # concurrent, opposed ou quiescent
-    "gravity",           # micro, moon, mars ou earth
-    "outcome",           # burned, extinguished, no_ignition ou unknown
-    "flow_min_cm_s",     # plus faible vitesse d'air notée pendant l'essai
-    "flow_max_cm_s",     # plus forte vitesse d'air notée pendant l'essai
-    "outcome_detail",    # le résultat en une phrase
-    "spread_rate_mm_s",  # vitesse de propagation de la flamme
-    "burn_time_s",       # durée de combustion
-    "n_tests",           # nombre d'essais identiques regroupés sur la ligne (vide = inconnu)
-    "co2_rise_pct",      # hausse du CO2 pendant l'essai (BASS-II)
-    "co_rise_ppm",       # hausse du CO pendant l'essai (BASS-II)
+    "investigation",     # short name of the investigation, e.g. BASS-II
+    "psi_id",            # PSI number, e.g. PSI-25
+    "test_id",           # test identifier in the PSI table
+    "material",          # material or fuel
+    "fuel_state",        # solid, liquid or gas
+    "geometry",          # sample shape
+    "thickness_mm",      # thickness
+    "o2_pct",            # oxygen, % by volume
+    "pressure_kpa",      # pressure
+    "flow_cm_s",         # air speed (0 = still air)
+    "flow_direction",    # concurrent, opposed or quiescent
+    "gravity",           # micro, moon, mars or earth
+    "outcome",           # burned, extinguished, no_ignition or unknown
+    "flow_min_cm_s",     # lowest air speed recorded during the test
+    "flow_max_cm_s",     # highest air speed recorded during the test
+    "outcome_detail",    # the outcome in one sentence
+    "spread_rate_mm_s",  # flame spread rate
+    "burn_time_s",       # burning time
+    "n_tests",           # number of identical tests grouped on the row (empty = unknown)
+    "co2_rise_pct",      # CO2 rise during the test (BASS-II)
+    "co_rise_ppm",       # CO rise during the test (BASS-II)
     "notes",
 ]
 
@@ -46,18 +45,17 @@ NUMERIC = [
 
 PSI_URL = "https://psi.nasa.gov/physci/repo/data/investigations/{psi_id}"
 
-# Base lunaire prévue (énoncé du défi) : 30 % d'oxygène ou plus, à 10,2 psi ou moins
+# Planned Moon base (challenge statement): 30% oxygen or more, at 10.2 psi or less
 MOON_BASE_O2_PCT = 30.0
-MOON_BASE_PRESSURE_KPA = 70.3  # 10,2 psi
+MOON_BASE_PRESSURE_KPA = 70.3  # 10.2 psi
 EARTH_AIR_O2_PCT = 21.0
-# Guide NASA 2015 : minimum de la limite d'inflammabilité vers 10 cm/s,
-# la vitesse typique de la ventilation d'un vaisseau
+# NASA guide (2015): flames spread best around 10 cm/s, the typical speed of spacecraft ventilation
 TYPICAL_VENTILATION_CM_S = 10.0
 
 
 @st.cache_data
 def _read_csv(path: str, mtime: float) -> pd.DataFrame:
-    # mtime fait partie de la clé du cache : un fichier modifié est relu
+    # mtime is part of the cache key, so an edited file is read again
     return pd.read_csv(path)
 
 
@@ -89,38 +87,12 @@ def load_investigations() -> pd.DataFrame:
 
 
 def o2_band(o2_pct: float) -> str | None:
-    """Bande d'oxygène utilisée par la carte des zones sans données."""
+    """Oxygen band used by the coverage map."""
     if pd.isna(o2_pct):
         return None
-    # 20,5 % : marge pour l'air normal, noté 20,9 % ou 21 % selon les tableaux
+    # 20.5%: a margin for normal air, written 20.9% or 21% depending on the table
     if o2_pct < EARTH_AIR_O2_PCT - 0.5:
         return "o2_low"
     if o2_pct < MOON_BASE_O2_PCT:
         return "o2_mid"
     return "o2_high"
-
-
-# Les noms de matériaux du tableau sont en français ; voici leur version anglaise
-MATERIAL_EN = {
-    "Cire de bougie": "Candle wax",
-    "Heptane": "Heptane",
-    "Méthane": "Methane",
-    "Méthanol": "Methanol",
-    "Nomex": "Nomex",
-    "Nomex (partie de 24 cm)": "Nomex (24 cm part)",
-    "PMMA": "PMMA",
-    "PMMA (partie de 5 cm)": "PMMA (5 cm part)",
-    "PMMA noir": "Black PMMA",
-    "PMMA transparent": "Clear PMMA",
-    "SIBAL (coton et fibre de verre)": "SIBAL (cotton and fiberglass)",
-    "Silicone": "Silicone",
-    "Éthylène": "Ethylene",
-    "Éthylène dilué (50 %)": "Diluted ethylene (50%)",
-}
-
-
-def material_label(name, lang: str) -> str:
-    """Nom du matériau dans la langue de l'interface."""
-    if lang == "en" and isinstance(name, str):
-        return MATERIAL_EN.get(name, name)
-    return name

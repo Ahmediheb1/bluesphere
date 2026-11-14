@@ -1,19 +1,19 @@
-# Les données de BlueSphere
+# BlueSphere's data
 
-`experiments.csv` est construit par `build_dataset.py` à partir des tableaux d'essais de PSI, copiés tels quels dans les fichiers `PSI-*.csv` (seuls les espaces en trop ont été retirés). Une ligne = un essai, ou un groupe d'essais identiques (colonne `n_tests`).
+`experiments.csv` is built by `build_dataset.py` from the PSI test tables, copied as they are into the `PSI-*.csv` files (only extra spaces were removed). One row = one test, or a group of identical tests (column `n_tests`).
 
-Unités : oxygène en % du volume, pression en kPa, vitesse de l'air en cm/s, épaisseur en mm.
+Units: oxygen in % by volume, pressure in kPa, air speed in cm/s, thickness in mm.
 
-## Comment chaque tableau est lu
+## How each table is read
 
-**BASS-II (PSI-25), 129 essais.** La colonne « Air display » est lue comme la vitesse de l'air en cm/s : le tunnel de BASS-II imposait jusqu'à 40 cm/s. Les valeurs entre parenthèses et celles qui suivent « pot » sont des lectures du potentiomètre du ventilateur, pas des vitesses : elles sont ignorées. « <1 » devient 0,5 cm/s. L'oxygène est la valeur initiale calibrée. Le résultat vient des mots notés dans le tableau : « ext » ou « extinguished » (éteinte en réduisant l'air), « blowoff » (soufflée par un air trop rapide), « no ign » (pas d'allumage), « off » (ventilateur coupé, résultat inconnu). Le point de l'Atlas est placé à la plus faible vitesse notée, ou à la plus forte en cas de « blowoff ». Le texte brut reste dans la colonne `notes`.
+**BASS-II (PSI-25), 129 tests.** The "Air display" column is read as the air speed in cm/s: the BASS-II tunnel imposed up to 40 cm/s. Values in parentheses and values after "pot" are fan potentiometer readings, not speeds, so they are ignored. "<1" becomes 0.5 cm/s. Oxygen is the calibrated initial value. The outcome comes from the words written in the table: "ext" or "extinguished" (went out as the air was reduced), "blowoff" (blown off by air that was too fast), "no ign" (no ignition), "off" (fan turned off, outcome unknown). With none of these words, the flame is counted as burning at the listed air speeds. The atlas point sits at the lowest recorded speed, or at the highest one for a blowoff. The raw text stays in the `notes` column.
 
-**Saffire-I, II et III (PSI-98, 99, 100).** Lus directement. Pour Saffire-II, l'oxygène a été déduit du CO₂ mesuré (note 1 du tableau). L'échantillon 2-7 est séparé en deux lignes : le PMMA a brûlé, le Nomex ne s'est pas allumé. Le tableau de Saffire-III ne donne ni l'oxygène ni le résultat : ses deux essais ne sont pas sur la carte.
+**Saffire-I, II and III (PSI-98, 99, 100).** Read directly. For Saffire-II, oxygen was derived from the measured CO₂ (note 1 of the table). Sample 2-7 is split into two rows: the PMMA burned, the Nomex did not ignite. The Saffire-III table gives neither the oxygen nor the outcome, so its two tests are not on the map.
 
-**FLEX (PSI-69), 274 gouttes.** Regroupées par combustible, pression, oxygène, dilution (CO₂ ou hélium) et fin d'essai : 149 groupes (`PSI-69_FLEX_grouped.csv`). « Extinction » = la flamme s'est éteinte avant la fin de la goutte ; « Completion » et « Disruption » = la goutte a brûlé. Air immobile (0 cm/s).
+**FLEX (PSI-69), 274 droplets.** Grouped by fuel, pressure, oxygen, dilution (CO₂ or helium) and test end: 149 groups (`PSI-69_FLEX_grouped.csv`). "Extinction" = the flame went out before the droplet was gone; "Completion" and "Disruption" = the droplet burned. Still air (0 cm/s).
 
-**ACME BRE (PSI-20), 194 flammes.** Le tableau de PSI résume chaque journée : les concentrations d'oxygène où des flammes ont pris, et le nombre de flammes allumées. Une ligne par journée et par concentration ; le nombre exact par concentration n'est pas connu. « 3400% » et « 2100% » sont lus comme 34 % et 21 %. Air immobile.
+**ACME BRE (PSI-20), 194 flames.** The PSI table summarizes each day: the oxygen levels where flames ignited, and the number of flames ignited. One row per day and per oxygen level; the exact number per level is not known. "3400%" and "2100%" are read as 34% and 21%. Still air.
 
-**FLEX-2 (PSI-68).** PSI ne donne que les plages étudiées (17 à 30 % d'O₂, 0,5 à 3 atm, 0,1 à 5 cm/s), pas chaque essai : FLEX-2 n'est pas sur la carte.
+**FLEX-2 (PSI-68).** PSI only gives the ranges studied (17 to 30% O₂, 0.5 to 3 atm, 0.1 to 5 cm/s), not each test, so FLEX-2 is not on the map.
 
-**CFI-G (PSI-159), 154 essais.** Flammes inversées : l'oxygène (jusqu'à 85 %) sort du brûleur dans une atmosphère de combustible. Ce n'est pas l'oxygène de l'air ambiant, donc CFI-G n'est pas sur la carte. Les essais sont regroupés dans `PSI-159_CFI-G_grouped.csv`.
+**CFI-G (PSI-159), 154 tests.** Inverse flames: oxygen (up to 85%) flows out of the burner into a fuel atmosphere. That is not the oxygen of the surrounding air, so CFI-G is not on the map. The tests are grouped in `PSI-159_CFI-G_grouped.csv`.

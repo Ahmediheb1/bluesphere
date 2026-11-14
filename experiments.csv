@@ -1,336 +1,336 @@
 investigation,psi_id,test_id,material,fuel_state,geometry,thickness_mm,o2_pct,pressure_kpa,flow_cm_s,flow_min_cm_s,flow_max_cm_s,flow_direction,gravity,outcome,outcome_detail,spread_rate_mm_s,burn_time_s,n_tests,co2_rise_pct,co_rise_ppm,notes
-Saffire-I,PSI-98,S1,SIBAL (coton et fibre de verre),solid,tissu,,21.6,,20,20,20,concurrent,micro,burned,a brûlé pendant 420 s,,420,1,,,"Échantillon de 94 x 40,6 cm"
-Saffire-I,PSI-98,S2,SIBAL (coton et fibre de verre),solid,tissu,,21.5,,20,20,20,opposed,micro,burned,a brûlé pendant 70 s,,70,1,,,"Échantillon de 94 x 40,6 cm"
-Saffire-II,PSI-99,2-1,Silicone,solid,tissu,0.27,21.5,,20,20,20,concurrent,micro,no_ignition,longueur brûlée ~0 (sur Terre : brûlé en entier),,,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-2,Silicone,solid,tissu,0.61,22.1,,20,20,20,concurrent,micro,no_ignition,"longueur brûlée ~0 (sur Terre : 7,6 cm)",,,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-3,Silicone,solid,tissu,1.03,22.1,,20,20,20,concurrent,micro,no_ignition,longueur brûlée ~0 (sur Terre : ~0),,,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-4,Silicone,solid,tissu,0.37,22.1,,20,20,20,opposed,micro,no_ignition,longueur brûlée ~0 (sur Terre : brûlé en entier),,,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-5,SIBAL (coton et fibre de verre),solid,tissu,0.37,22.1,,20,20,20,concurrent,micro,burned,29 cm brûlés en 145 s,2.1,145,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-6,SIBAL (coton et fibre de verre),solid,tissu,0.37,22.1,,20,20,20,concurrent,micro,burned,29 cm brûlés en 115 s,2.6,115,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-7a,PMMA (partie de 5 cm),solid,plaque,0.85,22.1,,20,20,20,concurrent,micro,burned,PMMA entièrement consumé en 140 s,,140,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-7b,Nomex (partie de 24 cm),solid,tissu,0.37,22.1,,20,20,20,concurrent,micro,no_ignition,"Nomex non allumé, même chauffé par le PMMA",,,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-8,PMMA,solid,plaque,,22.05,,20,20,20,concurrent,micro,burned,flamme ancrée à la base pendant 600 s,,600,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-II,PSI-99,2-9,PMMA,solid,plaque,10,21.95,,20,20,20,concurrent,micro,burned,flamme ancrée à la base pendant 900 s,,900,1,,,Échantillon de 29 x 5 cm ; O2 déduit du CO2 mesuré
-Saffire-III,PSI-100,S1,SIBAL (coton et fibre de verre),solid,tissu,,,,30,30,30,concurrent,micro,unknown,oxygène et résultat absents du tableau de PSI,,,1,,,"Échantillon de 94 x 40,6 cm"
-Saffire-III,PSI-100,S2,SIBAL (coton et fibre de verre),solid,tissu,,,,30,30,30,opposed,micro,unknown,oxygène et résultat absents du tableau de PSI,,,1,,,"Échantillon de 94 x 40,6 cm"
-BASS-II,PSI-25,B1,PMMA,solid,film,0.1,22.2,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0,6,Air display : 5 | Fan display : 62
-BASS-II,PSI-25,B2,PMMA,solid,film,0.2,22.2,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,,,Air display : 5 | Fan display : 62
-BASS-II,PSI-25,B3,PMMA,solid,film,0.1,22.2,,2,2,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.06,7,Air display : 2 | Fan display : 47
-BASS-II,PSI-25,B4,PMMA,solid,film,0.3,22.2,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.07,11,Air display : 5 | Fan display : 61
-BASS-II,PSI-25,B5,PMMA,solid,film,0.2,22.2,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0,12,Air display : 5 | Fan display : 59
-BASS-II,PSI-25,B6,PMMA,solid,film,0.1,21,,3,3,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.08,0.3,Air display : 3 5 approaching 10 | Fan display : 0.9 1.3 2.75
-BASS-II,PSI-25,B7,PMMA,solid,film,0.4,22.2,,2,2,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.06,16,Air display : 2 | Fan display : 47
-BASS-II,PSI-25,B8,PMMA,solid,film,0.2,21,,10,10,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.25,131,Air display : 10 max | Fan display : 1.4 incr to 10.0
-BASS-II,PSI-25,B9,PMMA,solid,film,0.1,21,,0.5,0.5,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.02,10,Air display : 2 <1 | Fan display : 0.6 0.35
-BASS-II,PSI-25,B10,PMMA,solid,film,0.2,21,,1,1,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.11,23,Air display : 5 4 3 2 1 | Fan display : 1.7 (52) 1.25 0.9 0.6 0.4 0.35
-BASS-II,PSI-25,B11,PMMA,solid,film,0.2,21,,0.5,0.5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.14,46,Air display : 5 3 1 <1 | Fan display : 2.5 (59) 1.3 0.7 0.5 0.35
-BASS-II,PSI-25,B12,PMMA,solid,film,0.3,22.2,,2,2,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.05,16,Air display : 2 | Fan display : 46.5
-BASS-II,PSI-25,B13,PMMA,solid,film,0.4,21,,1,1,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.32,61,Air display : 10 5 4 3 2 1 | Fan display : 3.5 (68) 1.7 1.25 0.9 0.6 0.4 0.35
-BASS-II,PSI-25,B14,PMMA,solid,film,0.2,15,,2,2,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,,,Air display : 5 3 2 ext | Fan display : pot 0.9 0.5 and down
-BASS-II,PSI-25,B15,PMMA,solid,film,0.1,21,,10,10,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.1,22,Air display : 10 max | Fan display : 1.4 (50) incr to 10.0 pot
-BASS-II,PSI-25,B16,PMMA,solid,film,0.1,17.3,,0.5,0.5,3,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.04,16,Air display : 3 0.5 pot 0.4 pot | Fan display : 44 (pot 0.68)
-BASS-II,PSI-25,B17,PMMA,solid,film,0.2,17.5,,3,3,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.14,47,Air display : 5 3 pot 0.4 | Fan display : pot 1.2 (48) 0.9 0.4 
-BASS-II,PSI-25,B18,PMMA,solid,film,0.2,17.4,,10,10,10,,micro,extinguished,flamme soufflée par un air trop rapide,,,1,0.08,31,Air display : 10 blowoff | Fan display : pot 1.02 (47) incr to 7.0
-BASS-II,PSI-25,B19,PMMA,solid,film,0.1,17.3,,10,10,10,,micro,extinguished,flamme soufflée par un air trop rapide,,,1,0.06,12,Air display : 10 blowoff | Fan display : 47 (pot 1.05) incr to pot 6.0
-BASS-II,PSI-25,B20,PMMA,solid,film,0.1,17.4,,3,3,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.05,25,Air display : 5 3 pot 0.5 | Fan display : 48 pot 0.9 0.5
-BASS-II,PSI-25,B21,PMMA,solid,film,0.2,20.8,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.08,19,Air display : 5 down to ext | Fan display : 53 and down
-BASS-II,PSI-25,B22,PMMA,solid,film,0.2,20.7,,0,0,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.06,11,Air display : 5 2 0 | Fan display : 53 42 41 40.5
-BASS-II,PSI-25,F1,Nomex,solid,tissu,,22.2,,9.5,9.5,9.5,,micro,burned,la flamme a brûlé aux débits notés,,,1,-0.01,2,Air display : 9.5 | Fan display : 82
-BASS-II,PSI-25,F2,Nomex,solid,tissu,,21,,15,15,15,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.02,-23,Air display : 15 | Fan display : 92
-BASS-II,PSI-25,F3,Nomex,solid,tissu,,21.7,,8,8,8,,micro,burned,la flamme a brûlé aux débits notés,,,1,,,Air display : 8 | Fan display : 61
-BASS-II,PSI-25,F4,Cire de bougie,solid,bougie,,17.4,,3,3,3,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.1,34,Air display : 3 ign | Fan display : see notes
-BASS-II,PSI-25,M1,PMMA,solid,plaque,1,22.2,,8,8,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.16,60,Air display : 10 8 | Fan display : 58 54
-BASS-II,PSI-25,M2,PMMA,solid,plaque,3,22.2,,13,13,20,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.87,313,Air display : 20 15 13 14 | Fan display : 116 (pot 9.3) 89 80 84
-BASS-II,PSI-25,M3,PMMA,solid,plaque,5,20.8,,10,10,20,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.85,289,Air display : 10 20 18 | Fan display : 3.0 3.1 3.2 6.4 5.5 5.4
-BASS-II,PSI-25,M4,PMMA,solid,plaque,5,21.8,,3,3,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.73,559,Air display : 5 4 3 | Fan display : 52 47 43
-BASS-II,PSI-25,M5,PMMA,solid,plaque,3,22.2,,5,5,20,,micro,burned,la flamme a brûlé aux débits notés,,,1,2.78,,Air display : 20 13 10 8 5 | Fan display : nan
-BASS-II,PSI-25,M6,PMMA,solid,plaque,1,21.8,,0,0,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.89,344,Air display : 10 5 3 0 | Fan display : 68 52 47 43 42 41
-BASS-II,PSI-25,M7,PMMA,solid,plaque,1,18.9,,3,3,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.42,214,Air display : 10 6 5 4.5 4 3 | Fan display : 2.6 1.3 0.8 0.7 0.6 0.5; 60 49 45 44 43 42
-BASS-II,PSI-25,M8,PMMA,solid,plaque,2,19.1,,5,5,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.84,415,Air display : 10 5>7 5 decr | Fan display : 3.3 1.6 1.0 decr
-BASS-II,PSI-25,M9,PMMA,solid,plaque,3,18,,10,10,14,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.28,191,Air display : 10 14 | Fan display : 3.3 4.8;66 79
-BASS-II,PSI-25,M10,PMMA,solid,plaque,4,20.1,,8,8,17,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.23,537,Air display : 10 17 14 10 8 | Fan display : 75 105 94/91 72/69 63/61 (4.4 8.0 6.6/6.3 4.0/3.7 3/0/2.7)
-BASS-II,PSI-25,M11,PMMA,solid,plaque,5,20,,10,10,20,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.1,531,Air display : 10 20 15 12 | Fan display : 3.9 6.5 4.6 3.3 2.9 2.8; 62.5 93 77 66 63 62
-BASS-II,PSI-25,M12,PMMA,solid,plaque,2,21.7,,0.5,0.5,0.5,,micro,burned,la flamme a brûlé aux débits notés,,,1,1,428,Air display : <1 | Fan display : 41 42 41
-BASS-II,PSI-25,M13,PMMA,solid,plaque,4,20.8,,4,4,6,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.39,487,Air display : 6 5 4 | Fan display : 52 47 43
-BASS-II,PSI-25,M14,PMMA,solid,plaque,2,22.2,,8,8,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.53,198,Air display : 10 ~8 | Fan display : pot 2.4 1.87 (54)
-BASS-II,PSI-25,M15,PMMA,solid,plaque,4,21,,7,7,20,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.73,219,Air display : 10 8 7 8 10 20 18 16 15 | Fan display : ignited 10 adjusted down then up to 20 down in incrments to 15
-BASS-II,PSI-25,M16,PMMA,solid,plaque,1,19.2,,1,1,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.8,303,Air display : 10 6 3 2 1 10 | Fan display : 73 57 59 48 45 43 75 (4.2 2.2 2.4 1.2 0.8 0.5 4.4)
-BASS-II,PSI-25,M17,PMMA,solid,plaque,2,18.8,,0,0,10,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,1.35,481,Air display : 10 5 3 0ext | Fan display : Fan pot 3.7 1.7 1.5 1.3 0.8 0.6 0.5 0.3ext
-BASS-II,PSI-25,M18,PMMA,solid,plaque,3,17.9,,8,8,15,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.99,335,Air display : 10 15 (brief) 10 8 | Fan display : Fan pot 3.5 5 (brief) 3 5 2.2
-BASS-II,PSI-25,M19,PMMA,solid,plaque,4,19,,5,5,17,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.25,354,Air display : 10 17 14 10 7 5 | Fan display : 75 105 94 75 77 79 59 61 57 55 53 (4.4 8.0 6.6 4.4 4.6 4.8 2.5 2.7 2.2 2.0 1.8)
-BASS-II,PSI-25,M20,PMMA,solid,plaque,5,18,,8,8,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.45,157,Air display : 10 8 | Fan display : 67 58
-BASS-II,PSI-25,O1,PMMA transparent,solid,tige,6.35,22.2,,1,1,20,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.41,52,Air display : 20 10 5 2 1 | Fan display : 89 62 50 41
-BASS-II,PSI-25,O2,PMMA transparent,solid,tige,6.35,22.2,,0,0,0,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.15,24,Air display : 0 | Fan display : .54 pot 0.45 pot
-BASS-II,PSI-25,O3a,PMMA transparent,solid,tige,6.35,18,,3,3,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.03,6,Air display : 5 3 | Fan display : nan
-BASS-II,PSI-25,O3b,PMMA transparent,solid,tige,6.35,18,,1,1,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.25,94,Air display : 5 3 2 1 low | Fan display : nan
-BASS-II,PSI-25,O4,PMMA transparent,solid,tige,9.53,14.8,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,1,,Air display : 5 down to ext | Fan display : 5 0.7 0.5 0.4 0.36 ext
-BASS-II,PSI-25,O5a,PMMA transparent,solid,tige,12.7,15.1,,0,0,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.8,498,Air display : 5 10 5 2 0 (49 62 49 44 42) | Fan display : 1.3 2.7 1.3 0.7 0.45. 4.0
-BASS-II,PSI-25,O5b,PMMA transparent,solid,tige,12.7,14.2,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.09,94,Air display : 49 5 cm/s | Fan display : 1.3
-BASS-II,PSI-25,O6,PMMA transparent,solid,tige,6.35,16.7,,,,,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.42,231,Air display : see fan | Fan display : 5 .36 .32 .31 .305 out .275
-BASS-II,PSI-25,O7,PMMA transparent,solid,tige,6.35,16,,,,,,micro,extinguished,flamme soufflée par un air trop rapide,,,1,0.53,280,Air display : nan | Fan display : 5 .36 .32 ..305 blowoff fan max 10
-BASS-II,PSI-25,O8a,PMMA transparent,solid,tige,6.35,15.7,,,,,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.21,100,Air display : nan | Fan display : 5 .36 .32 .31 extinguished
-BASS-II,PSI-25,O8b,PMMA transparent,solid,tige,6.35,15.5,,,,,,micro,extinguished,flamme soufflée par un air trop rapide,,,1,0.3,124,Air display : nan | Fan display : 5 .36 .32 .31 blowoff fan pot 6.0
-BASS-II,PSI-25,O9,PMMA transparent,solid,tige,6.35,15,,,,,,micro,extinguished,flamme soufflée par un air trop rapide,,,1,0.22,134,Air display : nan | Fan display : 5 .36 .32 blowoff pt 4.0
-BASS-II,PSI-25,O10,PMMA transparent,solid,tige,6.35,16.7,,0,0,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.49,193,Air display : 5 2 0 max | Fan display : 49 44 41 122 (1.3 0.7 0.4 0.36 0.32 10)
-BASS-II,PSI-25,O11,PMMA noir,solid,tige,6.35,15.4,,5,5,5,,micro,extinguished,flamme soufflée par un air trop rapide,,,1,0.45,288,Air display : 5 down then blowoff | Fan display : ign 5 0.36 0.32 0.31 0.305 blowoff 6.0
-BASS-II,PSI-25,O12,PMMA transparent,solid,tige,9.53,13.6,,,,,,micro,no_ignition,pas d'allumage à aucun débit,,,1,-0.01,,Air display : no ign at any flow | Fan display : pots 1.4 3 0.9 0.7
-BASS-II,PSI-25,O13a,PMMA transparent,solid,tige,12.7,15.9,,0,0,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.94,561,Air display : 49 44 42 41 41 40.5 (5 2 0) | Fan display : 1.3 0.7 0.45 0.36 0.32 0.31
-BASS-II,PSI-25,O13b,PMMA transparent,solid,tige,12.7,14.6,,4,4,7,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.24,,Air display : 7 4? (49 ?) | Fan display : 1.3 0.9
-BASS-II,PSI-25,O14,PMMA noir,solid,tige,6.35,16.3,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.57,348,Air display : 5 down to ext | Fan display : 52 and down
-BASS-II,PSI-25,O15a,PMMA transparent,solid,tige,9.53,17.1,,0,0,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.35,176,Air display : 5 0 | Fan display : 57.5 47 42 41 (2.3 1.0 0.5 0.35 0.32)
-BASS-II,PSI-25,O15b,PMMA transparent,solid,tige,9.53,16.7,,0,0,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.01,575,Air display : 5 0 | Fan display : 57.5 42 41 40 (2.3 0.5 0.35 0.34 0.33 0.32 0.31 0.30 0.29 0.28 0.27)
-BASS-II,PSI-25,O16,PMMA transparent,solid,tige,9.53,14.5,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.05,31,Air display : 5 | Fan display : 60 (2.6)
-BASS-II,PSI-25,O17,PMMA transparent,solid,tige,6.35,15.1,,0,0,11,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.59,375,Air display : 3 0 11 | Fan display : 49 46.5 44 42 41 72 decr (1.3 1.0 0.7 0.5 0.4 4.0 decr )
-BASS-II,PSI-25,O18,PMMA transparent,solid,tige,6.35,15.2,,0,0,11,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.49,293,Air display : 5 2 0 11 2 11 2 0 | Fan display : 57 51 47 72 51 72 51 47 (2.3 1.5 1.0 4.0 1.5 4.0 1.5 1.0)
-BASS-II,PSI-25,O19,PMMA transparent,solid,tige,6.35,15.3,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.65,334,Air display : 5 down to ext | Fan display : 52 and down
-BASS-II,PSI-25,O20,PMMA transparent,solid,tige,6.35,16.5,,5,5,38.5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.37,60,Air display : 5 8 incr to max 38.5 | Fan display : 49 (1.3 pot) pots 7 8 9 10
-BASS-II,PSI-25,O21,PMMA transparent,solid,tige,9.53,15.9,,28,28,28,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.42,135,Air display : incr to 28 | Fan display : 46 (pot 0.8) pot 7 10
-BASS-II,PSI-25,O22,PMMA transparent,solid,tige,12.7,15.4,,26.5,4,26.5,,micro,extinguished,flamme soufflée par un air trop rapide,,,1,0.41,137,Air display : 4 incr to 26.5 | Fan display : 49 (pot 1.1) blowoff pot 5 out at fan 87
-BASS-II,PSI-25,P1,PMMA noir,solid,tige,6.35,17.7,,2,2,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.17,13,Air display : 5 2 slow decr to ext | Fan display : nan
-BASS-II,PSI-25,P2,PMMA noir,solid,tige,6.35,17.4,,2,2,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.22,12,Air display : 5 2.5 2 (pot .9 .5 .35. .33) | Fan display : nan
-BASS-II,PSI-25,P3a,PMMA transparent,solid,tige,6.35,17.7,,2.5,2.5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.24,31,Air display : 5 2.5 (1.15 .5 .35 .33. .32 .315 .31 .3) | Fan display : nan
-BASS-II,PSI-25,P3b,PMMA transparent,solid,tige,6.35,17.4,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,,46,Air display : 5 very low (0.85 0.32 0.31 0.305 0.30 0.295) | Fan display : nan
-BASS-II,PSI-25,P4,PMMA noir,solid,tige,9.53,18.5,,5,5,5,,micro,unknown,"ventilateur coupé, résultat non noté",,,1,1.18,429,Air display : 5 pots 0.4 0.36 0.32 0.308 .3 off | Fan display : 48 41
-BASS-II,PSI-25,P5,PMMA noir,solid,tige,12.7,19.3,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,1.35,525,Air display : 5 down to ext | Fan display : Fan pot 1.5 (5cm/s) 0.9 0.4 0.36 0.32 0.308 0.3 0.29 0.28 0 ext
-BASS-II,PSI-25,P6,PMMA noir,solid,tige,6.35,18.9,,5,5,5,,micro,unknown,"ventilateur coupé, résultat non noté",,,1,0.32,64,Air display : 5 pots 0.4 0.36 0.32 0.31 off | Fan display : 48 41
-BASS-II,PSI-25,P8,PMMA noir,solid,tige,9.53,16.4,,5,5,15,,micro,extinguished,la flamme ne restait pas allumée,,,1,0.09,25,Air display : 5 would not stay lit 10 15 ibid | Fan display : 48 62 75
-BASS-II,PSI-25,P9,PMMA noir,solid,tige,12.7,17.6,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.43,10,Air display : 5 down to ext | Fan display : Fan pot 1.5 (5cm/s) 0.9 0.4 0.36 0.32 0.3 0.28 ext
-BASS-II,PSI-25,P10,PMMA noir,solid,tige,6.35,17,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.43,42,Air display : 5 pots 0.4 0.36 0.32 0.31 0.30 extinguished | Fan display : 48 41
-BASS-II,PSI-25,P12,PMMA noir,solid,tige,9.53,17.5,,0.5,0.5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.66,55,Air display : 5 3 2 1 0.5 lower | Fan display : 60 52 48 44.5 42 41.5 41 (2.6 1.6 1.2 .75 .5 .4 .36 0.34)
-BASS-II,PSI-25,P13a,PMMA noir,solid,tige,12.7,20.7,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,1.27,412,Air display : 5 down to ext | Fan display : Fan pot 1.1 (5cm/s) 0.4 0.36 0.32 0.3 0.28 0.26 0 ext
-BASS-II,PSI-25,P13b,PMMA noir,solid,tige,12.7,20.6,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.21,67,Air display : 5 down to ext | Fan display : Fan pot 1.3 (5cm/s) 0.4 0.36 0.32 ext
-BASS-II,PSI-25,P14,PMMA noir,solid,tige,6.35,18.4,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.28,87,Air display : 5 low (.85 .4 .32) | Fan display : 46 41
-BASS-II,PSI-25,P15,PMMA noir,solid,tige,6.35,18,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.49,18,Air display : 5 (0.36) | Fan display : 46 41
-BASS-II,PSI-25,P16,PMMA noir,solid,tige,6.35,18.2,,2,2,8,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.62,56,Air display : 5 8 2 low | Fan display : 49 62 44 41.5 41 (pots 1.3 2.8 0.7 0.4 0.36 0.32)
-BASS-II,PSI-25,P17,PMMA noir,solid,tige,6.35,16.8,,2,2,22,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.39,11,Air display : 5 3 2 22 2 low | Fan display : 60 52 48 233 48 41 (2.6 1.6 1.2 10 1.2 0.36 0.34)
-BASS-II,PSI-25,P18,PMMA noir,solid,tige,6.35,20,,0,0,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.86,25,Air display : 2 0 2 0 etc | Fan display : 55 47 etc (pot 1 2 1 2 etc)
-BASS-II,PSI-25,P19,PMMA noir,solid,tige,6.35,17.5,,0,0,8,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.71,40,Air display : 5 8 2 max 0 | Fan display : 49 62 44 41.5 122 41 (pots 1.3 2.8 0.7 0.4 0.36 10. 0.32)
-BASS-II,PSI-25,P20,PMMA noir,solid,tige,6.35,19,,0,0,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.71,76,Air display : 2 0 2 0 etc | Fan display : 55 47 etc (pot 1 2 1 2 etc)
-BASS-II,PSI-25,P21a,PMMA noir,solid,tige,6.35,16.3,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.04,8,Air display : 5 | Fan display : 46
-BASS-II,PSI-25,P21b,PMMA noir,solid,tige,6.35,16.3,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.03,4,Air display : 5 | Fan display : 46
-BASS-II,PSI-25,P22a,PMMA noir,solid,tige,9.53,20.8,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,,,Air display : 5 down to ext | Fan display : 5 0.36 0.32 ext after some time
-BASS-II,PSI-25,P22b,PMMA noir,solid,tige,9.53,20,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,,,Air display : 5 down to ext | Fan display : 5 p.36 0.34 0.33 0.32 0.31 ext
-BASS-II,PSI-25,P23,PMMA noir,solid,tige,9.53,18.2,,0,0,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.03,81,Air display : 2 0 2 0 etc | Fan display : 55 47 etc (pot 1 2 1 2 etc)
-BASS-II,PSI-25,P24,PMMA noir,solid,tige,9.53,19,,0,0,2,,micro,burned,la flamme a brûlé aux débits notés,,,1,1.04,234,Air display : 2 0 2 0 etc | Fan display : 55 47 etc (pot 1 2 1 2 etc)
-BASS-II,PSI-25,P25,PMMA transparent,solid,tige,9.53,20.9,,5,5,5,,micro,extinguished,flamme éteinte en réduisant l'air,,,1,0.62,162,Air display : 5 down to ext | Fan display : 5 p.36 0.34 0.33 0.32 0.31 ext
-BASS-II,PSI-25,T1,SIBAL (coton et fibre de verre),solid,tissu,,18.5,,10,10,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.06,40,Air display : 10 | Fan display : 80
-BASS-II,PSI-25,T2,SIBAL (coton et fibre de verre),solid,tissu,,18.5,,4,4,9,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.04,38,Air display : 9 5 4 | Fan display : 80 59 55
-BASS-II,PSI-25,T3,PMMA,solid,sphère,,17.2,,10,10,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.28,68,Air display : 10 | Fan display : 63
-BASS-II,PSI-25,T4,SIBAL (coton et fibre de verre),solid,tissu,,18.7,,1,1,9,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.01,13,Air display : 9 1 | Fan display : 80 46
-BASS-II,PSI-25,T5,SIBAL (coton et fibre de verre),solid,tissu,,18.8,,1,1,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.05,39,Air display : 10 2 1 | Fan display : 2.72 0.50 0.42
-BASS-II,PSI-25,T6,SIBAL (coton et fibre de verre),solid,tissu,,18.8,,0.5,0.5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.04,38,Air display : 5 2 1 <1 | Fan display : nan
-BASS-II,PSI-25,T7,PMMA,solid,sphère,,17.3,,1,1,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.27,91,Air display : 10 5 3 1 decr | Fan display : 3.4 67
-BASS-II,PSI-25,T9,SIBAL (coton et fibre de verre),solid,tissu,,16.4,,10,10,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.01,9,Air display : 10 | Fan display : pot 2.5
-BASS-II,PSI-25,T10,SIBAL (coton et fibre de verre),solid,tissu,,16.4,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.02,5,Air display : 5 | Fan display : pot 1.1
-BASS-II,PSI-25,T11,SIBAL (coton et fibre de verre),solid,tissu,,17.1,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.04,44,Air display : 5 | Fan display : 48
-BASS-II,PSI-25,T12,SIBAL (coton et fibre de verre),solid,tissu,,16.8,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0,4,Air display : 5 | Fan display : pot 1.1
-BASS-II,PSI-25,T13,SIBAL (coton et fibre de verre),solid,tissu,,17.5,,1,1,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.01,10,Air display : 5 1 | Fan display : nan
-BASS-II,PSI-25,T14,SIBAL (coton et fibre de verre),solid,tissu,,16.9,,3,3,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.02,35,Air display : 5 3 | Fan display : nan
-BASS-II,PSI-25,T15,SIBAL (coton et fibre de verre),solid,tissu,,18.7,,9,9,29,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.06,30,Air display : 9 29 | Fan display : 80122
-BASS-II,PSI-25,T16,SIBAL (coton et fibre de verre),solid,tissu,,17.6,,3,3,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0,24,Air display : 5 3 | Fan display : nan
-BASS-II,PSI-25,T17,SIBAL (coton et fibre de verre),solid,tissu,,16.9,,6,6,6,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.03,38,Air display : 6 53 | Fan display : nan
-BASS-II,PSI-25,T18,SIBAL (coton et fibre de verre),solid,tissu,,17.4,,2,2,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.02,20,Air display : 5 2 | Fan display : nan
-BASS-II,PSI-25,T19,SIBAL (coton et fibre de verre),solid,tissu,,17.2,,11,11,11,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.02,19,Air display : 11 | Fan display : 68.5 pot 3.6
-BASS-II,PSI-25,T20,SIBAL (coton et fibre de verre),solid,tissu,,17.2,,3,3,11,,micro,burned,la flamme a brûlé aux débits notés,,,1,0,14,Air display : 11 3 | Fan display : 3.6 0.9
-BASS-II,PSI-25,T21,SIBAL (coton et fibre de verre),solid,tissu,,17.2,,11,11,11,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.01,11,Air display : 11 max(47) | Fan display : 1.6 pot 52
-BASS-II,PSI-25,T22,SIBAL (coton et fibre de verre),solid,tissu,,17.1,,5,5,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.03,22,Air display : 10 5 | Fan display : 3.4 1.7
-BASS-II,PSI-25,T23,SIBAL (coton et fibre de verre),solid,tissu,,17.2,,10,10,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0,4,Air display : 10 | Fan display : 3.3 66
-BASS-II,PSI-25,T24,SIBAL (coton et fibre de verre),solid,tissu,,18.2,,10,10,10,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.02,22,Air display : 10 | Fan display : 3.3 66
-BASS-II,PSI-25,T25,SIBAL (coton et fibre de verre),solid,tissu,,20.8,,2.5,2.5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.03,18,Air display : 5 2.5 | Fan display : 53 45
-BASS-II,PSI-25,T26,SIBAL (coton et fibre de verre),solid,tissu,,20.8,,2.5,2.5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.07,25,Air display : 5 2.5 | Fan display : 53 45
-BASS-II,PSI-25,T27,SIBAL (coton et fibre de verre),solid,tissu,,20.7,,2,2,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.01,10,Air display : 5 2 | Fan display : 53 45
-BASS-II,PSI-25,T28a,SIBAL (coton et fibre de verre),solid,tissu,,20.7,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,,,Air display : 5 | Fan display : 53
-BASS-II,PSI-25,T28b,SIBAL (coton et fibre de verre),solid,tissu,,20.7,,5,5,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,,,Air display : 5 | Fan display : 53
-BASS-II,PSI-25,T29,SIBAL (coton et fibre de verre),solid,tissu,,20.7,,2,2,5,,micro,burned,la flamme a brûlé aux débits notés,,,1,0.03,11,Air display : 5 2(?) | Fan display : 53 43
-FLEX,PSI-69,1,Méthanol,liquid,goutte,,21,101,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,2 3 33 34 203,Méthanol,liquid,goutte,,21,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,5,,,Sans dilution
-FLEX,PSI-69,4 5 6 202,Méthanol,liquid,goutte,,21,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Sans dilution
-FLEX,PSI-69,7 9 204 205 206,Heptane,liquid,goutte,,21,101,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,5,,,Sans dilution
-FLEX,PSI-69,8 229,Heptane,liquid,goutte,,21,102,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Sans dilution
-FLEX,PSI-69,10 11,Méthanol,liquid,goutte,,21,309,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 70 %
-FLEX,PSI-69,12,Heptane,liquid,goutte,,21,309,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 70 %
-FLEX,PSI-69,13,Méthanol,liquid,goutte,,21,277,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 70 %
-FLEX,PSI-69,14,Méthanol,liquid,goutte,,21,274,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 70 %
-FLEX,PSI-69,15 16,Méthanol,liquid,goutte,,21,276,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 70 %
-FLEX,PSI-69,17,Méthanol,liquid,goutte,,21,206,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 70 %
-FLEX,PSI-69,18,Heptane,liquid,goutte,,21,207,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 70 %
-FLEX,PSI-69,19 23 24,Heptane,liquid,goutte,,34,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,3,,,Sans dilution
-FLEX,PSI-69,20,Méthanol,liquid,goutte,,34,72,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Sans dilution
-FLEX,PSI-69,21 22,Méthanol,liquid,goutte,,34,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Sans dilution
-FLEX,PSI-69,25,Méthanol,liquid,goutte,,30,72,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Sans dilution
-FLEX,PSI-69,26,Méthanol,liquid,goutte,,30,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,27 28,Heptane,liquid,goutte,,30,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Sans dilution
-FLEX,PSI-69,29,Méthanol,liquid,goutte,,30,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Sans dilution
-FLEX,PSI-69,30,Méthanol,liquid,goutte,,30,103,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Sans dilution
-FLEX,PSI-69,31 52,Heptane,liquid,goutte,,30,103,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Sans dilution
-FLEX,PSI-69,32,Heptane,liquid,goutte,,30,103,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Sans dilution
-FLEX,PSI-69,35 49 228,Heptane,liquid,goutte,,21,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Sans dilution
-FLEX,PSI-69,36 54,Méthanol,liquid,goutte,,20,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,37 38,Méthanol,liquid,goutte,,34,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Sans dilution
-FLEX,PSI-69,39,Heptane,liquid,goutte,,34,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,40 41,Méthanol,liquid,goutte,,30,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Sans dilution
-FLEX,PSI-69,42 43,Heptane,liquid,goutte,,30,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Sans dilution
-FLEX,PSI-69,44,Méthanol,liquid,goutte,,30,102,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,45,Méthanol,liquid,goutte,,30,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Sans dilution
-FLEX,PSI-69,46,Méthanol,liquid,goutte,,21,103,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,47 51,Heptane,liquid,goutte,,21,103,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,2,,,Sans dilution
-FLEX,PSI-69,48,Méthanol,liquid,goutte,,21,102,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,50 230,Heptane,liquid,goutte,,21,103,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,53,Heptane,liquid,goutte,,21,103,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,55,Méthanol,liquid,goutte,,20,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Sans dilution
-FLEX,PSI-69,56,Heptane,liquid,goutte,,20,73,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Sans dilution
-FLEX,PSI-69,57,Heptane,liquid,goutte,,20,73,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Sans dilution
-FLEX,PSI-69,58 59 60 61,Méthanol,liquid,goutte,,18,103,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Sans dilution
-FLEX,PSI-69,62 64,Heptane,liquid,goutte,,18,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,63,Heptane,liquid,goutte,,18,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Sans dilution
-FLEX,PSI-69,65 66 67 68 71,Méthanol,liquid,goutte,,15,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,5,,,Sans dilution
-FLEX,PSI-69,69,Heptane,liquid,goutte,,14,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Sans dilution
-FLEX,PSI-69,70 73,Heptane,liquid,goutte,,15,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,72 74,Heptane,liquid,goutte,,15,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,2,,,Sans dilution
-FLEX,PSI-69,75 76,Méthanol,liquid,goutte,,13,103,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,77 78,Méthanol,liquid,goutte,,14,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,79,Heptane,liquid,goutte,,13,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Sans dilution
-FLEX,PSI-69,80 81,Heptane,liquid,goutte,,13,103,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,82,Méthanol,liquid,goutte,,13,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Sans dilution
-FLEX,PSI-69,83 85 86 87,Méthanol,liquid,goutte,,12,103,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Sans dilution
-FLEX,PSI-69,84 219 220 221,Méthanol,liquid,goutte,,12,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Sans dilution
-FLEX,PSI-69,88 89 90 91,Méthanol,liquid,goutte,,25,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,4,,,Dilution : CO2 15 %
-FLEX,PSI-69,92 93,Heptane,liquid,goutte,,25,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Dilution : CO2 15 %
-FLEX,PSI-69,94 95,Heptane,liquid,goutte,,24,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 20 %
-FLEX,PSI-69,96 174 175,Heptane,liquid,goutte,,24,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,3,,,Dilution : CO2 20 %
-FLEX,PSI-69,97,Méthanol,liquid,goutte,,23,71,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : CO2 20 %
-FLEX,PSI-69,98,Méthanol,liquid,goutte,,23,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 25 %
-FLEX,PSI-69,99 183 184 185 186,Méthanol,liquid,goutte,,23,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,5,,,Dilution : CO2 25 %
-FLEX,PSI-69,100 101,Heptane,liquid,goutte,,23,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 25 %
-FLEX,PSI-69,102 103,Heptane,liquid,goutte,,21,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 30 %
-FLEX,PSI-69,104,Méthanol,liquid,goutte,,23,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 20 %
-FLEX,PSI-69,105 107,Méthanol,liquid,goutte,,23,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Dilution : CO2 20 %
-FLEX,PSI-69,106,Méthanol,liquid,goutte,,23,72,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 25 %
-FLEX,PSI-69,108,Méthanol,liquid,goutte,,23,72,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : CO2 25 %
-FLEX,PSI-69,109 110,Méthanol,liquid,goutte,,21,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 30 %
-FLEX,PSI-69,111,Méthanol,liquid,goutte,,21,72,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : CO2 30 %
-FLEX,PSI-69,112,Méthanol,liquid,goutte,,21,71,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : CO2 30 %
-FLEX,PSI-69,113 115,Méthanol,liquid,goutte,,20,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 35 %
-FLEX,PSI-69,114,Méthanol,liquid,goutte,,20,,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 35 %
-FLEX,PSI-69,116,Méthanol,liquid,goutte,,20,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 35 %
-FLEX,PSI-69,117 118,Heptane,liquid,goutte,,20,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 35 %
-FLEX,PSI-69,119 120,Heptane,liquid,goutte,,18,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 40 %
-FLEX,PSI-69,121,Méthanol,liquid,goutte,,18,70,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 40 %
-FLEX,PSI-69,122 123 124,Méthanol,liquid,goutte,,18,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Dilution : CO2 40 %
-FLEX,PSI-69,125 127 128,Méthanol,liquid,goutte,,17,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Dilution : CO2 45 %
-FLEX,PSI-69,126 147,Méthanol,liquid,goutte,,17,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 45 %
-FLEX,PSI-69,129,Heptane,liquid,goutte,,17,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 45 %
-FLEX,PSI-69,130,Heptane,liquid,goutte,,17,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 45 %
-FLEX,PSI-69,131 132 133 137 138 139,Heptane,liquid,goutte,,24,102,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,6,,,Dilution : CO2 20 %
-FLEX,PSI-69,134,Heptane,liquid,goutte,,24,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 20 %
-FLEX,PSI-69,135 136,Heptane,liquid,goutte,,24,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,2,,,Dilution : CO2 20 %
-FLEX,PSI-69,140 141 142 143,Méthanol,liquid,goutte,,15,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Dilution : CO2 50 %
-FLEX,PSI-69,144 145 146,Méthanol,liquid,goutte,,20,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Dilution : CO2 5 %
-FLEX,PSI-69,148 149,Heptane,liquid,goutte,,20,102,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,2,,,Dilution : CO2 5 %
-FLEX,PSI-69,150,Heptane,liquid,goutte,,20,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 5 %
-FLEX,PSI-69,151,Méthanol,liquid,goutte,,18,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : CO2 15 %
-FLEX,PSI-69,152 153 190 191,Méthanol,liquid,goutte,,18,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Dilution : CO2 15 %
-FLEX,PSI-69,154 155 165 172,Heptane,liquid,goutte,,18,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Dilution : CO2 15 %
-FLEX,PSI-69,156,Heptane,liquid,goutte,,18,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : CO2 15 %
-FLEX,PSI-69,157 158 159 160,Méthanol,liquid,goutte,,16,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Dilution : CO2 25 %
-FLEX,PSI-69,161 162 163 164,Méthanol,liquid,goutte,,15,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,4,,,Dilution : CO2 32 %
-FLEX,PSI-69,166,Méthanol,liquid,goutte,,14,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 36 %
-FLEX,PSI-69,167,Méthanol,liquid,goutte,,14,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 36 %
-FLEX,PSI-69,168,Méthanol,liquid,goutte,,21,102,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 15 %
-FLEX,PSI-69,169 170,Méthanol,liquid,goutte,,21,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 15 %
-FLEX,PSI-69,171,Heptane,liquid,goutte,,18,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 15 %
-FLEX,PSI-69,173,Heptane,liquid,goutte,,18,102,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 15 %
-FLEX,PSI-69,176 177,Méthanol,liquid,goutte,,24,72,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 20 %
-FLEX,PSI-69,178,Heptane,liquid,goutte,,23,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 25 %
-FLEX,PSI-69,179,Heptane,liquid,goutte,,23,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 25 %
-FLEX,PSI-69,180 181,Heptane,liquid,goutte,,19,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 10 %
-FLEX,PSI-69,182,Heptane,liquid,goutte,,19,101,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 10 %
-FLEX,PSI-69,187 188,Méthanol,liquid,goutte,,19,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 10 %
-FLEX,PSI-69,189,Méthanol,liquid,goutte,,18,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : CO2 15 %
-FLEX,PSI-69,192 193,Méthanol,liquid,goutte,,17,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 20 %
-FLEX,PSI-69,194 195,Heptane,liquid,goutte,,17,100,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 20 %
-FLEX,PSI-69,196 197,Heptane,liquid,goutte,,20,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : CO2 5 %
-FLEX,PSI-69,198,Heptane,liquid,goutte,,20,101,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : CO2 5 %
-FLEX,PSI-69,199 200 201,Méthanol,liquid,goutte,,20,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Dilution : CO2 5 %
-FLEX,PSI-69,207 208,Heptane,liquid,goutte,,21,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,2,,,Sans dilution
-FLEX,PSI-69,209 210 211,Heptane,liquid,goutte,,16,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Sans dilution
-FLEX,PSI-69,212,Heptane,liquid,goutte,,15,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Sans dilution
-FLEX,PSI-69,213 214,Heptane,liquid,goutte,,14,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,215 216,Méthanol,liquid,goutte,,14,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,217 218,Méthanol,liquid,goutte,,13,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Sans dilution
-FLEX,PSI-69,222 223,Méthanol,liquid,goutte,,20,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 5 %
-FLEX,PSI-69,224,Heptane,liquid,goutte,,20,101,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : hélium 5 %
-FLEX,PSI-69,225,Méthanol,liquid,goutte,,19,100,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 10 %
-FLEX,PSI-69,226 227,Méthanol,liquid,goutte,,18,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 15 %
-FLEX,PSI-69,231,Heptane,liquid,goutte,,19,101,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : hélium 10 %
-FLEX,PSI-69,232,Heptane,liquid,goutte,,18,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 15 %
-FLEX,PSI-69,233 234,Heptane,liquid,goutte,,18,102,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,2,,,Dilution : hélium 15 %
-FLEX,PSI-69,235 236,Heptane,liquid,goutte,,17,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 20 %
-FLEX,PSI-69,237,Heptane,liquid,goutte,,17,101,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : hélium 20 %
-FLEX,PSI-69,238,Heptane,liquid,goutte,,17,101,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : hélium 20 %
-FLEX,PSI-69,239 240,Méthanol,liquid,goutte,,17,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 20 %
-FLEX,PSI-69,241 242,Méthanol,liquid,goutte,,16,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 25 %
-FLEX,PSI-69,243,Heptane,liquid,goutte,,16,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 25 %
-FLEX,PSI-69,244 245,Méthanol,liquid,goutte,,15,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 30 %
-FLEX,PSI-69,246 247,Méthanol,liquid,goutte,,14,101,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 35 %
-FLEX,PSI-69,248,Méthanol,liquid,goutte,,13,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 40 %
-FLEX,PSI-69,249,Heptane,liquid,goutte,,24,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 20 %
-FLEX,PSI-69,250,Heptane,liquid,goutte,,23,71,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : hélium 25 %
-FLEX,PSI-69,251,Méthanol,liquid,goutte,,24,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 20 %
-FLEX,PSI-69,252,Méthanol,liquid,goutte,,24,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : hélium 20 %
-FLEX,PSI-69,253,Méthanol,liquid,goutte,,23,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 25 %
-FLEX,PSI-69,254,Méthanol,liquid,goutte,,23,71,0,0,0,quiescent,micro,burned,goutte éclatée en brûlant,,,1,,,Dilution : hélium 25 %
-FLEX,PSI-69,255 256 257,Méthanol,liquid,goutte,,21,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Dilution : hélium 30 %
-FLEX,PSI-69,258 259,Heptane,liquid,goutte,,21,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 30 %
-FLEX,PSI-69,260 261,Heptane,liquid,goutte,,20,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 35 %
-FLEX,PSI-69,262 263,Méthanol,liquid,goutte,,20,70,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 35 %
-FLEX,PSI-69,264 265 266,Méthanol,liquid,goutte,,18,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,3,,,Dilution : hélium 40 %
-FLEX,PSI-69,267,Heptane,liquid,goutte,,18,70,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 40 %
-FLEX,PSI-69,268,Heptane,liquid,goutte,,18,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 40 %
-FLEX,PSI-69,269,Heptane,liquid,goutte,,17,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,1,,,Dilution : hélium 45 %
-FLEX,PSI-69,270,Heptane,liquid,goutte,,17,71,0,0,0,quiescent,micro,burned,goutte entièrement brûlée,,,1,,,Dilution : hélium 45 %
-FLEX,PSI-69,271 272,Méthanol,liquid,goutte,,17,71,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 45 %
-FLEX,PSI-69,273 274,Heptane,liquid,goutte,,21,102,0,0,0,quiescent,micro,extinguished,flamme éteinte avant la fin de la goutte,,,2,,,Dilution : hélium 15 %
-ACME BRE,PSI-20,2019-Feb-8,Éthylène,gas,brûleur de 25 mm,,21,,0,0,0,quiescent,micro,burned,10 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-8,Éthylène,gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,10 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-8,Éthylène,gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,10 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-20,Éthylène,gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-20,Éthylène,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-25,Éthylène dilué (50 %),gas,brûleur de 25 mm,,21,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-25,Éthylène dilué (50 %),gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-25,Éthylène dilué (50 %),gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-Feb-25,Éthylène dilué (50 %),gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-March-4,Éthylène dilué (50 %),gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,6 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-March-4,Éthylène dilué (50 %),gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,6 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-March-7,Éthylène dilué (50 %),gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,6 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-March-11,Éthylène dilué (50 %),gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,7 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-March-11,Éthylène dilué (50 %),gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,7 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-March-28,Éthylène,gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-March-28,Éthylène,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,8 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-April-1,Éthylène,gas,brûleur de 25 mm,,21,,0,0,0,quiescent,micro,no_ignition,aucune flamme allumée ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-April-4,Éthylène,gas,brûleur de 25 mm,,21,,0,0,0,quiescent,micro,burned,9 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-April-4,Éthylène,gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,9 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2019-April-4,Éthylène,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,9 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Sept-3,Éthylène,gas,brûleur de 50 mm,,25,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Sept-3,Éthylène,gas,brûleur de 50 mm,,34,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Sept-3,Éthylène,gas,brûleur de 50 mm,,40,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Oct-17,Éthylène,gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Oct-17,Éthylène,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-5,Méthane,gas,brûleur de 25 mm,,25,,0,0,0,quiescent,micro,burned,21 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-5,Méthane,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,21 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-5,Méthane,gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,21 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-4,Méthane,gas,brûleur de 25 mm,,25,,0,0,0,quiescent,micro,burned,18 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-4,Méthane,gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,18 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-11,Éthylène dilué (50 %),gas,brûleur de 25 mm,,25,,0,0,0,quiescent,micro,burned,12 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-11,Éthylène dilué (50 %),gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,12 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-17,Éthylène,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,10 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-17,Éthylène,gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,10 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-23,Éthylène,gas,brûleur de 25 mm,,25,,0,0,0,quiescent,micro,burned,17 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-23,Éthylène,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,17 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2020-Dec-23,Éthylène,gas,brûleur de 25 mm,,40,,0,0,0,quiescent,micro,burned,17 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2021-Jan-20,Éthylène,gas,brûleur de 25 mm,,21,,0,0,0,quiescent,micro,burned,15 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2021-Jan-20,Éthylène,gas,brûleur de 25 mm,,26.5,,0,0,0,quiescent,micro,burned,15 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2021-Jan-20,Éthylène,gas,brûleur de 25 mm,,34,,0,0,0,quiescent,micro,burned,15 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2021-Jan-28,Éthylène,gas,brûleur de 50 mm,,25,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2021-Jan-28,Éthylène,gas,brûleur de 50 mm,,34,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
-ACME BRE,PSI-20,2021-Jan-28,Éthylène,gas,brûleur de 50 mm,,40,,0,0,0,quiescent,micro,burned,13 flammes allumées ce jour-là,,,,,,Pression variée mais non indiquée dans le tableau de PSI
+Saffire-I,PSI-98,S1,SIBAL (cotton and fiberglass),solid,fabric,,21.6,,20,20,20,concurrent,micro,burned,burned for 420 s,,420,1,,,94 x 40.6 cm sample
+Saffire-I,PSI-98,S2,SIBAL (cotton and fiberglass),solid,fabric,,21.5,,20,20,20,opposed,micro,burned,burned for 70 s,,70,1,,,94 x 40.6 cm sample
+Saffire-II,PSI-99,2-1,Silicone,solid,fabric,0.27,21.5,,20,20,20,concurrent,micro,no_ignition,burn length ~0 (on Earth: burned completely),,,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-2,Silicone,solid,fabric,0.61,22.1,,20,20,20,concurrent,micro,no_ignition,burn length ~0 (on Earth: 7.6 cm),,,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-3,Silicone,solid,fabric,1.03,22.1,,20,20,20,concurrent,micro,no_ignition,burn length ~0 (on Earth: ~0),,,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-4,Silicone,solid,fabric,0.37,22.1,,20,20,20,opposed,micro,no_ignition,burn length ~0 (on Earth: burned completely),,,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-5,SIBAL (cotton and fiberglass),solid,fabric,0.37,22.1,,20,20,20,concurrent,micro,burned,29 cm burned in 145 s,2.1,145,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-6,SIBAL (cotton and fiberglass),solid,fabric,0.37,22.1,,20,20,20,concurrent,micro,burned,29 cm burned in 115 s,2.6,115,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-7a,PMMA (5 cm part),solid,slab,0.85,22.1,,20,20,20,concurrent,micro,burned,PMMA fully consumed in 140 s,,140,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-7b,Nomex (24 cm part),solid,fabric,0.37,22.1,,20,20,20,concurrent,micro,no_ignition,"Nomex did not ignite, even heated by the PMMA",,,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-8,PMMA,solid,slab,,22.05,,20,20,20,concurrent,micro,burned,flame anchored at the base for 600 s,,600,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-II,PSI-99,2-9,PMMA,solid,slab,10,21.95,,20,20,20,concurrent,micro,burned,flame anchored at the base for 900 s,,900,1,,,29 x 5 cm sample; O2 derived from the measured CO2
+Saffire-III,PSI-100,S1,SIBAL (cotton and fiberglass),solid,fabric,,,,30,30,30,concurrent,micro,unknown,oxygen and outcome missing from the PSI table,,,1,,,94 x 40.6 cm sample
+Saffire-III,PSI-100,S2,SIBAL (cotton and fiberglass),solid,fabric,,,,30,30,30,opposed,micro,unknown,oxygen and outcome missing from the PSI table,,,1,,,94 x 40.6 cm sample
+BASS-II,PSI-25,B1,PMMA,solid,film,0.1,22.2,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0,6,Air display: 5 | Fan display: 62
+BASS-II,PSI-25,B2,PMMA,solid,film,0.2,22.2,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,,,Air display: 5 | Fan display: 62
+BASS-II,PSI-25,B3,PMMA,solid,film,0.1,22.2,,2,2,2,,micro,burned,the flame burned at the listed air speeds,,,1,0.06,7,Air display: 2 | Fan display: 47
+BASS-II,PSI-25,B4,PMMA,solid,film,0.3,22.2,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.07,11,Air display: 5 | Fan display: 61
+BASS-II,PSI-25,B5,PMMA,solid,film,0.2,22.2,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0,12,Air display: 5 | Fan display: 59
+BASS-II,PSI-25,B6,PMMA,solid,film,0.1,21,,3,3,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.08,0.3,Air display: 3 5 approaching 10 | Fan display: 0.9 1.3 2.75
+BASS-II,PSI-25,B7,PMMA,solid,film,0.4,22.2,,2,2,2,,micro,burned,the flame burned at the listed air speeds,,,1,0.06,16,Air display: 2 | Fan display: 47
+BASS-II,PSI-25,B8,PMMA,solid,film,0.2,21,,10,10,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.25,131,Air display: 10 max | Fan display: 1.4 incr to 10.0
+BASS-II,PSI-25,B9,PMMA,solid,film,0.1,21,,0.5,0.5,2,,micro,burned,the flame burned at the listed air speeds,,,1,0.02,10,Air display: 2 <1 | Fan display: 0.6 0.35
+BASS-II,PSI-25,B10,PMMA,solid,film,0.2,21,,1,1,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.11,23,Air display: 5 4 3 2 1 | Fan display: 1.7 (52) 1.25 0.9 0.6 0.4 0.35
+BASS-II,PSI-25,B11,PMMA,solid,film,0.2,21,,0.5,0.5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.14,46,Air display: 5 3 1 <1 | Fan display: 2.5 (59) 1.3 0.7 0.5 0.35
+BASS-II,PSI-25,B12,PMMA,solid,film,0.3,22.2,,2,2,2,,micro,burned,the flame burned at the listed air speeds,,,1,0.05,16,Air display: 2 | Fan display: 46.5
+BASS-II,PSI-25,B13,PMMA,solid,film,0.4,21,,1,1,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.32,61,Air display: 10 5 4 3 2 1 | Fan display: 3.5 (68) 1.7 1.25 0.9 0.6 0.4 0.35
+BASS-II,PSI-25,B14,PMMA,solid,film,0.2,15,,2,2,5,,micro,extinguished,flame went out as the air was reduced,,,1,,,Air display: 5 3 2 ext | Fan display: pot 0.9 0.5 and down
+BASS-II,PSI-25,B15,PMMA,solid,film,0.1,21,,10,10,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.1,22,Air display: 10 max | Fan display: 1.4 (50) incr to 10.0 pot
+BASS-II,PSI-25,B16,PMMA,solid,film,0.1,17.3,,0.5,0.5,3,,micro,burned,the flame burned at the listed air speeds,,,1,0.04,16,Air display: 3 0.5 pot 0.4 pot | Fan display: 44 (pot 0.68)
+BASS-II,PSI-25,B17,PMMA,solid,film,0.2,17.5,,3,3,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.14,47,Air display: 5 3 pot 0.4 | Fan display: pot 1.2 (48) 0.9 0.4 
+BASS-II,PSI-25,B18,PMMA,solid,film,0.2,17.4,,10,10,10,,micro,extinguished,flame blown off by air that was too fast,,,1,0.08,31,Air display: 10 blowoff | Fan display: pot 1.02 (47) incr to 7.0
+BASS-II,PSI-25,B19,PMMA,solid,film,0.1,17.3,,10,10,10,,micro,extinguished,flame blown off by air that was too fast,,,1,0.06,12,Air display: 10 blowoff | Fan display: 47 (pot 1.05) incr to pot 6.0
+BASS-II,PSI-25,B20,PMMA,solid,film,0.1,17.4,,3,3,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.05,25,Air display: 5 3 pot 0.5 | Fan display: 48 pot 0.9 0.5
+BASS-II,PSI-25,B21,PMMA,solid,film,0.2,20.8,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.08,19,Air display: 5 down to ext | Fan display: 53 and down
+BASS-II,PSI-25,B22,PMMA,solid,film,0.2,20.7,,0,0,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.06,11,Air display: 5 2 0 | Fan display: 53 42 41 40.5
+BASS-II,PSI-25,F1,Nomex,solid,fabric,,22.2,,9.5,9.5,9.5,,micro,burned,the flame burned at the listed air speeds,,,1,-0.01,2,Air display: 9.5 | Fan display: 82
+BASS-II,PSI-25,F2,Nomex,solid,fabric,,21,,15,15,15,,micro,burned,the flame burned at the listed air speeds,,,1,0.02,-23,Air display: 15 | Fan display: 92
+BASS-II,PSI-25,F3,Nomex,solid,fabric,,21.7,,8,8,8,,micro,burned,the flame burned at the listed air speeds,,,1,,,Air display: 8 | Fan display: 61
+BASS-II,PSI-25,F4,Candle wax,solid,candle,,17.4,,3,3,3,,micro,burned,the flame burned at the listed air speeds,,,1,0.1,34,Air display: 3 ign | Fan display: see notes
+BASS-II,PSI-25,M1,PMMA,solid,slab,1,22.2,,8,8,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.16,60,Air display: 10 8 | Fan display: 58 54
+BASS-II,PSI-25,M2,PMMA,solid,slab,3,22.2,,13,13,20,,micro,burned,the flame burned at the listed air speeds,,,1,0.87,313,Air display: 20 15 13 14 | Fan display: 116 (pot 9.3) 89 80 84
+BASS-II,PSI-25,M3,PMMA,solid,slab,5,20.8,,10,10,20,,micro,burned,the flame burned at the listed air speeds,,,1,0.85,289,Air display: 10 20 18 | Fan display: 3.0 3.1 3.2 6.4 5.5 5.4
+BASS-II,PSI-25,M4,PMMA,solid,slab,5,21.8,,3,3,5,,micro,burned,the flame burned at the listed air speeds,,,1,1.73,559,Air display: 5 4 3 | Fan display: 52 47 43
+BASS-II,PSI-25,M5,PMMA,solid,slab,3,22.2,,5,5,20,,micro,burned,the flame burned at the listed air speeds,,,1,2.78,,Air display: 20 13 10 8 5 | Fan display: nan
+BASS-II,PSI-25,M6,PMMA,solid,slab,1,21.8,,0,0,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.89,344,Air display: 10 5 3 0 | Fan display: 68 52 47 43 42 41
+BASS-II,PSI-25,M7,PMMA,solid,slab,1,18.9,,3,3,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.42,214,Air display: 10 6 5 4.5 4 3 | Fan display: 2.6 1.3 0.8 0.7 0.6 0.5; 60 49 45 44 43 42
+BASS-II,PSI-25,M8,PMMA,solid,slab,2,19.1,,5,5,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.84,415,Air display: 10 5>7 5 decr | Fan display: 3.3 1.6 1.0 decr
+BASS-II,PSI-25,M9,PMMA,solid,slab,3,18,,10,10,14,,micro,burned,the flame burned at the listed air speeds,,,1,0.28,191,Air display: 10 14 | Fan display: 3.3 4.8;66 79
+BASS-II,PSI-25,M10,PMMA,solid,slab,4,20.1,,8,8,17,,micro,burned,the flame burned at the listed air speeds,,,1,1.23,537,Air display: 10 17 14 10 8 | Fan display: 75 105 94/91 72/69 63/61 (4.4 8.0 6.6/6.3 4.0/3.7 3/0/2.7)
+BASS-II,PSI-25,M11,PMMA,solid,slab,5,20,,10,10,20,,micro,burned,the flame burned at the listed air speeds,,,1,1.1,531,Air display: 10 20 15 12 | Fan display: 3.9 6.5 4.6 3.3 2.9 2.8; 62.5 93 77 66 63 62
+BASS-II,PSI-25,M12,PMMA,solid,slab,2,21.7,,0.5,0.5,0.5,,micro,burned,the flame burned at the listed air speeds,,,1,1,428,Air display: <1 | Fan display: 41 42 41
+BASS-II,PSI-25,M13,PMMA,solid,slab,4,20.8,,4,4,6,,micro,burned,the flame burned at the listed air speeds,,,1,1.39,487,Air display: 6 5 4 | Fan display: 52 47 43
+BASS-II,PSI-25,M14,PMMA,solid,slab,2,22.2,,8,8,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.53,198,Air display: 10 ~8 | Fan display: pot 2.4 1.87 (54)
+BASS-II,PSI-25,M15,PMMA,solid,slab,4,21,,7,7,20,,micro,burned,the flame burned at the listed air speeds,,,1,0.73,219,Air display: 10 8 7 8 10 20 18 16 15 | Fan display: ignited 10 adjusted down then up to 20 down in incrments to 15
+BASS-II,PSI-25,M16,PMMA,solid,slab,1,19.2,,1,1,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.8,303,Air display: 10 6 3 2 1 10 | Fan display: 73 57 59 48 45 43 75 (4.2 2.2 2.4 1.2 0.8 0.5 4.4)
+BASS-II,PSI-25,M17,PMMA,solid,slab,2,18.8,,0,0,10,,micro,extinguished,flame went out as the air was reduced,,,1,1.35,481,Air display: 10 5 3 0ext | Fan display: Fan pot 3.7 1.7 1.5 1.3 0.8 0.6 0.5 0.3ext
+BASS-II,PSI-25,M18,PMMA,solid,slab,3,17.9,,8,8,15,,micro,burned,the flame burned at the listed air speeds,,,1,0.99,335,Air display: 10 15 (brief) 10 8 | Fan display: Fan pot 3.5 5 (brief) 3 5 2.2
+BASS-II,PSI-25,M19,PMMA,solid,slab,4,19,,5,5,17,,micro,burned,the flame burned at the listed air speeds,,,1,1.25,354,Air display: 10 17 14 10 7 5 | Fan display: 75 105 94 75 77 79 59 61 57 55 53 (4.4 8.0 6.6 4.4 4.6 4.8 2.5 2.7 2.2 2.0 1.8)
+BASS-II,PSI-25,M20,PMMA,solid,slab,5,18,,8,8,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.45,157,Air display: 10 8 | Fan display: 67 58
+BASS-II,PSI-25,O1,Clear PMMA,solid,rod,6.35,22.2,,1,1,20,,micro,burned,the flame burned at the listed air speeds,,,1,0.41,52,Air display: 20 10 5 2 1 | Fan display: 89 62 50 41
+BASS-II,PSI-25,O2,Clear PMMA,solid,rod,6.35,22.2,,0,0,0,,micro,burned,the flame burned at the listed air speeds,,,1,0.15,24,Air display: 0 | Fan display: .54 pot 0.45 pot
+BASS-II,PSI-25,O3a,Clear PMMA,solid,rod,6.35,18,,3,3,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.03,6,Air display: 5 3 | Fan display: nan
+BASS-II,PSI-25,O3b,Clear PMMA,solid,rod,6.35,18,,1,1,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.25,94,Air display: 5 3 2 1 low | Fan display: nan
+BASS-II,PSI-25,O4,Clear PMMA,solid,rod,9.53,14.8,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,1,,Air display: 5 down to ext | Fan display: 5 0.7 0.5 0.4 0.36 ext
+BASS-II,PSI-25,O5a,Clear PMMA,solid,rod,12.7,15.1,,0,0,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.8,498,Air display: 5 10 5 2 0 (49 62 49 44 42) | Fan display: 1.3 2.7 1.3 0.7 0.45. 4.0
+BASS-II,PSI-25,O5b,Clear PMMA,solid,rod,12.7,14.2,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.09,94,Air display: 49 5 cm/s | Fan display: 1.3
+BASS-II,PSI-25,O6,Clear PMMA,solid,rod,6.35,16.7,,,,,,micro,extinguished,flame went out as the air was reduced,,,1,0.42,231,Air display: see fan | Fan display: 5 .36 .32 .31 .305 out .275
+BASS-II,PSI-25,O7,Clear PMMA,solid,rod,6.35,16,,,,,,micro,extinguished,flame blown off by air that was too fast,,,1,0.53,280,Air display: nan | Fan display: 5 .36 .32 ..305 blowoff fan max 10
+BASS-II,PSI-25,O8a,Clear PMMA,solid,rod,6.35,15.7,,,,,,micro,extinguished,flame went out as the air was reduced,,,1,0.21,100,Air display: nan | Fan display: 5 .36 .32 .31 extinguished
+BASS-II,PSI-25,O8b,Clear PMMA,solid,rod,6.35,15.5,,,,,,micro,extinguished,flame blown off by air that was too fast,,,1,0.3,124,Air display: nan | Fan display: 5 .36 .32 .31 blowoff fan pot 6.0
+BASS-II,PSI-25,O9,Clear PMMA,solid,rod,6.35,15,,,,,,micro,extinguished,flame blown off by air that was too fast,,,1,0.22,134,Air display: nan | Fan display: 5 .36 .32 blowoff pt 4.0
+BASS-II,PSI-25,O10,Clear PMMA,solid,rod,6.35,16.7,,0,0,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.49,193,Air display: 5 2 0 max | Fan display: 49 44 41 122 (1.3 0.7 0.4 0.36 0.32 10)
+BASS-II,PSI-25,O11,Black PMMA,solid,rod,6.35,15.4,,5,5,5,,micro,extinguished,flame blown off by air that was too fast,,,1,0.45,288,Air display: 5 down then blowoff | Fan display: ign 5 0.36 0.32 0.31 0.305 blowoff 6.0
+BASS-II,PSI-25,O12,Clear PMMA,solid,rod,9.53,13.6,,,,,,micro,no_ignition,no ignition at any air speed,,,1,-0.01,,Air display: no ign at any flow | Fan display: pots 1.4 3 0.9 0.7
+BASS-II,PSI-25,O13a,Clear PMMA,solid,rod,12.7,15.9,,0,0,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.94,561,Air display: 49 44 42 41 41 40.5 (5 2 0) | Fan display: 1.3 0.7 0.45 0.36 0.32 0.31
+BASS-II,PSI-25,O13b,Clear PMMA,solid,rod,12.7,14.6,,4,4,7,,micro,burned,the flame burned at the listed air speeds,,,1,0.24,,Air display: 7 4? (49 ?) | Fan display: 1.3 0.9
+BASS-II,PSI-25,O14,Black PMMA,solid,rod,6.35,16.3,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.57,348,Air display: 5 down to ext | Fan display: 52 and down
+BASS-II,PSI-25,O15a,Clear PMMA,solid,rod,9.53,17.1,,0,0,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.35,176,Air display: 5 0 | Fan display: 57.5 47 42 41 (2.3 1.0 0.5 0.35 0.32)
+BASS-II,PSI-25,O15b,Clear PMMA,solid,rod,9.53,16.7,,0,0,5,,micro,burned,the flame burned at the listed air speeds,,,1,1.01,575,Air display: 5 0 | Fan display: 57.5 42 41 40 (2.3 0.5 0.35 0.34 0.33 0.32 0.31 0.30 0.29 0.28 0.27)
+BASS-II,PSI-25,O16,Clear PMMA,solid,rod,9.53,14.5,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.05,31,Air display: 5 | Fan display: 60 (2.6)
+BASS-II,PSI-25,O17,Clear PMMA,solid,rod,6.35,15.1,,0,0,11,,micro,burned,the flame burned at the listed air speeds,,,1,0.59,375,Air display: 3 0 11 | Fan display: 49 46.5 44 42 41 72 decr (1.3 1.0 0.7 0.5 0.4 4.0 decr )
+BASS-II,PSI-25,O18,Clear PMMA,solid,rod,6.35,15.2,,0,0,11,,micro,burned,the flame burned at the listed air speeds,,,1,0.49,293,Air display: 5 2 0 11 2 11 2 0 | Fan display: 57 51 47 72 51 72 51 47 (2.3 1.5 1.0 4.0 1.5 4.0 1.5 1.0)
+BASS-II,PSI-25,O19,Clear PMMA,solid,rod,6.35,15.3,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.65,334,Air display: 5 down to ext | Fan display: 52 and down
+BASS-II,PSI-25,O20,Clear PMMA,solid,rod,6.35,16.5,,5,5,38.5,,micro,burned,the flame burned at the listed air speeds,,,1,0.37,60,Air display: 5 8 incr to max 38.5 | Fan display: 49 (1.3 pot) pots 7 8 9 10
+BASS-II,PSI-25,O21,Clear PMMA,solid,rod,9.53,15.9,,28,28,28,,micro,burned,the flame burned at the listed air speeds,,,1,0.42,135,Air display: incr to 28 | Fan display: 46 (pot 0.8) pot 7 10
+BASS-II,PSI-25,O22,Clear PMMA,solid,rod,12.7,15.4,,26.5,4,26.5,,micro,extinguished,flame blown off by air that was too fast,,,1,0.41,137,Air display: 4 incr to 26.5 | Fan display: 49 (pot 1.1) blowoff pot 5 out at fan 87
+BASS-II,PSI-25,P1,Black PMMA,solid,rod,6.35,17.7,,2,2,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.17,13,Air display: 5 2 slow decr to ext | Fan display: nan
+BASS-II,PSI-25,P2,Black PMMA,solid,rod,6.35,17.4,,2,2,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.22,12,Air display: 5 2.5 2 (pot .9 .5 .35. .33) | Fan display: nan
+BASS-II,PSI-25,P3a,Clear PMMA,solid,rod,6.35,17.7,,2.5,2.5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.24,31,Air display: 5 2.5 (1.15 .5 .35 .33. .32 .315 .31 .3) | Fan display: nan
+BASS-II,PSI-25,P3b,Clear PMMA,solid,rod,6.35,17.4,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,,46,Air display: 5 very low (0.85 0.32 0.31 0.305 0.30 0.295) | Fan display: nan
+BASS-II,PSI-25,P4,Black PMMA,solid,rod,9.53,18.5,,5,5,5,,micro,unknown,"fan turned off, outcome not recorded",,,1,1.18,429,Air display: 5 pots 0.4 0.36 0.32 0.308 .3 off | Fan display: 48 41
+BASS-II,PSI-25,P5,Black PMMA,solid,rod,12.7,19.3,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,1.35,525,Air display: 5 down to ext | Fan display: Fan pot 1.5 (5cm/s) 0.9 0.4 0.36 0.32 0.308 0.3 0.29 0.28 0 ext
+BASS-II,PSI-25,P6,Black PMMA,solid,rod,6.35,18.9,,5,5,5,,micro,unknown,"fan turned off, outcome not recorded",,,1,0.32,64,Air display: 5 pots 0.4 0.36 0.32 0.31 off | Fan display: 48 41
+BASS-II,PSI-25,P8,Black PMMA,solid,rod,9.53,16.4,,5,5,15,,micro,extinguished,the flame would not stay lit,,,1,0.09,25,Air display: 5 would not stay lit 10 15 ibid | Fan display: 48 62 75
+BASS-II,PSI-25,P9,Black PMMA,solid,rod,12.7,17.6,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.43,10,Air display: 5 down to ext | Fan display: Fan pot 1.5 (5cm/s) 0.9 0.4 0.36 0.32 0.3 0.28 ext
+BASS-II,PSI-25,P10,Black PMMA,solid,rod,6.35,17,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.43,42,Air display: 5 pots 0.4 0.36 0.32 0.31 0.30 extinguished | Fan display: 48 41
+BASS-II,PSI-25,P12,Black PMMA,solid,rod,9.53,17.5,,0.5,0.5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.66,55,Air display: 5 3 2 1 0.5 lower | Fan display: 60 52 48 44.5 42 41.5 41 (2.6 1.6 1.2 .75 .5 .4 .36 0.34)
+BASS-II,PSI-25,P13a,Black PMMA,solid,rod,12.7,20.7,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,1.27,412,Air display: 5 down to ext | Fan display: Fan pot 1.1 (5cm/s) 0.4 0.36 0.32 0.3 0.28 0.26 0 ext
+BASS-II,PSI-25,P13b,Black PMMA,solid,rod,12.7,20.6,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.21,67,Air display: 5 down to ext | Fan display: Fan pot 1.3 (5cm/s) 0.4 0.36 0.32 ext
+BASS-II,PSI-25,P14,Black PMMA,solid,rod,6.35,18.4,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.28,87,Air display: 5 low (.85 .4 .32) | Fan display: 46 41
+BASS-II,PSI-25,P15,Black PMMA,solid,rod,6.35,18,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.49,18,Air display: 5 (0.36) | Fan display: 46 41
+BASS-II,PSI-25,P16,Black PMMA,solid,rod,6.35,18.2,,2,2,8,,micro,burned,the flame burned at the listed air speeds,,,1,0.62,56,Air display: 5 8 2 low | Fan display: 49 62 44 41.5 41 (pots 1.3 2.8 0.7 0.4 0.36 0.32)
+BASS-II,PSI-25,P17,Black PMMA,solid,rod,6.35,16.8,,2,2,22,,micro,burned,the flame burned at the listed air speeds,,,1,0.39,11,Air display: 5 3 2 22 2 low | Fan display: 60 52 48 233 48 41 (2.6 1.6 1.2 10 1.2 0.36 0.34)
+BASS-II,PSI-25,P18,Black PMMA,solid,rod,6.35,20,,0,0,2,,micro,burned,the flame burned at the listed air speeds,,,1,0.86,25,Air display: 2 0 2 0 etc | Fan display: 55 47 etc (pot 1 2 1 2 etc)
+BASS-II,PSI-25,P19,Black PMMA,solid,rod,6.35,17.5,,0,0,8,,micro,burned,the flame burned at the listed air speeds,,,1,0.71,40,Air display: 5 8 2 max 0 | Fan display: 49 62 44 41.5 122 41 (pots 1.3 2.8 0.7 0.4 0.36 10. 0.32)
+BASS-II,PSI-25,P20,Black PMMA,solid,rod,6.35,19,,0,0,2,,micro,burned,the flame burned at the listed air speeds,,,1,0.71,76,Air display: 2 0 2 0 etc | Fan display: 55 47 etc (pot 1 2 1 2 etc)
+BASS-II,PSI-25,P21a,Black PMMA,solid,rod,6.35,16.3,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.04,8,Air display: 5 | Fan display: 46
+BASS-II,PSI-25,P21b,Black PMMA,solid,rod,6.35,16.3,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.03,4,Air display: 5 | Fan display: 46
+BASS-II,PSI-25,P22a,Black PMMA,solid,rod,9.53,20.8,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,,,Air display: 5 down to ext | Fan display: 5 0.36 0.32 ext after some time
+BASS-II,PSI-25,P22b,Black PMMA,solid,rod,9.53,20,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,,,Air display: 5 down to ext | Fan display: 5 p.36 0.34 0.33 0.32 0.31 ext
+BASS-II,PSI-25,P23,Black PMMA,solid,rod,9.53,18.2,,0,0,2,,micro,burned,the flame burned at the listed air speeds,,,1,1.03,81,Air display: 2 0 2 0 etc | Fan display: 55 47 etc (pot 1 2 1 2 etc)
+BASS-II,PSI-25,P24,Black PMMA,solid,rod,9.53,19,,0,0,2,,micro,burned,the flame burned at the listed air speeds,,,1,1.04,234,Air display: 2 0 2 0 etc | Fan display: 55 47 etc (pot 1 2 1 2 etc)
+BASS-II,PSI-25,P25,Clear PMMA,solid,rod,9.53,20.9,,5,5,5,,micro,extinguished,flame went out as the air was reduced,,,1,0.62,162,Air display: 5 down to ext | Fan display: 5 p.36 0.34 0.33 0.32 0.31 ext
+BASS-II,PSI-25,T1,SIBAL (cotton and fiberglass),solid,fabric,,18.5,,10,10,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.06,40,Air display: 10 | Fan display: 80
+BASS-II,PSI-25,T2,SIBAL (cotton and fiberglass),solid,fabric,,18.5,,4,4,9,,micro,burned,the flame burned at the listed air speeds,,,1,0.04,38,Air display: 9 5 4 | Fan display: 80 59 55
+BASS-II,PSI-25,T3,PMMA,solid,sphere,,17.2,,10,10,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.28,68,Air display: 10 | Fan display: 63
+BASS-II,PSI-25,T4,SIBAL (cotton and fiberglass),solid,fabric,,18.7,,1,1,9,,micro,burned,the flame burned at the listed air speeds,,,1,0.01,13,Air display: 9 1 | Fan display: 80 46
+BASS-II,PSI-25,T5,SIBAL (cotton and fiberglass),solid,fabric,,18.8,,1,1,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.05,39,Air display: 10 2 1 | Fan display: 2.72 0.50 0.42
+BASS-II,PSI-25,T6,SIBAL (cotton and fiberglass),solid,fabric,,18.8,,0.5,0.5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.04,38,Air display: 5 2 1 <1 | Fan display: nan
+BASS-II,PSI-25,T7,PMMA,solid,sphere,,17.3,,1,1,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.27,91,Air display: 10 5 3 1 decr | Fan display: 3.4 67
+BASS-II,PSI-25,T9,SIBAL (cotton and fiberglass),solid,fabric,,16.4,,10,10,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.01,9,Air display: 10 | Fan display: pot 2.5
+BASS-II,PSI-25,T10,SIBAL (cotton and fiberglass),solid,fabric,,16.4,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.02,5,Air display: 5 | Fan display: pot 1.1
+BASS-II,PSI-25,T11,SIBAL (cotton and fiberglass),solid,fabric,,17.1,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.04,44,Air display: 5 | Fan display: 48
+BASS-II,PSI-25,T12,SIBAL (cotton and fiberglass),solid,fabric,,16.8,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0,4,Air display: 5 | Fan display: pot 1.1
+BASS-II,PSI-25,T13,SIBAL (cotton and fiberglass),solid,fabric,,17.5,,1,1,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.01,10,Air display: 5 1 | Fan display: nan
+BASS-II,PSI-25,T14,SIBAL (cotton and fiberglass),solid,fabric,,16.9,,3,3,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.02,35,Air display: 5 3 | Fan display: nan
+BASS-II,PSI-25,T15,SIBAL (cotton and fiberglass),solid,fabric,,18.7,,9,9,29,,micro,burned,the flame burned at the listed air speeds,,,1,0.06,30,Air display: 9 29 | Fan display: 80122
+BASS-II,PSI-25,T16,SIBAL (cotton and fiberglass),solid,fabric,,17.6,,3,3,5,,micro,burned,the flame burned at the listed air speeds,,,1,0,24,Air display: 5 3 | Fan display: nan
+BASS-II,PSI-25,T17,SIBAL (cotton and fiberglass),solid,fabric,,16.9,,6,6,6,,micro,burned,the flame burned at the listed air speeds,,,1,0.03,38,Air display: 6 53 | Fan display: nan
+BASS-II,PSI-25,T18,SIBAL (cotton and fiberglass),solid,fabric,,17.4,,2,2,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.02,20,Air display: 5 2 | Fan display: nan
+BASS-II,PSI-25,T19,SIBAL (cotton and fiberglass),solid,fabric,,17.2,,11,11,11,,micro,burned,the flame burned at the listed air speeds,,,1,0.02,19,Air display: 11 | Fan display: 68.5 pot 3.6
+BASS-II,PSI-25,T20,SIBAL (cotton and fiberglass),solid,fabric,,17.2,,3,3,11,,micro,burned,the flame burned at the listed air speeds,,,1,0,14,Air display: 11 3 | Fan display: 3.6 0.9
+BASS-II,PSI-25,T21,SIBAL (cotton and fiberglass),solid,fabric,,17.2,,11,11,11,,micro,burned,the flame burned at the listed air speeds,,,1,0.01,11,Air display: 11 max(47) | Fan display: 1.6 pot 52
+BASS-II,PSI-25,T22,SIBAL (cotton and fiberglass),solid,fabric,,17.1,,5,5,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.03,22,Air display: 10 5 | Fan display: 3.4 1.7
+BASS-II,PSI-25,T23,SIBAL (cotton and fiberglass),solid,fabric,,17.2,,10,10,10,,micro,burned,the flame burned at the listed air speeds,,,1,0,4,Air display: 10 | Fan display: 3.3 66
+BASS-II,PSI-25,T24,SIBAL (cotton and fiberglass),solid,fabric,,18.2,,10,10,10,,micro,burned,the flame burned at the listed air speeds,,,1,0.02,22,Air display: 10 | Fan display: 3.3 66
+BASS-II,PSI-25,T25,SIBAL (cotton and fiberglass),solid,fabric,,20.8,,2.5,2.5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.03,18,Air display: 5 2.5 | Fan display: 53 45
+BASS-II,PSI-25,T26,SIBAL (cotton and fiberglass),solid,fabric,,20.8,,2.5,2.5,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.07,25,Air display: 5 2.5 | Fan display: 53 45
+BASS-II,PSI-25,T27,SIBAL (cotton and fiberglass),solid,fabric,,20.7,,2,2,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.01,10,Air display: 5 2 | Fan display: 53 45
+BASS-II,PSI-25,T28a,SIBAL (cotton and fiberglass),solid,fabric,,20.7,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,,,Air display: 5 | Fan display: 53
+BASS-II,PSI-25,T28b,SIBAL (cotton and fiberglass),solid,fabric,,20.7,,5,5,5,,micro,burned,the flame burned at the listed air speeds,,,1,,,Air display: 5 | Fan display: 53
+BASS-II,PSI-25,T29,SIBAL (cotton and fiberglass),solid,fabric,,20.7,,2,2,5,,micro,burned,the flame burned at the listed air speeds,,,1,0.03,11,Air display: 5 2(?) | Fan display: 53 43
+FLEX,PSI-69,1,Methanol,liquid,droplet,,21,101,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,2 3 33 34 203,Methanol,liquid,droplet,,21,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,5,,,No dilution
+FLEX,PSI-69,4 5 6 202,Methanol,liquid,droplet,,21,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,No dilution
+FLEX,PSI-69,7 9 204 205 206,Heptane,liquid,droplet,,21,101,0,0,0,quiescent,micro,burned,droplet burst while burning,,,5,,,No dilution
+FLEX,PSI-69,8 229,Heptane,liquid,droplet,,21,102,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,No dilution
+FLEX,PSI-69,10 11,Methanol,liquid,droplet,,21,309,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 70%
+FLEX,PSI-69,12,Heptane,liquid,droplet,,21,309,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 70%
+FLEX,PSI-69,13,Methanol,liquid,droplet,,21,277,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 70%
+FLEX,PSI-69,14,Methanol,liquid,droplet,,21,274,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 70%
+FLEX,PSI-69,15 16,Methanol,liquid,droplet,,21,276,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 70%
+FLEX,PSI-69,17,Methanol,liquid,droplet,,21,206,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 70%
+FLEX,PSI-69,18,Heptane,liquid,droplet,,21,207,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 70%
+FLEX,PSI-69,19 23 24,Heptane,liquid,droplet,,34,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,3,,,No dilution
+FLEX,PSI-69,20,Methanol,liquid,droplet,,34,72,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,No dilution
+FLEX,PSI-69,21 22,Methanol,liquid,droplet,,34,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,No dilution
+FLEX,PSI-69,25,Methanol,liquid,droplet,,30,72,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,No dilution
+FLEX,PSI-69,26,Methanol,liquid,droplet,,30,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,27 28,Heptane,liquid,droplet,,30,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,No dilution
+FLEX,PSI-69,29,Methanol,liquid,droplet,,30,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,No dilution
+FLEX,PSI-69,30,Methanol,liquid,droplet,,30,103,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,No dilution
+FLEX,PSI-69,31 52,Heptane,liquid,droplet,,30,103,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,No dilution
+FLEX,PSI-69,32,Heptane,liquid,droplet,,30,103,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,No dilution
+FLEX,PSI-69,35 49 228,Heptane,liquid,droplet,,21,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,No dilution
+FLEX,PSI-69,36 54,Methanol,liquid,droplet,,20,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,37 38,Methanol,liquid,droplet,,34,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,No dilution
+FLEX,PSI-69,39,Heptane,liquid,droplet,,34,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,40 41,Methanol,liquid,droplet,,30,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,No dilution
+FLEX,PSI-69,42 43,Heptane,liquid,droplet,,30,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,No dilution
+FLEX,PSI-69,44,Methanol,liquid,droplet,,30,102,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,45,Methanol,liquid,droplet,,30,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,No dilution
+FLEX,PSI-69,46,Methanol,liquid,droplet,,21,103,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,47 51,Heptane,liquid,droplet,,21,103,0,0,0,quiescent,micro,burned,droplet burned completely,,,2,,,No dilution
+FLEX,PSI-69,48,Methanol,liquid,droplet,,21,102,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,50 230,Heptane,liquid,droplet,,21,103,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,53,Heptane,liquid,droplet,,21,103,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,55,Methanol,liquid,droplet,,20,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,No dilution
+FLEX,PSI-69,56,Heptane,liquid,droplet,,20,73,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,No dilution
+FLEX,PSI-69,57,Heptane,liquid,droplet,,20,73,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,No dilution
+FLEX,PSI-69,58 59 60 61,Methanol,liquid,droplet,,18,103,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,No dilution
+FLEX,PSI-69,62 64,Heptane,liquid,droplet,,18,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,63,Heptane,liquid,droplet,,18,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,No dilution
+FLEX,PSI-69,65 66 67 68 71,Methanol,liquid,droplet,,15,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,5,,,No dilution
+FLEX,PSI-69,69,Heptane,liquid,droplet,,14,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,No dilution
+FLEX,PSI-69,70 73,Heptane,liquid,droplet,,15,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,72 74,Heptane,liquid,droplet,,15,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,2,,,No dilution
+FLEX,PSI-69,75 76,Methanol,liquid,droplet,,13,103,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,77 78,Methanol,liquid,droplet,,14,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,79,Heptane,liquid,droplet,,13,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,No dilution
+FLEX,PSI-69,80 81,Heptane,liquid,droplet,,13,103,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,82,Methanol,liquid,droplet,,13,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,No dilution
+FLEX,PSI-69,83 85 86 87,Methanol,liquid,droplet,,12,103,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,No dilution
+FLEX,PSI-69,84 219 220 221,Methanol,liquid,droplet,,12,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,No dilution
+FLEX,PSI-69,88 89 90 91,Methanol,liquid,droplet,,25,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,4,,,Dilution: CO2 15%
+FLEX,PSI-69,92 93,Heptane,liquid,droplet,,25,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,Dilution: CO2 15%
+FLEX,PSI-69,94 95,Heptane,liquid,droplet,,24,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 20%
+FLEX,PSI-69,96 174 175,Heptane,liquid,droplet,,24,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,3,,,Dilution: CO2 20%
+FLEX,PSI-69,97,Methanol,liquid,droplet,,23,71,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: CO2 20%
+FLEX,PSI-69,98,Methanol,liquid,droplet,,23,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 25%
+FLEX,PSI-69,99 183 184 185 186,Methanol,liquid,droplet,,23,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,5,,,Dilution: CO2 25%
+FLEX,PSI-69,100 101,Heptane,liquid,droplet,,23,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 25%
+FLEX,PSI-69,102 103,Heptane,liquid,droplet,,21,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 30%
+FLEX,PSI-69,104,Methanol,liquid,droplet,,23,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 20%
+FLEX,PSI-69,105 107,Methanol,liquid,droplet,,23,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,Dilution: CO2 20%
+FLEX,PSI-69,106,Methanol,liquid,droplet,,23,72,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 25%
+FLEX,PSI-69,108,Methanol,liquid,droplet,,23,72,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: CO2 25%
+FLEX,PSI-69,109 110,Methanol,liquid,droplet,,21,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 30%
+FLEX,PSI-69,111,Methanol,liquid,droplet,,21,72,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: CO2 30%
+FLEX,PSI-69,112,Methanol,liquid,droplet,,21,71,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: CO2 30%
+FLEX,PSI-69,113 115,Methanol,liquid,droplet,,20,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 35%
+FLEX,PSI-69,114,Methanol,liquid,droplet,,20,,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 35%
+FLEX,PSI-69,116,Methanol,liquid,droplet,,20,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 35%
+FLEX,PSI-69,117 118,Heptane,liquid,droplet,,20,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 35%
+FLEX,PSI-69,119 120,Heptane,liquid,droplet,,18,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 40%
+FLEX,PSI-69,121,Methanol,liquid,droplet,,18,70,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 40%
+FLEX,PSI-69,122 123 124,Methanol,liquid,droplet,,18,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,Dilution: CO2 40%
+FLEX,PSI-69,125 127 128,Methanol,liquid,droplet,,17,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,Dilution: CO2 45%
+FLEX,PSI-69,126 147,Methanol,liquid,droplet,,17,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 45%
+FLEX,PSI-69,129,Heptane,liquid,droplet,,17,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 45%
+FLEX,PSI-69,130,Heptane,liquid,droplet,,17,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 45%
+FLEX,PSI-69,131 132 133 137 138 139,Heptane,liquid,droplet,,24,102,0,0,0,quiescent,micro,burned,droplet burst while burning,,,6,,,Dilution: CO2 20%
+FLEX,PSI-69,134,Heptane,liquid,droplet,,24,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 20%
+FLEX,PSI-69,135 136,Heptane,liquid,droplet,,24,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,2,,,Dilution: CO2 20%
+FLEX,PSI-69,140 141 142 143,Methanol,liquid,droplet,,15,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,Dilution: CO2 50%
+FLEX,PSI-69,144 145 146,Methanol,liquid,droplet,,20,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,Dilution: CO2 5%
+FLEX,PSI-69,148 149,Heptane,liquid,droplet,,20,102,0,0,0,quiescent,micro,burned,droplet burst while burning,,,2,,,Dilution: CO2 5%
+FLEX,PSI-69,150,Heptane,liquid,droplet,,20,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 5%
+FLEX,PSI-69,151,Methanol,liquid,droplet,,18,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: CO2 15%
+FLEX,PSI-69,152 153 190 191,Methanol,liquid,droplet,,18,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,Dilution: CO2 15%
+FLEX,PSI-69,154 155 165 172,Heptane,liquid,droplet,,18,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,Dilution: CO2 15%
+FLEX,PSI-69,156,Heptane,liquid,droplet,,18,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: CO2 15%
+FLEX,PSI-69,157 158 159 160,Methanol,liquid,droplet,,16,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,Dilution: CO2 25%
+FLEX,PSI-69,161 162 163 164,Methanol,liquid,droplet,,15,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,4,,,Dilution: CO2 32%
+FLEX,PSI-69,166,Methanol,liquid,droplet,,14,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 36%
+FLEX,PSI-69,167,Methanol,liquid,droplet,,14,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 36%
+FLEX,PSI-69,168,Methanol,liquid,droplet,,21,102,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 15%
+FLEX,PSI-69,169 170,Methanol,liquid,droplet,,21,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 15%
+FLEX,PSI-69,171,Heptane,liquid,droplet,,18,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 15%
+FLEX,PSI-69,173,Heptane,liquid,droplet,,18,102,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 15%
+FLEX,PSI-69,176 177,Methanol,liquid,droplet,,24,72,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 20%
+FLEX,PSI-69,178,Heptane,liquid,droplet,,23,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 25%
+FLEX,PSI-69,179,Heptane,liquid,droplet,,23,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 25%
+FLEX,PSI-69,180 181,Heptane,liquid,droplet,,19,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 10%
+FLEX,PSI-69,182,Heptane,liquid,droplet,,19,101,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 10%
+FLEX,PSI-69,187 188,Methanol,liquid,droplet,,19,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 10%
+FLEX,PSI-69,189,Methanol,liquid,droplet,,18,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: CO2 15%
+FLEX,PSI-69,192 193,Methanol,liquid,droplet,,17,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 20%
+FLEX,PSI-69,194 195,Heptane,liquid,droplet,,17,100,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 20%
+FLEX,PSI-69,196 197,Heptane,liquid,droplet,,20,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: CO2 5%
+FLEX,PSI-69,198,Heptane,liquid,droplet,,20,101,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: CO2 5%
+FLEX,PSI-69,199 200 201,Methanol,liquid,droplet,,20,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,Dilution: CO2 5%
+FLEX,PSI-69,207 208,Heptane,liquid,droplet,,21,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,2,,,No dilution
+FLEX,PSI-69,209 210 211,Heptane,liquid,droplet,,16,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,No dilution
+FLEX,PSI-69,212,Heptane,liquid,droplet,,15,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,No dilution
+FLEX,PSI-69,213 214,Heptane,liquid,droplet,,14,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,215 216,Methanol,liquid,droplet,,14,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,217 218,Methanol,liquid,droplet,,13,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,No dilution
+FLEX,PSI-69,222 223,Methanol,liquid,droplet,,20,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 5%
+FLEX,PSI-69,224,Heptane,liquid,droplet,,20,101,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: helium 5%
+FLEX,PSI-69,225,Methanol,liquid,droplet,,19,100,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 10%
+FLEX,PSI-69,226 227,Methanol,liquid,droplet,,18,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 15%
+FLEX,PSI-69,231,Heptane,liquid,droplet,,19,101,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: helium 10%
+FLEX,PSI-69,232,Heptane,liquid,droplet,,18,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 15%
+FLEX,PSI-69,233 234,Heptane,liquid,droplet,,18,102,0,0,0,quiescent,micro,burned,droplet burned completely,,,2,,,Dilution: helium 15%
+FLEX,PSI-69,235 236,Heptane,liquid,droplet,,17,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 20%
+FLEX,PSI-69,237,Heptane,liquid,droplet,,17,101,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: helium 20%
+FLEX,PSI-69,238,Heptane,liquid,droplet,,17,101,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: helium 20%
+FLEX,PSI-69,239 240,Methanol,liquid,droplet,,17,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 20%
+FLEX,PSI-69,241 242,Methanol,liquid,droplet,,16,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 25%
+FLEX,PSI-69,243,Heptane,liquid,droplet,,16,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 25%
+FLEX,PSI-69,244 245,Methanol,liquid,droplet,,15,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 30%
+FLEX,PSI-69,246 247,Methanol,liquid,droplet,,14,101,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 35%
+FLEX,PSI-69,248,Methanol,liquid,droplet,,13,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 40%
+FLEX,PSI-69,249,Heptane,liquid,droplet,,24,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 20%
+FLEX,PSI-69,250,Heptane,liquid,droplet,,23,71,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: helium 25%
+FLEX,PSI-69,251,Methanol,liquid,droplet,,24,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 20%
+FLEX,PSI-69,252,Methanol,liquid,droplet,,24,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: helium 20%
+FLEX,PSI-69,253,Methanol,liquid,droplet,,23,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 25%
+FLEX,PSI-69,254,Methanol,liquid,droplet,,23,71,0,0,0,quiescent,micro,burned,droplet burst while burning,,,1,,,Dilution: helium 25%
+FLEX,PSI-69,255 256 257,Methanol,liquid,droplet,,21,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,Dilution: helium 30%
+FLEX,PSI-69,258 259,Heptane,liquid,droplet,,21,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 30%
+FLEX,PSI-69,260 261,Heptane,liquid,droplet,,20,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 35%
+FLEX,PSI-69,262 263,Methanol,liquid,droplet,,20,70,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 35%
+FLEX,PSI-69,264 265 266,Methanol,liquid,droplet,,18,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,3,,,Dilution: helium 40%
+FLEX,PSI-69,267,Heptane,liquid,droplet,,18,70,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 40%
+FLEX,PSI-69,268,Heptane,liquid,droplet,,18,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 40%
+FLEX,PSI-69,269,Heptane,liquid,droplet,,17,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,1,,,Dilution: helium 45%
+FLEX,PSI-69,270,Heptane,liquid,droplet,,17,71,0,0,0,quiescent,micro,burned,droplet burned completely,,,1,,,Dilution: helium 45%
+FLEX,PSI-69,271 272,Methanol,liquid,droplet,,17,71,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 45%
+FLEX,PSI-69,273 274,Heptane,liquid,droplet,,21,102,0,0,0,quiescent,micro,extinguished,flame went out before the droplet was gone,,,2,,,Dilution: helium 15%
+ACME BRE,PSI-20,2019-Feb-8,Ethylene,gas,25 mm burner,,21,,0,0,0,quiescent,micro,burned,10 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-8,Ethylene,gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,10 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-8,Ethylene,gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,10 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-20,Ethylene,gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-20,Ethylene,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-25,Diluted ethylene (50%),gas,25 mm burner,,21,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-25,Diluted ethylene (50%),gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-25,Diluted ethylene (50%),gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-Feb-25,Diluted ethylene (50%),gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-March-4,Diluted ethylene (50%),gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,6 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-March-4,Diluted ethylene (50%),gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,6 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-March-7,Diluted ethylene (50%),gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,6 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-March-11,Diluted ethylene (50%),gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,7 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-March-11,Diluted ethylene (50%),gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,7 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-March-28,Ethylene,gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-March-28,Ethylene,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,8 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-April-1,Ethylene,gas,25 mm burner,,21,,0,0,0,quiescent,micro,no_ignition,no flame ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-April-4,Ethylene,gas,25 mm burner,,21,,0,0,0,quiescent,micro,burned,9 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-April-4,Ethylene,gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,9 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2019-April-4,Ethylene,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,9 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Sept-3,Ethylene,gas,50 mm burner,,25,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Sept-3,Ethylene,gas,50 mm burner,,34,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Sept-3,Ethylene,gas,50 mm burner,,40,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Oct-17,Ethylene,gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Oct-17,Ethylene,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-5,Methane,gas,25 mm burner,,25,,0,0,0,quiescent,micro,burned,21 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-5,Methane,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,21 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-5,Methane,gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,21 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-4,Methane,gas,25 mm burner,,25,,0,0,0,quiescent,micro,burned,18 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-4,Methane,gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,18 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-11,Diluted ethylene (50%),gas,25 mm burner,,25,,0,0,0,quiescent,micro,burned,12 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-11,Diluted ethylene (50%),gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,12 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-17,Ethylene,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,10 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-17,Ethylene,gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,10 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-23,Ethylene,gas,25 mm burner,,25,,0,0,0,quiescent,micro,burned,17 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-23,Ethylene,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,17 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2020-Dec-23,Ethylene,gas,25 mm burner,,40,,0,0,0,quiescent,micro,burned,17 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2021-Jan-20,Ethylene,gas,25 mm burner,,21,,0,0,0,quiescent,micro,burned,15 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2021-Jan-20,Ethylene,gas,25 mm burner,,26.5,,0,0,0,quiescent,micro,burned,15 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2021-Jan-20,Ethylene,gas,25 mm burner,,34,,0,0,0,quiescent,micro,burned,15 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2021-Jan-28,Ethylene,gas,50 mm burner,,25,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2021-Jan-28,Ethylene,gas,50 mm burner,,34,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table
+ACME BRE,PSI-20,2021-Jan-28,Ethylene,gas,50 mm burner,,40,,0,0,0,quiescent,micro,burned,13 flames ignited that day,,,,,,Pressure varied but is not given in the PSI table

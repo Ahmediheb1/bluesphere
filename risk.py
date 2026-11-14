@@ -1,14 +1,14 @@
-"""Score de risque et classement des essais de la NASA selon l'environnement.
+"""Risk score and ranking of NASA tests by environment.
 
-La pondération vient de l'équipe BlueSphere (version 1) :
-oxygène 30 %, matériau 25 %, ventilation 25 %, épaisseur 10 %, pression 10 %.
+The weighting comes from the BlueSphere team (version 1):
+oxygen 30%, material 25%, ventilation 25%, thickness 10%, pressure 10%.
 
-Chaque facteur est une valeur de 0 (peu de risque) à 1 (risque maximal).
-Le score est la moyenne pondérée, sur 100. C'est un indice relatif pour comparer
-des situations, pas une probabilité d'incendie, et pas une certification.
+Each factor is a value from 0 (little risk) to 1 (highest risk). The score is the
+weighted average, out of 100. It is a relative index to compare situations,
+not a probability of fire, and not a certification.
 
-La gravité ne change pas le score : elle change la confiance, parce qu'aucun essai
-de PSI n'a été fait en gravité lunaire ou martienne.
+Gravity does not change the score: it changes the confidence, because no PSI test
+was run in lunar or Martian gravity.
 """
 
 import math
@@ -18,31 +18,31 @@ import pandas as pd
 EARTH_PRESSURE_KPA = 101.3
 KPA_PER_PSI = 6.894757
 
-# Poids par défaut (en %), dans l'ordre d'affichage
+# Default weights (in %), in display order
 FACTORS = ["o2", "material", "ventilation", "thickness", "pressure"]
 DEFAULT_WEIGHTS = {"o2": 30, "material": 25, "ventilation": 25, "thickness": 10, "pressure": 10}
 
-# Bornes du facteur oxygène : 0 au plus bas O2 où un solide a brûlé dans nos essais (14,2 %, BASS-II),
-# 1 à partir de 35 % (au-delà de l'atmosphère d'exploration de la NASA, 34 %).
+# Oxygen factor bounds: 0 at the lowest O2 where a solid burned in our tests (14.2%, BASS-II),
+# 1 from 35% (just above NASA's exploration atmosphere, 34%).
 O2_LOW_PCT = 14.0
 O2_HIGH_PCT = 35.0
 
-# Ventilation : courbe en cloche, sommet vers 10 cm/s (guide de la NASA, 2015).
+# Ventilation: a bell curve peaking near 10 cm/s (NASA guide, 2015).
 VENT_PEAK_CM_S = 10.0
-VENT_FLOOR = 0.3   # air immobile : le feu faiblit, mais « il s'éteint tout seul » est une idée fausse
-VENT_WIDTH = 0.35  # largeur de la cloche, en décades (échelle logarithmique)
+VENT_FLOOR = 0.3   # still air: the fire weakens, but "it goes out by itself" is a misconception
+VENT_WIDTH = 0.35  # width of the bell, in decades (log scale)
 
-# Matériaux testés dans nos essais solides, avec une valeur d'expert (version 1)
+# Materials tested in our solid-fuel tests, with an expert value (version 1)
 MATERIALS = {
-    "sibal": 1.0,     # tissu coton et fibre de verre : a brûlé dans presque tous les essais
-    "pmma": 0.8,      # plastique acrylique : brûle, et peut se rallumer (Saffire-IV)
-    "nomex": 0.5,     # résultats partagés : pas d'allumage dans Saffire-II
-    "silicone": 0.2,  # aucun allumage en microgravité dans Saffire-II, alors qu'il brûle sur Terre
+    "sibal": 1.0,     # cotton and fiberglass fabric: burned in almost every test
+    "pmma": 0.8,      # acrylic plastic: burns, and can reignite (Saffire-IV)
+    "nomex": 0.5,     # mixed results: no ignition in Saffire-II
+    "silicone": 0.2,  # no ignition in microgravity in Saffire-II, although it burns on Earth
 }
 DEFAULT_THICKNESS_MM = {"sibal": 0.37, "pmma": 6.35, "nomex": 0.37, "silicone": 0.37}
 THICKNESS_CHOICES_MM = [0.1, 0.25, 0.37, 0.5, 1.0, 2.0, 6.35, 10.0, 12.7]
 
-# Environnements (le rover a la même atmosphère que la base lunaire, selon l'énoncé du défi)
+# Environments (the rover has the same atmosphere as the Moon base, per the challenge statement)
 ENVIRONMENTS = {
     "iss": {"o2": 21.0, "pressure_kpa": 101.3, "flow": 10.0, "gravity": "micro"},
     "moon_base": {"o2": 30.0, "pressure_kpa": 70.3, "flow": 10.0, "gravity": "moon"},
@@ -50,7 +50,7 @@ ENVIRONMENTS = {
     "mars_ship": {"o2": 34.0, "pressure_kpa": 56.5, "flow": 10.0, "gravity": "micro"},
 }
 
-# Mode prudent : marge ajoutée au score quand la confiance est faible
+# Cautious mode: margin added to the score when confidence is low
 PRUDENT_MARGIN = 10
 
 
@@ -76,12 +76,12 @@ def f_ventilation(flow_cm_s: float) -> float:
 
 
 def f_thickness(thickness_mm: float) -> float:
-    """Plus le matériau est mince, plus il brûle facilement : 1 à 0,1 mm, 0,2 à 10 mm et plus."""
+    """The thinner the material, the more easily it burns: 1 at 0.1 mm, 0.2 at 10 mm and more."""
     return _clamp(1 - 0.8 * math.log10(max(thickness_mm, 0.01) / 0.1) / 2, 0.2, 1.0)
 
 
 def f_pressure(pressure_kpa: float) -> float:
-    """À oxygène égal, une pression plus basse donne un peu moins de molécules d'oxygène."""
+    """At the same oxygen percentage, lower pressure means fewer oxygen molecules."""
     return _clamp(pressure_kpa / EARTH_PRESSURE_KPA)
 
 
@@ -96,7 +96,7 @@ def factor_values(o2: float, material: str, flow: float, thickness_mm: float, pr
 
 
 def score(values: dict, weights: dict) -> tuple[float, dict]:
-    """Score sur 100, et la part de chaque facteur (en points) pour le graphique."""
+    """Score out of 100, and each factor's share (in points) for the chart."""
     total = sum(weights.values()) or 1
     parts = {k: 100 * weights[k] * values[k] / total for k in FACTORS}
     maxima = {k: 100 * weights[k] / total for k in FACTORS}
@@ -122,11 +122,11 @@ def _similarity(diff: float, scale: float) -> float:
 
 
 def rank_tests(tests: pd.DataFrame, env: dict, material: str, thickness_mm: float, weights: dict) -> pd.DataFrame:
-    """Classe les essais solides de la NASA du plus proche au plus éloigné de l'environnement choisi.
+    """Rank NASA solid-fuel tests from closest to farthest from the chosen environment.
 
-    La proximité est une moyenne géométrique pondérée (mêmes poids que le score) :
-    un seul grand écart, par exemple 8 points d'oxygène, suffit à éloigner un essai.
-    La pression manque dans les tableaux de BASS-II et de Saffire : on prend celle de la Station (101,3 kPa).
+    The match is a weighted geometric mean (same weights as the score): a single large gap,
+    for example 8 points of oxygen, is enough to push a test away.
+    Pressure is missing from the BASS-II and Saffire tables: we use the station's (101.3 kPa).
     """
     solid = tests[tests["fuel_state"].eq("solid") & tests["o2_pct"].notna()].copy()
     if solid.empty:
@@ -157,7 +157,7 @@ def rank_tests(tests: pd.DataFrame, env: dict, material: str, thickness_mm: floa
 
 
 def confidence(best_proximity: float | None, gravity: str) -> tuple[str, str]:
-    """Niveau de confiance et sa raison (clé de texte)."""
+    """Confidence level and its reason (a text key)."""
     if best_proximity is None:
         data_level, reason = "low", "conf_reason_no_test"
     elif best_proximity >= 0.8:

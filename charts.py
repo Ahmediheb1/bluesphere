@@ -1,12 +1,11 @@
-"""Graphiques de BlueSphere (Altair).
+"""BlueSphere charts (Altair).
 
-Règles suivies : une couleur par type de combustible (3 au maximum sur un nuage de points),
-le résultat de l'essai porté par le remplissage (plein = a brûlé, vide = éteint),
-des lignes de repère discrètes, et les valeurs toujours lisibles dans le tableau.
+Rules: one color per fuel type (3 at most on a scatter plot), the test outcome carried by the fill
+(filled = burned, hollow = went out), quiet reference lines, and every value also readable in a table.
 
-L'Atlas a deux panneaux qui partagent l'axe de l'oxygène :
-- à gauche, les essais en air immobile (0 cm/s : gouttes de FLEX, flammes de gaz d'ACME BRE) ;
-- à droite, les essais avec un courant d'air (BASS-II, Saffire).
+The atlas has two panels that share the oxygen axis:
+- left, tests in still air (0 cm/s: FLEX droplets, ACME BRE gas flames);
+- right, tests with an air flow (BASS-II, Saffire).
 """
 
 import hashlib
@@ -15,8 +14,8 @@ import altair as alt
 import pandas as pd
 
 import data as d
-from i18n import get_lang, t
-from style import colors
+from style import CHART_FONT, colors
+from texts import t
 
 FUEL_ORDER = ["solid", "liquid", "gas"]
 GRAVITY_ORDER = ["micro", "moon", "mars", "earth"]
@@ -36,7 +35,8 @@ def _finish(chart, height: int = HEIGHT):
     c = colors()
     return (
         chart.properties(height=height, background=c["surface"],
-                         padding={"left": 8, "right": 8, "top": 8, "bottom": 8})
+                         padding={"left": 12, "right": 12, "top": 12, "bottom": 8})
+        .configure(font=CHART_FONT)
         .configure_axis(**_axis(c))
         .configure_view(stroke=None)
     )
@@ -46,7 +46,6 @@ def _prepare(df: pd.DataFrame) -> pd.DataFrame:
     plot = df.dropna(subset=["o2_pct", "flow_cm_s"]).copy()
     plot["fuel_label"] = plot["fuel_state"].map(lambda f: t(f"fuel_{f}") if f in FUEL_ORDER else f)
     plot["outcome_label"] = plot["outcome"].map(lambda o: t(f"outcome_{o}"))
-    plot["material"] = plot["material"].map(lambda m: d.material_label(m, get_lang()))
     plot["pressure_txt"] = plot["pressure_kpa"].map(lambda p: "—" if pd.isna(p) else f"{p:.0f}")
     plot["n_txt"] = plot["n_tests"].map(lambda n: "—" if pd.isna(n) else f"{n:.0f}")
     plot["is_still"] = plot["flow_max_cm_s"].fillna(plot["flow_cm_s"]).eq(0)
@@ -54,7 +53,7 @@ def _prepare(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def y_domain(df: pd.DataFrame) -> list[float]:
-    """Le même axe d'oxygène pour les deux panneaux."""
+    """The same oxygen axis for both panels."""
     o2 = df["o2_pct"].dropna()
     low = float(o2.min()) if len(o2) else 21.0
     high = float(o2.max()) if len(o2) else 21.0
@@ -91,7 +90,7 @@ def _points(plot: pd.DataFrame, x, y, c: dict):
 
 
 def _references(ys: alt.Scale, c: dict):
-    """Bande de la base lunaire (30 % et plus) et ligne de l'air (21 %)."""
+    """The Moon base band (30% and more) and the air line (21%)."""
     moon = alt.Chart(pd.DataFrame({"y0": [d.MOON_BASE_O2_PCT], "y1": [ys.domain[1]]})).mark_rect(
         color=c["ink"], opacity=0.07
     ).encode(y=alt.Y("y0:Q", scale=ys), y2="y1:Q")
@@ -102,12 +101,12 @@ def _references(ys: alt.Scale, c: dict):
 
 
 def _jitter(key: str) -> float:
-    """Décalage horizontal stable (entre -0,5 et 0,5) pour séparer les points en air immobile."""
+    """A stable horizontal offset (between -0.5 and 0.5) to spread out points in still air."""
     return int(hashlib.md5(key.encode()).hexdigest()[:6], 16) / 0xFFFFFF - 0.5
 
 
 def still_air_chart(df: pd.DataFrame, domain: list[float]):
-    """Panneau de gauche : essais en air immobile (0 cm/s)."""
+    """Left panel: tests in still air (0 cm/s)."""
     c = colors()
     plot = _prepare(df)
     plot = plot[plot["is_still"]].copy()
@@ -130,7 +129,7 @@ def still_air_chart(df: pd.DataFrame, domain: list[float]):
 
 
 def moving_air_chart(df: pd.DataFrame, domain: list[float]):
-    """Panneau de droite : essais avec un courant d'air."""
+    """Right panel: tests with an air flow."""
     c = colors()
     plot = _prepare(df)
     plot = plot[~plot["is_still"]].copy()
@@ -158,7 +157,7 @@ def moving_air_chart(df: pd.DataFrame, domain: list[float]):
     if plot.empty:
         return _finish(alt.layer(moon, air, vent, moon_label, air_label, vent_label))
 
-    # Plage de vitesses d'air parcourue pendant un même essai (BASS-II)
+    # Range of air speeds covered during a single test (BASS-II)
     ranges = plot[plot["flow_max_cm_s"] > plot["flow_min_cm_s"]]
     segments = alt.Chart(ranges).mark_rule(strokeWidth=2, opacity=0.3).encode(
         x=alt.X("flow_min_cm_s:Q", scale=xs), x2="flow_max_cm_s:Q", y=alt.Y("o2_pct:Q", scale=ys),
@@ -167,7 +166,7 @@ def moving_air_chart(df: pd.DataFrame, domain: list[float]):
     pts = _points(plot, x, y, c)
     layers = [moon, air, vent, segments, pts, moon_label, air_label, vent_label]
 
-    # Le message clé : aucun essai avec un courant d'air dans l'atmosphère de la base lunaire
+    # The key message: no test with an air flow in the Moon base atmosphere
     if not (plot["o2_pct"] >= d.MOON_BASE_O2_PCT).any():
         mid = (d.MOON_BASE_O2_PCT + domain[1]) / 2
         layers.append(alt.Chart(pd.DataFrame({"x": [x_max / 2], "y": [mid]})).mark_text(
@@ -177,7 +176,7 @@ def moving_air_chart(df: pd.DataFrame, domain: list[float]):
 
 
 def coverage_table(df: pd.DataFrame) -> pd.DataFrame:
-    """Nombre de conditions testées par bande d'oxygène et par gravité, cases vides comprises."""
+    """Number of tested conditions by oxygen band and gravity, empty cells included."""
     counts = (
         df.assign(band=df["o2_pct"].map(d.o2_band))
         .dropna(subset=["band"])
@@ -191,7 +190,7 @@ def coverage_table(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def coverage_chart(df: pd.DataFrame):
-    """Carte des zones sans données : une case par (oxygène, gravité)."""
+    """Coverage map: one cell per (oxygen, gravity)."""
     c = colors()
     cov = coverage_table(df)
     cov["band_label"] = cov["band"].map(t)
@@ -214,7 +213,7 @@ def coverage_chart(df: pd.DataFrame):
             alt.Tooltip("n:Q", title=t("atlas_conditions")),
         ],
     )
-    # Contour de la case de la base lunaire (30 % et plus, gravité lunaire)
+    # Outline of the Moon base cell (30% and more, lunar gravity)
     ring = alt.Chart(cov[cov["is_moon_base"]]).mark_rect(
         cornerRadius=4, fillOpacity=0, stroke=c["ink"], strokeWidth=2
     ).encode(x=x, y=y)
@@ -225,16 +224,17 @@ def coverage_chart(df: pd.DataFrame):
     return (
         alt.layer(cells, ring, text)
         .properties(height=210, background=c["surface"],
-                    padding={"left": 8, "right": 8, "top": 8, "bottom": 8})
+                    padding={"left": 12, "right": 12, "top": 12, "bottom": 8})
+        .configure(font=CHART_FONT)
         .configure_axis(labelColor=c["ink2"], labelFontSize=12, grid=False)
         .configure_view(stroke=None)
     )
 
 
-# --- Classement selon l'environnement ---------------------------------------------------------
+# --- Ranking by environment ------------------------------------------------------------------
 
 def score_parts_chart(parts: dict, maxima: dict, order: list[str]):
-    """Points apportés par chaque facteur, sur une bande qui montre le maximum possible."""
+    """Points added by each factor, on a track that shows the most it can add."""
     c = colors()
     rows = pd.DataFrame({
         "factor": [t(f"f_{k}") for k in order],
@@ -260,7 +260,7 @@ def score_parts_chart(parts: dict, maxima: dict, order: list[str]):
 
 
 def env_ranking_chart(rows: pd.DataFrame, selected: str):
-    """Score de chaque environnement avec le même matériau, du plus risqué au moins risqué."""
+    """Score of each environment with the same material, from riskiest to least risky."""
     c = colors()
     rows = rows.sort_values("score", ascending=False).copy()
     rows["is_selected"] = rows["key"].eq(selected)

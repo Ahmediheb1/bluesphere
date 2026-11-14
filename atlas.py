@@ -1,20 +1,20 @@
-"""Atlas d'inflammabilité : chaque essai de la NASA sur une seule carte."""
+"""Flammability atlas: every NASA test on a single map."""
 
 import streamlit as st
 
 import charts
-from data import load_experiments, material_label
-from i18n import get_lang, t
-from style import colors, page_header
+from data import load_experiments
+from style import colors, page_header, section
+from texts import t
 
-page_header(t("nav_atlas"), t("atlas_lead"))
+page_header(t("atlas_title"), t("atlas_lead"))
 
 df = load_experiments()
 if df.empty or df["o2_pct"].isna().all():
     st.info(t("atlas_no_data"))
     st.stop()
 
-# Filtres : une seule rangée, au-dessus de tout ce qu'ils filtrent
+# Filters: one row, above everything they filter
 col1, col2 = st.columns([3, 2])
 with col1:
     investigations = sorted(df["investigation"].dropna().unique())
@@ -29,7 +29,7 @@ with col2:
 view = df[df["investigation"].isin(chosen) & df["fuel_state"].isin(chosen_fuels or [])]
 plotted = view.dropna(subset=["o2_pct", "flow_cm_s"])
 
-# Légende commune aux deux panneaux : la couleur du point = le combustible, le remplissage = le résultat
+# One legend for both panels: point color = fuel, fill = outcome
 c = colors()
 fuel_keys = "".join(
     f"<span class='bs-key' style='color:{c['ink2']}'>"
@@ -57,13 +57,12 @@ else:
     st.caption(t("atlas_lead_2"))
     st.caption(t("atlas_ref_vent"))
 
-# Zones sans données : calculées sur toutes les données, pas seulement le filtre
-st.subheader(t("atlas_coverage_title"))
-st.markdown(t("atlas_coverage_lead"))
+# No-data zones: computed on all the data, not only the filtered view
+section(t("atlas_coverage_title"), t("atlas_coverage_lead"))
 st.altair_chart(charts.coverage_chart(df), width="stretch")
 st.caption(t("atlas_coverage_note"))
 
-# Le tableau : les mêmes valeurs, lisibles sans le graphique
+# The table: the same values, readable without the chart
 with st.expander(t("atlas_table")):
     table = view[[
         "investigation", "test_id", "material", "fuel_state", "o2_pct",
@@ -71,7 +70,6 @@ with st.expander(t("atlas_table")):
     ]].copy()
     table["fuel_state"] = table["fuel_state"].map(lambda f: t(f"fuel_{f}") if f in charts.FUEL_ORDER else f)
     table["outcome"] = table["outcome"].map(lambda o: t(f"outcome_{o}"))
-    table["material"] = table["material"].map(lambda m: material_label(m, get_lang()))
     st.dataframe(
         table,
         hide_index=True,
