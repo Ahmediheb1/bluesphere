@@ -15,7 +15,7 @@ import altair as alt
 import pandas as pd
 
 import data as d
-from i18n import t
+from i18n import get_lang, t
 from style import colors
 
 FUEL_ORDER = ["solid", "liquid", "gas"]
@@ -46,6 +46,7 @@ def _prepare(df: pd.DataFrame) -> pd.DataFrame:
     plot = df.dropna(subset=["o2_pct", "flow_cm_s"]).copy()
     plot["fuel_label"] = plot["fuel_state"].map(lambda f: t(f"fuel_{f}") if f in FUEL_ORDER else f)
     plot["outcome_label"] = plot["outcome"].map(lambda o: t(f"outcome_{o}"))
+    plot["material"] = plot["material"].map(lambda m: d.material_label(m, get_lang()))
     plot["pressure_txt"] = plot["pressure_kpa"].map(lambda p: "—" if pd.isna(p) else f"{p:.0f}")
     plot["n_txt"] = plot["n_tests"].map(lambda n: "—" if pd.isna(n) else f"{n:.0f}")
     plot["is_still"] = plot["flow_max_cm_s"].fillna(plot["flow_cm_s"]).eq(0)
@@ -228,3 +229,52 @@ def coverage_chart(df: pd.DataFrame):
         .configure_axis(labelColor=c["ink2"], labelFontSize=12, grid=False)
         .configure_view(stroke=None)
     )
+
+
+# --- Classement selon l'environnement ---------------------------------------------------------
+
+def score_parts_chart(parts: dict, maxima: dict, order: list[str]):
+    """Points apportés par chaque facteur, sur une bande qui montre le maximum possible."""
+    c = colors()
+    rows = pd.DataFrame({
+        "factor": [t(f"f_{k}") for k in order],
+        "points": [round(parts[k], 1) for k in order],
+        "max": [round(maxima[k], 1) for k in order],
+    })
+    rows["label"] = rows.apply(lambda r: f"{r['points']:.0f} / {r['max']:.0f}", axis=1)
+    y = alt.Y("factor:N", sort=list(rows["factor"]), title=None, axis=alt.Axis(labelLimit=160))
+    x_scale = alt.Scale(domain=[0, max(rows["max"].max(), 1)])
+    track = alt.Chart(rows).mark_bar(color=c["nodata"], cornerRadiusEnd=4, height=18).encode(
+        y=y, x=alt.X("max:Q", scale=x_scale, title=t("points")),
+        tooltip=[alt.Tooltip("factor:N", title=" "), alt.Tooltip("max:Q", title=t("points_max"), format=".0f")],
+    )
+    bars = alt.Chart(rows).mark_bar(color=c["data"], cornerRadiusEnd=4, height=18).encode(
+        y=y, x=alt.X("points:Q", scale=x_scale),
+        tooltip=[alt.Tooltip("factor:N", title=" "), alt.Tooltip("points:Q", title=t("points"), format=".1f"),
+                 alt.Tooltip("max:Q", title=t("points_max"), format=".0f")],
+    )
+    labels = alt.Chart(rows).mark_text(align="left", dx=6, color=c["ink2"], fontSize=12).encode(
+        y=y, x=alt.X("max:Q", scale=x_scale), text="label:N",
+    )
+    return _finish(track + bars + labels, height=210)
+
+
+def env_ranking_chart(rows: pd.DataFrame, selected: str):
+    """Score de chaque environnement avec le même matériau, du plus risqué au moins risqué."""
+    c = colors()
+    rows = rows.sort_values("score", ascending=False).copy()
+    rows["is_selected"] = rows["key"].eq(selected)
+    rows["label"] = rows["score"].map(lambda s: f"{s:.0f}")
+    y = alt.Y("name:N", sort=list(rows["name"]), title=None, axis=alt.Axis(labelLimit=220))
+    x_scale = alt.Scale(domain=[0, 100])
+    bars = alt.Chart(rows).mark_bar(cornerRadiusEnd=4, height=18).encode(
+        y=y,
+        x=alt.X("score:Q", scale=x_scale, title=t("metric_score")),
+        color=alt.condition("datum.is_selected", alt.value(c["data"]), alt.value(c["muted"])),
+        tooltip=[alt.Tooltip("name:N", title=t("rank_env")), alt.Tooltip("score:Q", title=t("metric_score"), format=".0f"),
+                 alt.Tooltip("gravity_label:N", title=t("rank_gravity"))],
+    )
+    labels = alt.Chart(rows).mark_text(align="left", dx=6, color=c["ink2"], fontSize=12).encode(
+        y=y, x=alt.X("score:Q", scale=x_scale), text="label:N",
+    )
+    return _finish(bars + labels, height=40 * len(rows) + 40)

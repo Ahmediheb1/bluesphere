@@ -16,6 +16,7 @@ language_selector()
 pages = [
     st.Page("accueil.py", title=t("nav_home"), icon=":material/public:", default=True),
     st.Page("atlas.py", title=t("nav_atlas"), icon=":material/scatter_plot:", url_path="atlas"),
+    st.Page("classement.py", title=t("nav_ranking"), icon=":material/leaderboard:", url_path="ranking"),
     st.Page("sources.py", title=t("nav_sources"), icon=":material/menu_book:", url_path="sources"),
 ]
 

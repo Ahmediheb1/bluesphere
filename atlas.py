@@ -3,8 +3,8 @@
 import streamlit as st
 
 import charts
-from data import load_experiments
-from i18n import t
+from data import load_experiments, material_label
+from i18n import get_lang, t
 from style import colors, page_header
 
 page_header(t("nav_atlas"), t("atlas_lead"))
@@ -71,6 +71,7 @@ with st.expander(t("atlas_table")):
     ]].copy()
     table["fuel_state"] = table["fuel_state"].map(lambda f: t(f"fuel_{f}") if f in charts.FUEL_ORDER else f)
     table["outcome"] = table["outcome"].map(lambda o: t(f"outcome_{o}"))
+    table["material"] = table["material"].map(lambda m: material_label(m, get_lang()))
     st.dataframe(
         table,
         hide_index=True,

@@ -10,6 +10,7 @@ BlueSphere est un copilote de sécurité incendie alimenté par l'IA. Il transfo
 
 - **Atlas d'inflammabilité** : 764 essais réels de 8 expériences de la NASA (BASS-II, Saffire I à III, FLEX, FLEX-2, ACME BRE, CFI-G) réunis sur une seule carte, oxygène en fonction de la vitesse de l'air.
 - **Les zones sans données** : ce que la NASA n'a pas encore testé, à commencer par l'atmosphère de la future base lunaire (30 % d'O₂ ou plus, à 10,2 psi ou moins) en gravité lunaire.
+- **Classement selon l'environnement** : station spatiale, base lunaire, rover lunaire, vaisseau vers Mars ou environnement personnalisé. Un score de risque de 0 à 100 avec la pondération de l'équipe (oxygène 30 %, matériau 25 %, ventilation 25 %, épaisseur 10 %, pression 10 %), les essais de la NASA les plus proches, et une confiance qui baisse là où les données manquent (mode prudent).
 - Application bilingue (français et anglais) : `?lang=fr` ou `?lang=en` dans le lien.
 
 ## Lancer en local
@@ -32,9 +33,10 @@ Tous les fichiers sont à la racine du dépôt, sauf le thème (`.streamlit/conf
 | Fichier | Rôle |
 | --- | --- |
 | `app.py` | Point d'entrée : langue, menu et pages |
-| `accueil.py`, `atlas.py`, `sources.py` | Les pages de l'application |
+| `accueil.py`, `atlas.py`, `classement.py`, `sources.py` | Les pages de l'application |
 | `i18n.py` | Tous les textes, en français et en anglais |
 | `data.py`, `charts.py`, `style.py` | Lecture des données, graphiques, couleurs |
+| `risk.py` | Le score de risque, la confiance et le classement des essais |
 | `experiments.csv`, `investigations.csv` | Les données harmonisées utilisées par l'application |
 | `PSI-*.csv` | Les tableaux d'essais bruts de la NASA |
 | `build_dataset.py` | Construit `experiments.csv` à partir des tableaux bruts |

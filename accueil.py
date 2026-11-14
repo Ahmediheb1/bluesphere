@@ -31,3 +31,4 @@ for i in range(1, 5):
 
 st.subheader(t("home_start"))
 st.page_link("atlas.py", label=t("home_go_atlas"), icon=":material/arrow_forward:")
+st.page_link("classement.py", label=t("home_go_ranking"), icon=":material/arrow_forward:")

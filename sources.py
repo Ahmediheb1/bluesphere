@@ -32,6 +32,8 @@ PAPERS = [
      "https://doi.org/10.1016/j.combustflame.2009.01.015"),
     ("Greenberg et al., 1999, Microgravity combustion diagnostics: the path to the ISS, Meas. Sci. Technol.",
      "https://iopscience.iop.org/0957-0233/10/10/301"),
+    ("Abercromby et al., 2022, NASA DCS Strategic Plan: exploration atmosphere 8.2 psia / 34% O2 (NASA)",
+     "https://ntrs.nasa.gov/api/citations/20220005709/downloads/AsMA%202022%20-%20Abercromby%20-%20DCS%20Strategic%20Plan%20v2.pdf"),
 ]
 for title, url in PAPERS:
     st.markdown(f"- [{title}]({url})")

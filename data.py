@@ -98,3 +98,29 @@ def o2_band(o2_pct: float) -> str | None:
     if o2_pct < MOON_BASE_O2_PCT:
         return "o2_mid"
     return "o2_high"
+
+
+# Les noms de matériaux du tableau sont en français ; voici leur version anglaise
+MATERIAL_EN = {
+    "Cire de bougie": "Candle wax",
+    "Heptane": "Heptane",
+    "Méthane": "Methane",
+    "Méthanol": "Methanol",
+    "Nomex": "Nomex",
+    "Nomex (partie de 24 cm)": "Nomex (24 cm part)",
+    "PMMA": "PMMA",
+    "PMMA (partie de 5 cm)": "PMMA (5 cm part)",
+    "PMMA noir": "Black PMMA",
+    "PMMA transparent": "Clear PMMA",
+    "SIBAL (coton et fibre de verre)": "SIBAL (cotton and fiberglass)",
+    "Silicone": "Silicone",
+    "Éthylène": "Ethylene",
+    "Éthylène dilué (50 %)": "Diluted ethylene (50%)",
+}
+
+
+def material_label(name, lang: str) -> str:
+    """Nom du matériau dans la langue de l'interface."""
+    if lang == "en" and isinstance(name, str):
+        return MATERIAL_EN.get(name, name)
+    return name
