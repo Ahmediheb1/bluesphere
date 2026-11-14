@@ -1,0 +1,24 @@
+"""BlueSphere : copilote de sécurité incendie pour l'exploration spatiale.
+
+NASA Space Apps Challenge 2026, défi « Flame in Freefall ».
+Lancer en local :  py -m streamlit run app.py
+"""
+
+import streamlit as st
+
+from lib.i18n import language_selector, t
+from lib.style import inject_css
+
+st.set_page_config(page_title="BlueSphere", page_icon="🔵", layout="wide")
+inject_css()
+language_selector()
+
+pages = [
+    st.Page("views/accueil.py", title=t("nav_home"), icon=":material/public:", default=True),
+    st.Page("views/atlas.py", title=t("nav_atlas"), icon=":material/scatter_plot:", url_path="atlas"),
+    st.Page("views/sources.py", title=t("nav_sources"), icon=":material/menu_book:", url_path="sources"),
+]
+
+st.navigation(pages).run()
+
+st.markdown(f"<p class='bs-footer'>{t('footer')}</p>", unsafe_allow_html=True)

@@ -1,0 +1,12 @@
+# Secrets : ne jamais publier la clé de l'API Claude
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Systèmes
+.DS_Store
+Thumbs.db
