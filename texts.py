@@ -4,6 +4,47 @@ Pages call t("key") instead of writing text inline, so wording stays consistent.
 """
 
 STRINGS = {
+    # After the fire (module 4)
+    'nav_after': 'After the fire',
+    'after_title': 'After the fire',
+    'after_lead': 'When the flame goes out, the danger does not. NASA saw it in orbit: flames that hide, '
+                  'fuel that keeps smoking, and fires that come back when the fan restarts.',
+    'after_timeline_title': 'How a fire can come back',
+    'after_timeline_lead': 'The phases of a cabin fire, from what NASA measured and modeled. Times are given only where a source gives them.',
+    'after_phases': [
+        ('Ignition', 'A material starts to burn.', ''),
+        ('First signal', 'Far from the fire, CO2 starts rising about 50 s after ignition. CO rises more slowly.', 'S5'),
+        ('Airflow cut', 'Cutting the ventilation often puts the flame out, but not always.', 'S9'),
+        ('Hidden burning', 'The flame can shrink into flamelets about 1 cm wide that keep burning below the extinction limit.', 'S8'),
+        ('Fan back on', 'In Saffire-IV, a flame that had gone out reignited in a deflagration when the fan came back.', 'S6'),
+    ],
+    'after_findings_title': 'What NASA saw',
+    'after_findings': [
+        ('A fire that came back', 'Saffire-IV, Cygnus', 'The PMMA flame went out when the ventilation was lowered, but the hot fuel kept '
+         'releasing vapors. When the fan came back, a deflagration reignited it.', 'S6'),
+        ('Flames that hide', 'Thin fuels, NASA Glenn', 'When the air slows down, a flame can break into flamelets about 1 cm wide that keep burning '
+         'below the extinction limit. If the air goes from 0.5 to 50 cm/s, a flamelet can grow by 200% in less than 10 seconds.', 'S8'),
+        ('A flame too faint to see', 'Mir', 'A candle burned for up to 45 minutes with a flame too faint for the cameras. After extinction, '
+         'a flammable cloud remained. Shutting off the ventilation often puts the fire out, but not always.', 'S9'),
+        ('A common misconception', 'NASA guide, 2015', 'NASA lists "a fire will self-extinguish if the ventilation is shut off" as a misconception. '
+         'Invisible cool flames can reignite long after.', 'S2'),
+        ('Gases that stay', 'Saffire-IV and V', 'The smoke-eater filter did not remove CO in a noticeable way. Far from the fire, CO2 rose '
+         'first and CO more slowly.', 'S5'),
+    ],
+    'after_check_title': 'Before restarting the ventilation',
+    'after_check_lead': 'A decision-support checklist that BlueSphere draws from these findings. It is not a NASA procedure.',
+    'after_checks': [
+        ('CO and CO2 are back to normal and no longer rising.', 'CO confirms a fire, and the smoke eater did not remove it in Saffire-IV and V.', 'S5'),
+        ('The fuel has cooled down.', 'Hot PMMA kept releasing vapors, and those vapors reignited when the fan came back.', 'S6'),
+        ('No hidden flame remains.', 'Flamelets and cool flames can be too faint to see.', 'S8'),
+        ('Restart the air slowly, and watch.', 'A flamelet can grow by 200% in less than 10 seconds when the air speeds up.', 'S8'),
+    ],
+    'after_moon_title': 'At the Moon base',
+    'after_moon': 'None of these effects has been tested at 30% oxygen or in lunar gravity. After the fire is one more no-data zone, '
+                  'so BlueSphere treats it with extra caution.',
+    'after_ask': 'Ask the assistant about it',
+    'after_source': 'Source',
+
     # Home
     'nav_home': 'Overview',
     'home_wordmark': 'BlueSphere',
@@ -33,7 +74,7 @@ STRINGS = {
     'home_mod_assistant_title': 'AI assistant',
     'home_mod_assistant': 'Ask a question about fire in space. Answers come only from NASA sources, with references.',
     'home_mod_after_title': 'After the fire',
-    'home_mod_after': 'Why the danger continues once the flame is out, and when it is safe to restart the ventilation.',
+    'home_mod_after': 'Why the danger continues once the flame is out, and what to check before restarting the ventilation.',
     'home_in_progress': 'In progress',
     'home_open': 'Open',
     'home_history_title': 'Why it matters',
@@ -49,7 +90,6 @@ STRINGS = {
     'atlas_title': 'Flammability atlas',
     'nav_ranking': 'Ranking',
     'nav_assistant': 'Assistant',
-    'nav_after': 'After the fire',
     'nav_detection': 'Live detection',
     'nav_sources': 'Sources',
     'sources_title': 'Sources and method',

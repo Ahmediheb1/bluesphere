@@ -16,6 +16,7 @@ pages = [
     st.Page("atlas.py", title=t("nav_atlas"), icon=":material/scatter_plot:", url_path="atlas"),
     st.Page("ranking.py", title=t("nav_ranking"), icon=":material/leaderboard:", url_path="ranking"),
     st.Page("assistant.py", title=t("nav_assistant"), icon=":material/smart_toy:", url_path="assistant"),
+    st.Page("after.py", title=t("nav_after"), icon=":material/local_fire_department:", url_path="after-the-fire"),
     st.Page("sources.py", title=t("nav_sources"), icon=":material/menu_book:", url_path="sources"),
 ]
 st.navigation(pages, position="top").run()

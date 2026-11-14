@@ -130,6 +130,20 @@ def inject_css() -> None:
         .bs-year {{ font-weight: 650; font-stretch: 118%; color: {c['flame']}; font-variant-numeric: tabular-nums; }}
         .bs-event {{ color: {c['ink2']}; line-height: 1.55; }}
 
+        /* After the fire */
+        .bs-finding {{ border-left: 2px solid {c['line']}; padding: 0.2rem 0 0.2rem 1.1rem; margin: 0 0 1.4rem 0; max-width: 48rem; }}
+        .bs-finding h3 {{ font-size: 1.15rem; font-weight: 600; margin: 0 0 0.15rem 0; color: {c['ink']}; }}
+        .bs-finding p {{ color: {c['ink2']}; line-height: 1.6; margin: 0 0 0.3rem 0; }}
+        .bs-finding .bs-finding-where {{ color: {c['muted']}; font-size: 0.9rem; }}
+        .bs-finding .bs-finding-src {{ font-size: 0.85rem; color: {c['muted']}; }}
+        .bs-check {{ display: flex; gap: 0.9rem; align-items: flex-start; margin: 0 0 1rem 0; max-width: 48rem; }}
+        .bs-check-box {{ flex: 0 0 18px; height: 18px; border: 2px solid {c['flame']}; border-radius: 4px; margin-top: 0.2rem; }}
+        .bs-check-title {{ color: {c['ink']}; font-weight: 600; margin: 0 0 0.15rem 0; }}
+        .bs-check-why {{ color: {c['ink2']}; margin: 0; line-height: 1.55; font-size: 0.95rem; }}
+        .bs-moon-note {{ border: 1px solid {c['ember']}; border-radius: 10px; padding: 1rem 1.2rem; margin: 2.4rem 0 1.4rem 0; max-width: 48rem; }}
+        .bs-moon-note h3 {{ color: {c['ember']}; font-size: 1.1rem; font-weight: 600; margin: 0 0 0.3rem 0; }}
+        .bs-moon-note p {{ color: {c['ink2']}; margin: 0; line-height: 1.6; }}
+
         .bs-footer {{ font-size: 0.85rem; color: {c['muted']}; margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid {c['line']}; max-width: 60rem; line-height: 1.6; }}
 
         /* Atlas legend */

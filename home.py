@@ -60,7 +60,7 @@ modules = [
     ("atlas", "atlas.py", False),
     ("ranking", "ranking.py", False),
     ("assistant", "assistant.py", False),
-    ("after", None, True),
+    ("after", "after.py", False),
 ]
 for key, page, in_progress in modules:
     text_col, action_col = st.columns([5, 1], vertical_alignment="center")

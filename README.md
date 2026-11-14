@@ -19,7 +19,8 @@ In these PSI tables, solid materials, the stuff habitats are made of, were teste
 - **Flammability atlas**: 764 real tests from 8 NASA investigations (BASS-II, Saffire I to III, FLEX, FLEX-2, ACME BRE, CFI-G) on a single map, oxygen against air speed, plus a coverage map of the conditions no test has covered yet.
 - **Ranking by environment**: space station, Moon base, lunar rover, ship to Mars, or a custom environment. A risk score from 0 to 100 with the team's expert weighting (oxygen 30%, material 25%, ventilation 25%, thickness 10%, pressure 10%), the closest NASA tests, and a confidence that drops where data is missing (cautious mode).
 - **AI assistant**: answers questions about fire in space using only facts from NASA sources (`knowledge.py`), cites each source, and says "I don't know" when the information is missing. It runs on Claude Sonnet 5.5; the API key stays in the Streamlit secrets, never in this repository.
-- **After the fire** and **live detection**: in progress.
+- **After the fire**: why the danger continues once the flame is out (Saffire-IV reignition, Mir, hidden flamelets), with every point sourced, and a checklist before restarting the ventilation.
+- **Live detection**: in progress.
 
 ## Run it locally
 
@@ -43,7 +44,7 @@ Every file sits at the root of the repository, except the theme (`.streamlit/con
 | File | Role |
 | --- | --- |
 | `app.py` | Entry point: page setup and navigation |
-| `home.py`, `atlas.py`, `ranking.py`, `assistant.py`, `sources.py` | The pages of the app |
+| `home.py`, `atlas.py`, `ranking.py`, `assistant.py`, `after.py`, `sources.py` | The pages of the app |
 | `texts.py` | Every piece of text shown in the app |
 | `data.py`, `charts.py`, `style.py` | Data loading, charts, look and feel |
 | `risk.py` | The risk score, the confidence, and the ranking of tests |
