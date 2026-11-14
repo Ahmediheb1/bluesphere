@@ -45,6 +45,69 @@ STRINGS = {
     'after_ask': 'Ask the assistant about it',
     'after_source': 'Source',
 
+    # Live detection (bonus)
+    'det_title': 'Live fire detection',
+    'det_lead': 'Cabin sensors replay a fire like the ones NASA set in Cygnus. BlueSphere applies the team\'s rules: '
+                'CO2 gives the alert, CO confirms it, and the speed of change matters more than the value.',
+    'det_simulated': 'Simulated data, not real sensor readings. The timing follows Saffire-IV and V: far from the fire, '
+                     'CO2 starts rising about 50 s after ignition and CO rises more slowly; CO2 reached 1.4 times its starting '
+                     'value with SIBAL fabric and 2.8 times with PMMA.',
+    'det_scenario': 'Scenario',
+    'det_sc_pmma': 'PMMA plastic fire',
+    'det_sc_sibal': 'Fabric fire (SIBAL)',
+    'det_sc_exercise': 'No fire: a crew member exercising',
+    'det_cautious': 'Cautious mode (Moon base: no NASA data)',
+    'det_cautious_help': 'In a no-data zone, BlueSphere lowers its alert threshold so the alert comes earlier.',
+    'det_time': 'Time since the start (minutes:seconds)',
+    'det_status_0': '🟢 Normal',
+    'det_status_1': '🟡 Watch',
+    'det_status_2': '🔴 Fire signature detected',
+    'det_why_0': 'All four signals move within their normal range.',
+    'det_why_prefix': 'Why: ',
+    'det_why_signal': '{name} is changing {x} times faster than its normal fluctuations',
+    'det_why_fire': 'CO confirms the alert together with another signal.',
+    'det_why_watch': 'One signal is abnormal, but CO has not confirmed it yet.',
+    'det_ignition': 'Ignition',
+    'det_first_alert': 'First alert',
+    'det_confirmed': 'Fire confirmed',
+    'det_after_ignition': '{s} s after ignition',
+    'det_not_yet': 'not yet',
+    'det_none': 'none',
+    'det_sig_co2': 'CO2',
+    'det_sig_co': 'CO',
+    'det_sig_o2': 'O2',
+    'det_sig_temp': 'Temperature',
+    'det_y_co2': 'CO2 (× starting level)',
+    'det_y_co': 'CO (× starting level)',
+    'det_y_o2': 'O2 (% by volume)',
+    'det_y_temp': 'Cabin temperature (°C)',
+    'det_x': 'Time (s)',
+    'det_ev_ignition': 'Ignition',
+    'det_ev_cut': 'Airflow cut',
+    'det_chart_caption': 'Orange points: readings the rules flag as abnormal. All four sensors sit away from the fire, '
+                         'like the far sensor in Saffire.',
+    'det_restart_title': 'Can we restart the ventilation?',
+    'det_restart_wait': 'The flame is still burning. Keep the airflow off.',
+    'det_restart_no_fire': 'No fire in this scenario: the ventilation was never cut.',
+    'det_restart_no': '❌ Not yet',
+    'det_restart_slow': '✅ Restart slowly and watch',
+    'det_check_co_normal': 'CO back to normal and not rising (now {v} × its starting level)',
+    'det_check_co2_normal': 'CO2 back to normal (now {v} × its starting level)',
+    'det_check_temp_normal': 'Cabin temperature back to normal (now {v} °C above it)',
+    'det_check_flame_out': 'The flame is out',
+    'det_restart_note': 'In Saffire-IV and V, the smoke eater did not remove CO in a noticeable way, and a PMMA flame reignited '
+                        'when the fan came back. See the After the fire page.',
+    'det_method_title': 'How detection works',
+    'det_method_body': 'BlueSphere learns the normal behavior of each signal during the first 90 seconds. Every 5 seconds, it '
+                       'measures how fast each signal changed over the last 30 seconds, and compares that speed with the normal '
+                       'fluctuations. A signal is abnormal when it changes more than 5 times faster than normal (3.5 times in '
+                       'cautious mode), two readings in a row. For oxygen, a drop counts.\n\n'
+                       '- **Watch**: one signal is abnormal, often CO2, which reaches a far sensor first.\n'
+                       '- **Fire signature**: CO is abnormal together with another signal. The crew barely produces CO, '
+                       'so it confirms a fire.\n\n'
+                       'No absolute threshold is invented: each limit is relative to the habitat\'s own normal behavior. '
+                       'Breathing and exercise move CO2 slowly; a fire moves it fast.',
+
     # Home
     'nav_home': 'Overview',
     'home_wordmark': 'BlueSphere',
@@ -73,6 +136,8 @@ STRINGS = {
                         'and the closest NASA tests.',
     'home_mod_assistant_title': 'AI assistant',
     'home_mod_assistant': 'Ask a question about fire in space. Answers come only from NASA sources, with references.',
+    'home_mod_detection_title': 'Live fire detection',
+    'home_mod_detection': 'Watch simulated cabin sensors catch a fire: CO2 gives the alert, CO confirms it.',
     'home_mod_after_title': 'After the fire',
     'home_mod_after': 'Why the danger continues once the flame is out, and what to check before restarting the ventilation.',
     'home_in_progress': 'In progress',
@@ -90,7 +155,7 @@ STRINGS = {
     'atlas_title': 'Flammability atlas',
     'nav_ranking': 'Ranking',
     'nav_assistant': 'Assistant',
-    'nav_detection': 'Live detection',
+    'nav_detection': 'Detection',
     'nav_sources': 'Sources',
     'sources_title': 'Sources and method',
     'atlas_lead': 'Each point is a real NASA test in microgravity. Filled point: the flame burned. Hollow point: it went out or never caught.',

@@ -60,6 +60,7 @@ modules = [
     ("atlas", "atlas.py", False),
     ("ranking", "ranking.py", False),
     ("assistant", "assistant.py", False),
+    ("detection", "detection.py", False),
     ("after", "after.py", False),
 ]
 for key, page, in_progress in modules:

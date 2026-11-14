@@ -278,3 +278,32 @@ def env_ranking_chart(rows: pd.DataFrame, selected: str):
         y=y, x=alt.X("score:Q", scale=x_scale), text="label:N",
     )
     return _finish(bars + labels, height=40 * len(rows) + 40)
+
+
+# --- Live detection ---------------------------------------------------------------------------
+
+def signal_chart(det: pd.DataFrame, signal: str, t_now: float, events: list[tuple[float, str]], y_title: str,
+                 x_max: float):
+    """One sensor signal up to the current time; readings flagged as abnormal are shown in orange."""
+    c = colors()
+    now = det[det["t"] <= t_now].copy()
+    now["value"] = now[signal]
+    now["abnormal"] = now[f"{signal}_abnormal"]
+    xs = alt.Scale(domain=[0, x_max], nice=False)
+    ys = alt.Scale(zero=False, nice=True)
+    x = alt.X("t:Q", scale=xs, title=t("det_x"), axis=alt.Axis(values=list(range(0, int(x_max) + 1, 120)), grid=False))
+    line = alt.Chart(now).mark_line(color=c["data"], strokeWidth=2).encode(
+        x=x, y=alt.Y("value:Q", scale=ys, title=y_title),
+        tooltip=[alt.Tooltip("t:Q", title=t("det_x")), alt.Tooltip("value:Q", title=y_title, format=".3g")],
+    )
+    flagged = alt.Chart(now[now["abnormal"]]).mark_circle(color=c["ember"], size=36, opacity=1).encode(
+        x=x, y=alt.Y("value:Q", scale=ys),
+    )
+    shown = [(when, label) for when, label in events if when <= t_now]
+    layers = [line, flagged]
+    if shown:
+        ev = pd.DataFrame(shown, columns=["t", "label"])
+        layers.append(alt.Chart(ev).mark_rule(color=c["muted"], strokeDash=[4, 4]).encode(x=x))
+        layers.append(alt.Chart(ev).mark_text(align="left", baseline="top", dx=4, dy=4, color=c["ink2"], fontSize=11)
+                      .encode(x=x, y=alt.value(0), text="label:N"))
+    return _finish(alt.layer(*layers), height=190)
