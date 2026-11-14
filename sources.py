@@ -34,9 +34,12 @@ PAPERS = [
      "https://iopscience.iop.org/0957-0233/10/10/301"),
     ("Abercromby et al., 2022, NASA DCS Strategic Plan: exploration atmosphere 8.2 psia / 34% O2 (NASA)",
      "https://ntrs.nasa.gov/api/citations/20220005709/downloads/AsMA%202022%20-%20Abercromby%20-%20DCS%20Strategic%20Plan%20v2.pdf"),
+    ("Norcross et al., 2013, Effects of the 8 psia / 32% O2 Atmosphere on the Human in the Spaceflight Environment (NASA TM)",
+     "https://ntrs.nasa.gov/citations/20130013505"),
+    ("Ross et al., combustion experiments on Mir (NASA SP-4225)", None),
 ]
 for title, url in PAPERS:
-    st.markdown(f"- [{title}]({url})")
+    st.markdown(f"- [{title}]({url})" if url else f"- {title}")
 
 st.subheader("NASA")
 RESOURCES = [
@@ -46,6 +49,8 @@ RESOURCES = [
      "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/"),
     ("Space Apps 2026, Flame in Freefall",
      "https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/"),
+    ("NASA history: 25 years ago, fire aboard space station Mir",
+     "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/"),
 ]
 for title, url in RESOURCES:
     st.markdown(f"- [{title}]({url})")
