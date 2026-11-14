@@ -1,9 +1,9 @@
-"""Construit data/experiments.csv à partir des tableaux d'essais de PSI (data/raw/).
+"""Construit experiments.csv à partir des tableaux d'essais de PSI (les fichiers PSI-*.csv).
 
-Lancer :  py tools/build_dataset.py
+Lancer :  py build_dataset.py
 
 Chaque ligne du résultat est un essai, ou un groupe d'essais identiques (colonne n_tests).
-Les choix de lecture des tableaux bruts sont expliqués dans data/README.md.
+Les choix de lecture des tableaux bruts sont expliqués dans DATA.md.
 """
 
 import re
@@ -12,9 +12,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
-RAW = ROOT / "data" / "raw"
-OUT = ROOT / "data" / "experiments.csv"
+ROOT = Path(__file__).resolve().parent  # tous les fichiers sont à la racine du projet
+RAW = ROOT
+OUT = ROOT / "experiments.csv"
 
 COLUMNS = [
     "investigation", "psi_id", "test_id", "material", "fuel_state", "geometry", "thickness_mm",

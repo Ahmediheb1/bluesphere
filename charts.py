@@ -14,9 +14,9 @@ import hashlib
 import altair as alt
 import pandas as pd
 
-from lib import data as d
-from lib.i18n import t
-from lib.style import colors
+import data as d
+from i18n import t
+from style import colors
 
 FUEL_ORDER = ["solid", "liquid", "gas"]
 GRAVITY_ORDER = ["micro", "moon", "mars", "earth"]

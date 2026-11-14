@@ -1,7 +1,7 @@
 """Chargement des données de BlueSphere.
 
-data/experiments.csv : un essai par ligne, avec les colonnes harmonisées ci-dessous.
-data/investigations.csv : une ligne par expérience de la NASA (nom, numéro PSI, lien).
+experiments.csv : un essai par ligne, avec les colonnes harmonisées ci-dessous.
+investigations.csv : une ligne par expérience de la NASA (nom, numéro PSI, lien).
 
 Les unités sont toujours les mêmes : oxygène en % du volume, pression en kPa,
 vitesse de l'air en cm/s, épaisseur en mm.
@@ -12,7 +12,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR = Path(__file__).resolve().parent  # tous les fichiers sont à la racine du projet
 
 EXPERIMENT_COLUMNS = [
     "investigation",     # nom court de l'expérience, ex. BASS-II

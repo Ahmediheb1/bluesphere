@@ -1,5 +1,6 @@
 # Secrets : ne jamais publier la clé de l'API Claude
 .streamlit/secrets.toml
+secrets.toml
 
 # Python
 __pycache__/

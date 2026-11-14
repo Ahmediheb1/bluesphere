@@ -1,19 +1,66 @@
-# Les données de BlueSphere
+# BlueSphere 🔵
 
-`experiments.csv` est construit par `tools/build_dataset.py` à partir des tableaux d'essais de PSI, copiés tels quels dans `raw/` (seuls les espaces en trop ont été retirés). Une ligne = un essai, ou un groupe d'essais identiques (colonne `n_tests`).
+**NASA Space Apps Challenge 2026 · Défi « Flame in Freefall » · Équipe BlueSphere (Sherbrooke)**
 
-Unités : oxygène en % du volume, pression en kPa, vitesse de l'air en cm/s, épaisseur en mm.
+BlueSphere est un copilote de sécurité incendie alimenté par l'IA. Il transforme des décennies d'expériences de la NASA sur le feu en microgravité en réponses claires, pour protéger les astronautes sur la Lune et sur Mars.
 
-## Comment chaque tableau est lu
+*BlueSphere is an AI-powered fire safety copilot that turns decades of NASA microgravity combustion experiments into clear answers to keep astronauts safe on the Moon and Mars.*
 
-**BASS-II (PSI-25), 129 essais.** La colonne « Air display » est lue comme la vitesse de l'air en cm/s : le tunnel de BASS-II imposait jusqu'à 40 cm/s. Les valeurs entre parenthèses et celles qui suivent « pot » sont des lectures du potentiomètre du ventilateur, pas des vitesses : elles sont ignorées. « <1 » devient 0,5 cm/s. L'oxygène est la valeur initiale calibrée. Le résultat vient des mots notés dans le tableau : « ext » ou « extinguished » (éteinte en réduisant l'air), « blowoff » (soufflée par un air trop rapide), « no ign » (pas d'allumage), « off » (ventilateur coupé, résultat inconnu). Le point de l'Atlas est placé à la plus faible vitesse notée, ou à la plus forte en cas de « blowoff ». Le texte brut reste dans la colonne `notes`.
+## Ce que fait l'application
 
-**Saffire-I, II et III (PSI-98, 99, 100).** Lus directement. Pour Saffire-II, l'oxygène a été déduit du CO₂ mesuré (note 1 du tableau). L'échantillon 2-7 est séparé en deux lignes : le PMMA a brûlé, le Nomex ne s'est pas allumé. Le tableau de Saffire-III ne donne ni l'oxygène ni le résultat : ses deux essais ne sont pas sur la carte.
+- **Atlas d'inflammabilité** : 764 essais réels de 8 expériences de la NASA (BASS-II, Saffire I à III, FLEX, FLEX-2, ACME BRE, CFI-G) réunis sur une seule carte, oxygène en fonction de la vitesse de l'air.
+- **Les zones sans données** : ce que la NASA n'a pas encore testé, à commencer par l'atmosphère de la future base lunaire (30 % d'O₂ ou plus, à 10,2 psi ou moins) en gravité lunaire.
+- Application bilingue (français et anglais) : `?lang=fr` ou `?lang=en` dans le lien.
 
-**FLEX (PSI-69), 274 gouttes.** Regroupées par combustible, pression, oxygène, dilution (CO₂ ou hélium) et fin d'essai : 149 groupes (`raw/PSI-69_FLEX_grouped.csv`). « Extinction » = la flamme s'est éteinte avant la fin de la goutte ; « Completion » et « Disruption » = la goutte a brûlé. Air immobile (0 cm/s).
+## Lancer en local
 
-**ACME BRE (PSI-20), 194 flammes.** Le tableau de PSI résume chaque journée : les concentrations d'oxygène où des flammes ont pris, et le nombre de flammes allumées. Une ligne par journée et par concentration ; le nombre exact par concentration n'est pas connu. « 3400% » et « 2100% » sont lus comme 34 % et 21 %. Air immobile.
+```bash
+py -m pip install -r requirements.txt
+py -m streamlit run app.py
+```
 
-**FLEX-2 (PSI-68).** PSI ne donne que les plages étudiées (17 à 30 % d'O₂, 0,5 à 3 atm, 0,1 à 5 cm/s), pas chaque essai : FLEX-2 n'est pas sur la carte.
+Pour reconstruire le tableau de données à partir des fichiers bruts de PSI :
 
-**CFI-G (PSI-159), 154 essais.** Flammes inversées : l'oxygène (jusqu'à 85 %) sort du brûleur dans une atmosphère de combustible. Ce n'est pas l'oxygène de l'air ambiant, donc CFI-G n'est pas sur la carte. Les essais sont regroupés dans `raw/PSI-159_CFI-G_grouped.csv`.
+```bash
+py build_dataset.py
+```
+
+## Fichiers du projet
+
+Tous les fichiers sont à la racine du dépôt, sauf le thème (`.streamlit/config.toml`).
+
+| Fichier | Rôle |
+| --- | --- |
+| `app.py` | Point d'entrée : langue, menu et pages |
+| `accueil.py`, `atlas.py`, `sources.py` | Les pages de l'application |
+| `i18n.py` | Tous les textes, en français et en anglais |
+| `data.py`, `charts.py`, `style.py` | Lecture des données, graphiques, couleurs |
+| `experiments.csv`, `investigations.csv` | Les données harmonisées utilisées par l'application |
+| `PSI-*.csv` | Les tableaux d'essais bruts de la NASA |
+| `build_dataset.py` | Construit `experiments.csv` à partir des tableaux bruts |
+| `DATA.md` | Comment chaque tableau de la NASA est lu |
+
+## Données
+
+Toutes les données viennent du dépôt [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/physci/repo/) de la NASA, sous licence CC0. Les tableaux d'essais bruts sont les fichiers `PSI-*.csv`, et la façon de les lire est expliquée dans [DATA.md](DATA.md).
+
+| Expérience | PSI |
+| --- | --- |
+| BASS-II (DOI 10.60555/4qc4-de67) | [PSI-25](https://psi.nasa.gov/physci/repo/data/investigations/PSI-25) |
+| Saffire-I | [PSI-98](https://psi.nasa.gov/physci/repo/data/investigations/PSI-98) |
+| Saffire-II | [PSI-99](https://psi.nasa.gov/physci/repo/data/investigations/PSI-99) |
+| Saffire-III | [PSI-100](https://psi.nasa.gov/physci/repo/data/investigations/PSI-100) |
+| FLEX | [PSI-69](https://psi.nasa.gov/physci/repo/data/investigations/PSI-69) |
+| FLEX-2 | [PSI-68](https://psi.nasa.gov/physci/repo/data/investigations/PSI-68) |
+| ACME BRE | [PSI-20](https://psi.nasa.gov/physci/repo/data/investigations/PSI-20) |
+| CFI-G | [PSI-159](https://psi.nasa.gov/physci/repo/data/investigations/PSI-159) |
+
+Les autres sources (articles de la NASA sur Saffire, guide de la NASA sur la combustion, 2015) sont listées dans la page « Sources et méthode » de l'application.
+
+## Usage de l'IA
+
+BlueSphere a été construit avec l'aide de Claude (Anthropic) pour le code, l'analyse des tableaux et la rédaction. Les données, elles, viennent toutes de la NASA. L'assistant de l'application utilise aussi Claude et répond seulement à partir des documents de la NASA.
+
+## Licence
+
+Code sous licence MIT. Données de la NASA : CC0.

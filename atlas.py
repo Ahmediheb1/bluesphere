@@ -2,10 +2,10 @@
 
 import streamlit as st
 
-from lib import charts
-from lib.data import load_experiments
-from lib.i18n import t
-from lib.style import colors, page_header
+import charts
+from data import load_experiments
+from i18n import t
+from style import colors, page_header
 
 page_header(t("nav_atlas"), t("atlas_lead"))
 

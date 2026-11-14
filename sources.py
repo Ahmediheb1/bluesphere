@@ -2,9 +2,9 @@
 
 import streamlit as st
 
-from lib.data import PSI_URL, load_investigations
-from lib.i18n import get_lang, t
-from lib.style import page_header
+from data import PSI_URL, load_investigations
+from i18n import get_lang, t
+from style import page_header
 
 page_header(t("nav_sources"), t("sources_lead"))
 

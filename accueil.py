@@ -2,9 +2,9 @@
 
 import streamlit as st
 
-from lib import data as d
-from lib.data import load_experiments, load_investigations
-from lib.i18n import t
+import data as d
+from data import load_experiments, load_investigations
+from i18n import t
 
 st.markdown("<div class='bs-hero'>Blue<span>Sphere</span></div>", unsafe_allow_html=True)
 st.markdown(f"<p class='bs-lead'>{t('home_tagline')}</p>", unsafe_allow_html=True)
@@ -30,4 +30,4 @@ for i in range(1, 5):
     st.markdown(f"{i}. {t(f'home_msg_{i}')}")
 
 st.subheader(t("home_start"))
-st.page_link("views/atlas.py", label=t("home_go_atlas"), icon=":material/arrow_forward:")
+st.page_link("atlas.py", label=t("home_go_atlas"), icon=":material/arrow_forward:")
