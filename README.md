@@ -59,7 +59,11 @@ Les autres sources (articles de la NASA sur Saffire, guide de la NASA sur la com
 
 ## Usage de l'IA
 
-BlueSphere a été construit avec l'aide de Claude (Anthropic) pour le code, l'analyse des tableaux et la rédaction. Les données, elles, viennent toutes de la NASA. L'assistant de l'application utilise aussi Claude et répond seulement à partir des documents de la NASA.
+*Déclaration demandée par le règlement de NASA Space Apps.*
+
+Claude (Anthropic) a participé à l'écriture du code avec l'équipe BlueSphere. L'assistant de l'application fonctionne avec Claude, grâce à une clé d'API. Les idées, le scénario de la base lunaire, les choix scientifiques et l'analyse du risque viennent de l'équipe BlueSphere.
+
+*Use of AI (required by the NASA Space Apps rules): Claude (Anthropic) took part in writing the code with the BlueSphere team. The app's assistant runs on Claude, through an API key. The ideas, the Moon base scenario, the scientific choices and the risk analysis come from the BlueSphere team.*
 
 ## Licence
 
